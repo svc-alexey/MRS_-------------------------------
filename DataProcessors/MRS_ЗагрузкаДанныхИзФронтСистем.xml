@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="f23f4824-40ad-456a-81e9-4cceddfe6621">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.MRS_ЗагрузкаДанныхИзФронтСистем" category="Object">
+				<xr:TypeId>55c40798-ef4f-4d9a-b725-e1bcd1cc1086</xr:TypeId>
+				<xr:ValueId>2ad75599-13de-4227-99c6-bdb5046beb35</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.MRS_ЗагрузкаДанныхИзФронтСистем" category="Manager">
+				<xr:TypeId>f5f77c67-46ee-4f6f-bff5-e658c127d1db</xr:TypeId>
+				<xr:ValueId>87d294b2-31a9-47af-aeb0-facb74529801</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>MRS_ЗагрузкаДанныхИзФронтСистем</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4b6aa653-c6c7-40fb-83dd-7c06c7e51aa3</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="bc49d21a-8ef4-4bfe-81c0-a31d9a82c732">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НачалоПериода</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c3864b89-7fd9-4132-8e7a-77879e45291c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b8d2feda-551a-4202-8cc5-03dda1d6f523">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КонецПериода</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7239726e-0518-4043-ad20-385510a21075</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4ae9101c-f5d0-475a-9552-0a03f47c104e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОтчетСверка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e4683c1d-decc-4a4c-879c-2f6a92543e8a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1318d1ae-a6bc-484d-82e4-37ad6ab0c514">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФронтСистема</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b4ce88b6-316f-470b-866d-fe1ed6c54848</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПЛ_ТипыФронтСистем</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3c8d593e-5e05-46f8-8c93-56574fbbc918">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерЧека</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9ed0cc27-4805-414a-9f7a-ff0d51ba3a83</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="2f40c9ef-42b5-4e1b-8654-9cf1d586d9b8">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.MRS_ЗагрузкаДанныхИзФронтСистем.ПараметрыКасс" category="TabularSection">
+						<xr:TypeId>246681aa-3a59-472c-a83d-360733242eaa</xr:TypeId>
+						<xr:ValueId>d12d2bbf-7e55-45d8-8764-0f9e7a64700b</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.MRS_ЗагрузкаДанныхИзФронтСистем.ПараметрыКасс" category="TabularSectionRow">
+						<xr:TypeId>dbf00042-f974-4d09-baa9-1068fd1cf545</xr:TypeId>
+						<xr:ValueId>ecb1567a-052b-43b5-adb5-1fec06fc3ab7</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПараметрыКасс</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ffdc1871-a663-4920-af29-45601ecf7c9e</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="d6d53093-5b11-43ac-be6f-eac8c785d38c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Использовать</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>3b14a9b6-1eb3-46ad-b7e9-8b3323b90ea1</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fe690cea-d560-4491-a518-32e0ff28ee3b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КассаККМ</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>cb172880-0d92-465f-b15b-5aeecee83168</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6fd2881a-bab0-4006-896e-6fd30ff276dd">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ФронтСистема</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>5b9a1104-dd0a-472a-9b7d-cf90ec58b66c</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:EnumRef.ПЛ_ТипыФронтСистем</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="12029f40-55fa-4514-8827-f656c437c983">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КодТочкиПродаж</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>5fd62393-b884-4460-b038-992db4fa643d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>10</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="fe2f6312-359c-4a98-8512-a2ced37207e8">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>НаименованиеТочкиПродаж</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>6038af87-9cd2-4a03-a258-07a3036e8c11</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>20</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>Форма</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

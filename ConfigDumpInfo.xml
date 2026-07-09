@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.КассыККМ" id="8c0ada18-2cc8-4d8f-8327-59bc97633f4d" configVersion="3dbdffd244fe86576b6d8685805839aed8a50c37"/>
+		<Metadata name="Catalog.Номенклатура" id="7c57f314-5151-490d-978b-5b4184b84fd2" configVersion="782a7fc7452c5172821bccceb7c5f66493574f52"/>
+		<Metadata name="CommonModule.MRS_ЗагрузкаЕГАИСФронт" id="7b4b22ba-3ee2-4cb7-b57b-494a595f4c2b" configVersion="4bf57162ec2fda6839c48099cbc3b07732dca42f"/>
+		<Metadata name="CommonModule.MRS_ЗагрузкаЕГАИСФронт.Module" id="7b4b22ba-3ee2-4cb7-b57b-494a595f4c2b.0" configVersion="81909ff8ba7fbb38fade588a549c2990914e8efa"/>
+		<Metadata name="CommonModule.MRS_МенеджерОбменаMicros" id="53f4bbb0-c414-4baf-a7e1-bbea9cd59ab1" configVersion="434b1353605fab804275ce9c6779cffcfee4103e"/>
+		<Metadata name="CommonModule.MRS_МенеджерОбменаMicros.Module" id="53f4bbb0-c414-4baf-a7e1-bbea9cd59ab1.0" configVersion="9bf540257faaad2b54f5164f92c546f8af55ab3d"/>
+		<Metadata name="CommonModule.MRS_МенеджерОбменаTNG" id="398b4c76-a40a-4dde-80cf-b387d0707071" configVersion="6b54ccfea22475f668cef0a4aacb92ee0d18ebe4"/>
+		<Metadata name="CommonModule.MRS_МенеджерОбменаTNG.Module" id="398b4c76-a40a-4dde-80cf-b387d0707071.0" configVersion="f3f685c80fd2d3cddae6ef4ffb3c0c603a89bf2d"/>
+		<Metadata name="Configuration.MRS_ЗакрытиеСмены" id="faf0f71d-9ecf-4271-84bd-682e8ab5ec2d" configVersion="2cd13878097cc860cecd88112a08e37c16b55130"/>
+		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены" id="d0aaea4b-93d2-4a90-b815-e456b8bdb738" configVersion="192fb8ee2588b267e72733e3b4049a807a0955a9">
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.Использовать" id="1ea96a21-02d3-48dd-b64d-d894d969a363"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.НачалоПериода" id="340067d1-a73c-47e0-bbcc-0b12e4515481"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.КодТочкиПродаж" id="3ee00f80-cc7e-4a31-a70b-3a5110c77029"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.КонецПериода" id="42420c48-8a3d-4a51-a51a-cbfd8e751039"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.НомерЧека" id="432575a3-14df-4f35-b730-33751cd7dcda"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.ФронтСистема" id="49d6ff05-c01c-4fe0-90dd-e19cc2a55589"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.ВедомостьОтчет" id="57acdfe5-07b5-4195-a7ca-66d5679e44b8"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.ФронтСистема" id="68e9ea70-ba94-480b-a7a7-25f4cf97f662"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.ОтчетСверка" id="8f71930e-57aa-4499-a4c3-04c3053c239c"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.АнализДанных" id="984decf0-0e85-4b70-b205-a5503563b991"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.КассаККМ" id="a27635aa-2565-4725-9dbf-51bed1dff2d6"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.НаименованиеТочкиПродаж" id="d68dab18-d31b-43d6-9b3b-33434e3c8c68"/>
+			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс" id="e012f113-7496-445f-8fee-f64726a50b00"/>
+		</Metadata>
+		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Form.Форма" id="c9913c53-e71b-4b60-8467-2293640b60aa" configVersion="745ebd067f410a85be312221c29ddd52e9cfa0cb"/>
+		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Form.Форма.Form" id="c9913c53-e71b-4b60-8467-2293640b60aa.0" configVersion="705d01dc2d02d6742d9a445208e2cde4cb507c11"/>
+		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Help" id="d0aaea4b-93d2-4a90-b815-e456b8bdb738.1" configVersion="4aa4c7e05cb72a82498b6190e37a38b1b5f49c88"/>
+		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.ObjectModule" id="d0aaea4b-93d2-4a90-b815-e456b8bdb738.0" configVersion="89d6d0bee40565285b0eadf90af4cd75f8e19d6b"/>
+		<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем" id="f23f4824-40ad-456a-81e9-4cceddfe6621" configVersion="5fcd74d80ef73590a626fc93dbb68327cce61bd2">
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс.Attribute.КодТочкиПродаж" id="12029f40-55fa-4514-8827-f656c437c983"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Attribute.ФронтСистема" id="1318d1ae-a6bc-484d-82e4-37ad6ab0c514"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс" id="2f40c9ef-42b5-4e1b-8654-9cf1d586d9b8"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Attribute.НомерЧека" id="3c8d593e-5e05-46f8-8c93-56574fbbc918"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Attribute.ОтчетСверка" id="4ae9101c-f5d0-475a-9552-0a03f47c104e"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс.Attribute.ФронтСистема" id="6fd2881a-bab0-4006-896e-6fd30ff276dd"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Attribute.КонецПериода" id="b8d2feda-551a-4202-8cc5-03dda1d6f523"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Attribute.НачалоПериода" id="bc49d21a-8ef4-4bfe-81c0-a31d9a82c732"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс.Attribute.Использовать" id="d6d53093-5b11-43ac-be6f-eac8c785d38c"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс.Attribute.НаименованиеТочкиПродаж" id="fe2f6312-359c-4a98-8512-a2ced37207e8"/>
+			<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.TabularSection.ПараметрыКасс.Attribute.КассаККМ" id="fe690cea-d560-4491-a518-32e0ff28ee3b"/>
+		</Metadata>
+		<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Form.Форма" id="d99ea4e5-a457-455e-9895-8bc17386c925" configVersion="74bb7c91f3b3bbcc9bae2008bd7c8739f49664c2"/>
+		<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.Form.Форма.Form" id="d99ea4e5-a457-455e-9895-8bc17386c925.0" configVersion="24eb7604fc7725cf3ea11c6b10a43f6e3a81838a"/>
+		<Metadata name="DataProcessor.MRS_ЗагрузкаДанныхИзФронтСистем.ObjectModule" id="f23f4824-40ad-456a-81e9-4cceddfe6621.0" configVersion="2e489bee464459a1de86d23d7a92dd12076022f8"/>
+		<Metadata name="Enum.ПЛ_ТипыФронтСистем" id="3dc8f498-4fb1-497b-8e8e-40688f7203e8" configVersion="f800eb3f222d2113d35c553b61e253a7a9d3ee49"/>
+		<Metadata name="Language.Русский" id="f897aac1-ba25-4089-8bb5-59aa40c3bf34" configVersion="5caae8324641df9185197a09548302766d5fd0f6"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452" configVersion="9415f71a740629ca82696e582ad00c9595c4a45b"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем.ObjectModule" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452.0" configVersion="48cc40f8a35dd0ca42d8cad63e403d7140c77114"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.ОсновнаяСхемаКомпоновкиДанных" id="0217b0dc-0167-413e-a508-1754c2bc1bf3" configVersion="9691f1f3a676446800951f118391f259a3d4db7e"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="0217b0dc-0167-413e-a508-1754c2bc1bf3.0" configVersion="a4a3d7760c25a406b5f75c0750ca3dfe2b708324"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.СхемаКомпоновкиMicros" id="19a54c0c-3422-4b50-a14b-712ed55553f0" configVersion="cc74d782af19e4ae3184a2a24239e1555937b6b3"/>
+		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.СхемаКомпоновкиMicros.Template" id="19a54c0c-3422-4b50-a14b-712ed55553f0.0" configVersion="8b2761991d16dae0b2ab3be3a994c00bc3b7d81a"/>
+		<Metadata name="Role.MRS_ОсновнаяРоль" id="c29ce69f-fc65-4f8c-bc58-f53e4499e99c" configVersion="9b2a81e0dabe4289dafc141d56cb55137a2f49d0"/>
+		<Metadata name="StyleItem.ЕдиныйНалоговыйСчетКрасныйЦветФона" id="114a8eb4-313a-42bb-a0da-c9e194617949" configVersion="bff426ef362c2142a45bf50e48db145da4eced28"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
