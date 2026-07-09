@@ -66,16 +66,58 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<StyleItem>ЕдиныйНалоговыйСчетКрасныйЦветФона</StyleItem>
+			<StyleItem>ИтогиФонГруппы</StyleItem>
+			<StyleItem>ЦветФонаВыделения</StyleItem>
+			<CommonPicture>СерииНоменклатурыКолонкаСтатусов</CommonPicture>
+			<CommonPicture>питКартинкаНоменклатуры</CommonPicture>
+			<CommonPicture>СтатусыУказанияСерий</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>МаркируемаяПродукцияШапка</CommonPicture>
+			<CommonPicture>МаркируемаяПродукцияТЧ</CommonPicture>
 			<Role>MRS_ОсновнаяРоль</Role>
 			<CommonModule>MRS_ЗагрузкаЕГАИСФронт</CommonModule>
 			<CommonModule>MRS_МенеджерОбменаMicros</CommonModule>
 			<CommonModule>MRS_МенеджерОбменаTNG</CommonModule>
+			<CommonModule>питТиповыеДокументы</CommonModule>
+			<CommonModule>питПроизводство</CommonModule>
+			<ExchangePlan>питУдаленныеКассы</ExchangePlan>
+			<DefinedType>ДенежнаяСуммаНеотрицательная</DefinedType>
+			<DefinedType>ДенежнаяСуммаЛюбогоЗнака</DefinedType>
+			<DefinedType>ПользователиИС</DefinedType>
+			<DefinedType>Номенклатура</DefinedType>
+			<DefinedType>Упаковка</DefinedType>
+			<DefinedType>СерияНоменклатуры</DefinedType>
 			<Catalog>КассыККМ</Catalog>
 			<Catalog>Номенклатура</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>СтруктураПредприятия</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>СерииНоменклатуры</Catalog>
+			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
+			<Catalog>СтавкиНДС</Catalog>
+			<Catalog>питВидыОплатОрганизаций</Catalog>
+			<Catalog>ЭквайринговыеТерминалы</Catalog>
+			<Catalog>КлассификаторОрганизацийЕГАИС</Catalog>
+			<Catalog>Сотрудники</Catalog>
+			<Catalog>КлассификаторАлкогольнойПродукцииЕГАИС</Catalog>
+			<Catalog>Справки2ЕГАИС</Catalog>
+			<Catalog>ШтрихкодыУпаковокТоваров</Catalog>
+			<Document>питВыпускБлюд</Document>
+			<Document>питРецептура</Document>
+			<Document>питАктВскрытияТарыАлкогольнойПродукции</Document>
 			<Enum>ПЛ_ТипыФронтСистем</Enum>
+			<Enum>питХозяйственныеОперации</Enum>
+			<Enum>питВидыДвиженийОстатковМарокИС</Enum>
 			<Report>MRS_ПродажиФронтСистем</Report>
+			<Report>ПЛ_СверкаПродажСЧеками</Report>
 			<DataProcessor>MRS_АРМ_Закрытия_смены</DataProcessor>
 			<DataProcessor>MRS_ЗагрузкаДанныхИзФронтСистем</DataProcessor>
+			<DataProcessor>питЗагрузкаИзДанныхПродажФронта</DataProcessor>
+			<InformationRegister>ПЛ_СоответствиеСФронтСистемами</InformationRegister>
+			<AccumulationRegister>питОстаткиМарокИС</AccumulationRegister>
+			<ChartOfCharacteristicTypes>ПЛ_ТипыОбъектовФронтСистем</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

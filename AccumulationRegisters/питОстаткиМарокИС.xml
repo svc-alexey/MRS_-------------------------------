@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AccumulationRegister uuid="5dc77fdb-7c6d-4f34-b210-958703599d1a">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.питОстаткиМарокИС" category="Record">
+				<xr:TypeId>8ea8b8cb-54e4-4146-be6e-88b48a7b02df</xr:TypeId>
+				<xr:ValueId>016a385e-39ce-4a72-92f9-30ef3dd50d2d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.питОстаткиМарокИС" category="Manager">
+				<xr:TypeId>161c1133-c826-40e7-aa6f-86e3c7205a3c</xr:TypeId>
+				<xr:ValueId>a30d9551-9fb4-4995-8341-6248f2c02496</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.питОстаткиМарокИС" category="Selection">
+				<xr:TypeId>8341df5c-e82c-45ed-b331-7d4881108ed1</xr:TypeId>
+				<xr:ValueId>c13436a6-c380-453c-bc99-781516be5e16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.питОстаткиМарокИС" category="List">
+				<xr:TypeId>275f62b8-4a35-4975-a790-41ec614b5665</xr:TypeId>
+				<xr:ValueId>6f820e69-2d7a-439f-be9a-e8da9bbe5eb7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.питОстаткиМарокИС" category="RecordSet">
+				<xr:TypeId>a51cc970-8c1a-4076-92e2-3ec5c6a1f334</xr:TypeId>
+				<xr:ValueId>bafb1770-093e-4a5e-9047-e3f8d05766fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.питОстаткиМарокИС" category="RecordKey">
+				<xr:TypeId>c39d1ecc-dcdb-4467-8b12-31f20d361190</xr:TypeId>
+				<xr:ValueId>65a32d73-4705-4dc7-beb4-dd6369cfd2aa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питОстаткиМарокИС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>11427828-9ea3-45d9-a894-1417e0013c6d</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="7e1abe31-6f4b-4c58-806d-9c9d45dec95e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Количество</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e5d33dc2-3c92-4416-805e-c25f89d80f95</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="b3594190-6cfe-4318-a785-bcd017bc7d41">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидДвиженияМарок</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bdc07c83-5e05-4772-9c49-d8ffb068944f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.питВидыДвиженийОстатковМарокИС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="06a2deb1-9d8a-4f7b-adea-f735323bd29a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4eea9394-8846-48a0-b723-23265b69ebb2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="054c4585-8773-4013-ae84-80404085a301">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МестоПечати</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f3db622c-64ef-4ace-9944-274f7f854006</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="0b045fc6-1903-4355-85f3-d9cf3e384240">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f143fe19-ce51-45b5-a389-f40fea224c8e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="706f134b-5281-4795-90f2-b07a5fe64abd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Штрихкод</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2f639fa2-0519-4896-ba8f-a29546ef7deb</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ШтрихкодыУпаковокТоваров</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

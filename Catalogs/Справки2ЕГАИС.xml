@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="4de312d7-16b8-43fc-a54d-55ea18296b4d">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Справки2ЕГАИС" category="Object">
+				<xr:TypeId>942caf4e-22e1-4e8f-961f-5c421bd91acb</xr:TypeId>
+				<xr:ValueId>03207ebe-a1ba-4a69-a374-400c359c7012</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Справки2ЕГАИС" category="Ref">
+				<xr:TypeId>a007ebb6-292a-46b3-a193-3beb0c32357a</xr:TypeId>
+				<xr:ValueId>fe4ceb9d-d5a4-4ca2-9e9d-ea1bee1c7591</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Справки2ЕГАИС" category="Selection">
+				<xr:TypeId>4d358719-9030-4f1e-bc7a-bd7519f19e82</xr:TypeId>
+				<xr:ValueId>25c27979-362b-4305-9415-1cbcaf0cd0d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Справки2ЕГАИС" category="List">
+				<xr:TypeId>a271c1c9-0504-4625-a426-64cf91bcd5f3</xr:TypeId>
+				<xr:ValueId>79950853-13c6-4296-9547-65b3b2cc31f3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Справки2ЕГАИС" category="Manager">
+				<xr:TypeId>31500114-db53-478a-8f07-a66fc45a1b74</xr:TypeId>
+				<xr:ValueId>275d1838-af43-4a8f-b12b-02b118beb7fe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Справки2ЕГАИС</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7c1672d3-a660-46af-8f5e-1d6dc1e4ae7c</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

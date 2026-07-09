@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаФронт" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа фронт</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФронтРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="Код" id="7">
+					<ContextMenu name="КодКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ФронтСистема" id="4">
+					<ContextMenu name="ФронтСистемаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ФронтСистемаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="НаименованиеКнопки" id="22">
+			<ContextMenu name="НаименованиеКнопкиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НаименованиеКнопкиРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ТипОбъекта" id="1">
+			<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Объект" id="10">
+			<ContextMenu name="ОбъектКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="ГруппаКоличество" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа количество</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоличествоРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="Количество" id="13">
+					<Width>15</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="КоличествоКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Упаковка" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица</v8:content>
+						</v8:item>
+					</Title>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="УпаковкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="УпаковкаРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Номенкалтура" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенкалтура Алкоголь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенкалтура</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="НоменкалтураРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="НоменклатураАлкоголь" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серийный алкоголь</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоменклатураАлкогольКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="НоменклатураАлкогольРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ЕдиницаИзмеренияАлкоголь" id="34">
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЕдиницаИзмеренияАлкогольКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияАлкогольРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="НеВлияетНаУчетТМЦ" id="19">
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеВлияетНаУчетТМЦКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="НеВлияетНаУчетТМЦРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<UsualGroup name="ГруппаФронт" id="25">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа фронт</v8:content>
+					</v8:item>
+				</Title>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаФронтРасширеннаяПодсказка" id="26"/>
+				<ChildItems>
+					<InputField name="Код" id="7">
+						<ContextMenu name="КодКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="КодРасширеннаяПодсказка" id="9"/>
+					</InputField>
+					<InputField name="ФронтСистема" id="4">
+						<ContextMenu name="ФронтСистемаКонтекстноеМеню" id="5"/>
+						<ExtendedTooltip name="ФронтСистемаРасширеннаяПодсказка" id="6"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<InputField name="НаименованиеКнопки" id="22">
+				<ContextMenu name="НаименованиеКнопкиКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="НаименованиеКнопкиРасширеннаяПодсказка" id="24"/>
+			</InputField>
+			<InputField name="ТипОбъекта" id="1">
+				<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<InputField name="Объект" id="10">
+				<ContextMenu name="ОбъектКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="12"/>
+			</InputField>
+			<UsualGroup name="ГруппаКоличество" id="27">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа количество</v8:content>
+					</v8:item>
+				</Title>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаКоличествоРасширеннаяПодсказка" id="28"/>
+				<ChildItems>
+					<InputField name="Количество" id="13">
+						<Width>15</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<AutoMarkIncomplete>true</AutoMarkIncomplete>
+						<ContextMenu name="КоличествоКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="15"/>
+					</InputField>
+					<InputField name="Упаковка" id="16">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Единица</v8:content>
+							</v8:item>
+						</Title>
+						<Width>10</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<ContextMenu name="УпаковкаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="УпаковкаРасширеннаяПодсказка" id="18"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="Номенкалтура" id="29">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номенкалтура Алкоголь</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номенкалтура</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="НоменкалтураРасширеннаяПодсказка" id="30"/>
+				<ChildItems>
+					<InputField name="НоменклатураАлкоголь" id="31">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Серийный алкоголь</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="НоменклатураАлкогольКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="НоменклатураАлкогольРасширеннаяПодсказка" id="33"/>
+					</InputField>
+					<InputField name="ЕдиницаИзмеренияАлкоголь" id="34">
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="ЕдиницаИзмеренияАлкогольКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ЕдиницаИзмеренияАлкогольРасширеннаяПодсказка" id="36"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<CheckBoxField name="НеВлияетНаУчетТМЦ" id="19">
+				<TitleLocation>Right</TitleLocation>
+				<CheckBoxType>Auto</CheckBoxType>
+				<ContextMenu name="НеВлияетНаУчетТМЦКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="НеВлияетНаУчетТМЦРасширеннаяПодсказка" id="21"/>
+			</CheckBoxField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

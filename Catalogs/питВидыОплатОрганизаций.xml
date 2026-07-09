@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="a50122bb-1650-4bcd-b44c-6931ea2cb1b8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.питВидыОплатОрганизаций" category="Object">
+				<xr:TypeId>c60df604-0b73-4de6-ba60-9cc88297cc7c</xr:TypeId>
+				<xr:ValueId>3c2a351c-6354-4457-be07-3024497ef7fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.питВидыОплатОрганизаций" category="Ref">
+				<xr:TypeId>c2ba8c02-bad5-456d-a2d3-e9d9e71b1151</xr:TypeId>
+				<xr:ValueId>b4456d91-1eac-45cf-b186-ed0f2dc4d99c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.питВидыОплатОрганизаций" category="Selection">
+				<xr:TypeId>b52a6555-6155-4c5d-ad93-8442399bcc04</xr:TypeId>
+				<xr:ValueId>746faaef-7d89-40f9-b062-6b334013ccba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.питВидыОплатОрганизаций" category="List">
+				<xr:TypeId>a39767b2-9fea-4d1e-93bd-3429771c8f49</xr:TypeId>
+				<xr:ValueId>c77f1974-2d31-4e59-8510-a6bb406b48cf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.питВидыОплатОрганизаций" category="Manager">
+				<xr:TypeId>b7651612-1661-408f-8375-5e02d72a4c80</xr:TypeId>
+				<xr:ValueId>5ac52b80-f092-42f8-843b-b3393233482d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питВидыОплатОрганизаций</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3837fa6e-898e-4643-997e-b9a0ff80d388</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

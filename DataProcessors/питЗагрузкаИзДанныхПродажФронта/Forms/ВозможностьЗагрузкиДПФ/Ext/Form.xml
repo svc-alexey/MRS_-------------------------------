@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаУстановитьВозможностьЗагрузки" id="47">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаУстановитьВозможностьЗагрузкиРасширеннаяПодсказка" id="48"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="Дата" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="ДатаНачалаОтбора" id="32">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата с</v8:content>
+								</v8:item>
+							</Title>
+							<Width>14</Width>
+							<ContextMenu name="ДатаНачалаОтбораКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДатаНачалаОтбораРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="ДатаКонцаОтбора" id="35">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<Width>14</Width>
+							<ContextMenu name="ДатаКонцаОтбораКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДатаКонцаОтбораРасширеннаяПодсказка" id="37"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Организация" id="38">
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="КассовыйУзел" id="41">
+					<ContextMenu name="КассовыйУзелКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КассовыйУзелРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ДатаСмены" id="44">
+					<ContextMenu name="ДатаСменыКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДатаСменыРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСписокДокументов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа список документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа список документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписокДокументовРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Table name="ДокументыДПФ" id="5">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДокументыДПФКонтекстноеМеню" id="6"/>
+					<AutoCommandBar name="ДокументыДПФКоманднаяПанель" id="7">
+						<ChildItems>
+							<Button name="ОбновитьСписок" id="24">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ОбновитьСписокРасширеннаяПодсказка" id="25"/>
+							</Button>
+							<Button name="ДокументыДПФУстановитьФлажки" id="26">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ДокументыДПФУстановитьФлажкиРасширеннаяПодсказка" id="27"/>
+							</Button>
+							<Button name="ДокументыДПФСнятьФлажки" id="28">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ДокументыДПФСнятьФлажкиРасширеннаяПодсказка" id="29"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДокументыДПФРасширеннаяПодсказка" id="8"/>
+					<SearchStringAddition name="ДокументыДПФСтрокаПоиска" id="9">
+						<AdditionSource>
+							<Item>ДокументыДПФ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокументыДПФСтрокаПоискаКонтекстноеМеню" id="10"/>
+						<ExtendedTooltip name="ДокументыДПФСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДокументыДПФСостояниеПросмотра" id="12">
+						<AdditionSource>
+							<Item>ДокументыДПФ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокументыДПФСостояниеПросмотраКонтекстноеМеню" id="13"/>
+						<ExtendedTooltip name="ДокументыДПФСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДокументыДПФУправлениеПоиском" id="15">
+						<AdditionSource>
+							<Item>ДокументыДПФ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДокументыДПФУправлениеПоискомКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ДокументыДПФУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ДокументыДПФДокумент" id="18">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДокументыДПФДокументКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ДокументыДПФДокументРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<CheckBoxField name="ДокументыДПФЗагружать" id="21">
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДокументыДПФЗагружатьКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ДокументыДПФЗагружатьРасширеннаяПодсказка" id="23"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="ФормаУстановитьВозможностьЗагрузки" id="47">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаУстановитьВозможностьЗагрузкиРасширеннаяПодсказка" id="48"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаШапка" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа шапка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа шапка</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>false</HorizontalStretch>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+				<ChildItems>
+					<UsualGroup name="Дата" id="30">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="31"/>
+						<ChildItems>
+							<InputField name="ДатаНачалаОтбора" id="32">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дата с</v8:content>
+									</v8:item>
+								</Title>
+								<Width>14</Width>
+								<ContextMenu name="ДатаНачалаОтбораКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ДатаНачалаОтбораРасширеннаяПодсказка" id="34"/>
+							</InputField>
+							<InputField name="ДатаКонцаОтбора" id="35">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>по</v8:content>
+									</v8:item>
+								</Title>
+								<Width>14</Width>
+								<ContextMenu name="ДатаКонцаОтбораКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ДатаКонцаОтбораРасширеннаяПодсказка" id="37"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+					<InputField name="Организация" id="38">
+						<ContextMenu name="ОрганизацияКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="40"/>
+					</InputField>
+					<InputField name="КассовыйУзел" id="41">
+						<ContextMenu name="КассовыйУзелКонтекстноеМеню" id="42"/>
+						<ExtendedTooltip name="КассовыйУзелРасширеннаяПодсказка" id="43"/>
+					</InputField>
+					<InputField name="ДатаСмены" id="44">
+						<ContextMenu name="ДатаСменыКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ДатаСменыРасширеннаяПодсказка" id="46"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаСписокДокументов" id="3">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа список документов</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа список документов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСписокДокументовРасширеннаяПодсказка" id="4"/>
+				<ChildItems>
+					<Table name="ДокументыДПФ" id="5">
+						<Representation>List</Representation>
+						<AutoInsertNewRow>true</AutoInsertNewRow>
+						<EnableStartDrag>true</EnableStartDrag>
+						<EnableDrag>true</EnableDrag>
+						<FileDragMode>AsFile</FileDragMode>
+						<RowFilter xsi:nil="true"/>
+						<ContextMenu name="ДокументыДПФКонтекстноеМеню" id="6"/>
+						<AutoCommandBar name="ДокументыДПФКоманднаяПанель" id="7">
+							<ChildItems>
+								<Button name="ОбновитьСписок" id="24">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ОбновитьСписокРасширеннаяПодсказка" id="25"/>
+								</Button>
+								<Button name="ДокументыДПФУстановитьФлажки" id="26">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ДокументыДПФУстановитьФлажкиРасширеннаяПодсказка" id="27"/>
+								</Button>
+								<Button name="ДокументыДПФСнятьФлажки" id="28">
+									<Type>CommandBarButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ДокументыДПФСнятьФлажкиРасширеннаяПодсказка" id="29"/>
+								</Button>
+							</ChildItems>
+						</AutoCommandBar>
+						<ExtendedTooltip name="ДокументыДПФРасширеннаяПодсказка" id="8"/>
+						<SearchStringAddition name="ДокументыДПФСтрокаПоиска" id="9">
+							<AdditionSource>
+								<Item>ДокументыДПФ</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="ДокументыДПФСтрокаПоискаКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ДокументыДПФСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+						</SearchStringAddition>
+						<ViewStatusAddition name="ДокументыДПФСостояниеПросмотра" id="12">
+							<AdditionSource>
+								<Item>ДокументыДПФ</Item>
+								<Type>ViewStatusRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="ДокументыДПФСостояниеПросмотраКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ДокументыДПФСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+						</ViewStatusAddition>
+						<SearchControlAddition name="ДокументыДПФУправлениеПоиском" id="15">
+							<AdditionSource>
+								<Item>ДокументыДПФ</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<ContextMenu name="ДокументыДПФУправлениеПоискомКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ДокументыДПФУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+						</SearchControlAddition>
+						<ChildItems>
+							<InputField name="ДокументыДПФДокумент" id="18">
+								<EditMode>EnterOnInput</EditMode>
+								<ContextMenu name="ДокументыДПФДокументКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ДокументыДПФДокументРасширеннаяПодсказка" id="20"/>
+							</InputField>
+							<CheckBoxField name="ДокументыДПФЗагружать" id="21">
+								<EditMode>EnterOnInput</EditMode>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="ДокументыДПФЗагружатьКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="ДокументыДПФЗагружатьРасширеннаяПодсказка" id="23"/>
+							</CheckBoxField>
+						</ChildItems>
+					</Table>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="235b2d00-1c9a-4947-85c9-e763276b3293">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.питАктВскрытияТарыАлкогольнойПродукции" category="Object">
+				<xr:TypeId>dd702e49-ef3f-47f1-b2ac-48e5481e084f</xr:TypeId>
+				<xr:ValueId>99d399c3-2004-4be3-889f-c24fc1d38ffa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.питАктВскрытияТарыАлкогольнойПродукции" category="Ref">
+				<xr:TypeId>613d1501-159b-4ae3-944d-494eff147884</xr:TypeId>
+				<xr:ValueId>c481cdba-8f2e-4035-b317-9735bcdcf8ca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.питАктВскрытияТарыАлкогольнойПродукции" category="Selection">
+				<xr:TypeId>d046e413-1824-4819-8beb-335f5fce2bf5</xr:TypeId>
+				<xr:ValueId>e840c3ed-72ea-4d81-9bbe-b21c0919ef98</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.питАктВскрытияТарыАлкогольнойПродукции" category="List">
+				<xr:TypeId>0ffaef64-c7b8-4a13-83de-40edf7c06bda</xr:TypeId>
+				<xr:ValueId>5b6b58d3-b284-408f-8e90-5a0c78d30ef0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.питАктВскрытияТарыАлкогольнойПродукции" category="Manager">
+				<xr:TypeId>1022bfdd-aa43-4c3d-9f35-35c28923e0be</xr:TypeId>
+				<xr:ValueId>5ebdc897-b55c-44f7-93ed-aa7d17040dae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питАктВскрытияТарыАлкогольнойПродукции</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>eba9633a-da28-48b2-bdd0-ba046281b6e9</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="80d1dc77-f940-487e-bbb8-30b65dc2c9b6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОрганизацияЕГАИС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b18c1bf9-afa1-4297-881a-5f184134dc6e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КлассификаторОрганизацийЕГАИС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f35d319b-63ac-4889-a7aa-3d2b603ac630">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Автор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9d2b26e2-6b81-4776-97d2-3ba3476155c6</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ПользователиИС</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a1da2eb2-2395-42b4-a59f-4449dcbbb9a3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7884f5b1-10d4-4d2a-afc9-f702e9170f04</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f0f98208-57b0-49fa-85f0-151e4e6ee113">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Магазин</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9ce4bf54-516d-4af2-9b6d-ad7bec594eac</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2afd394d-edb1-4a12-a32e-0989b517fff8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидОперации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>90f0efd1-af44-4c72-9e5c-9c80f64edcf0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.питХозяйственныеОперации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7c2e731f-0c5f-4f08-b34a-ade6e5e4088b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ee093d7e-d166-4486-84bd-85850fb2c840</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0d79dd2b-cc08-4c54-8898-77a6904957c1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ответственный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>099ec7a9-2847-42b5-b40c-a36a229f5a80</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="54ad0537-8607-4002-b3bd-79722c5b6856">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.питАктВскрытияТарыАлкогольнойПродукции.Товары" category="TabularSection">
+						<xr:TypeId>e847822e-c571-4e10-9706-ba5a8afb8923</xr:TypeId>
+						<xr:ValueId>98a2d53d-8a9e-4078-8ca7-50be0b2f6cd9</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.питАктВскрытияТарыАлкогольнойПродукции.Товары" category="TabularSectionRow">
+						<xr:TypeId>3f3a7a77-ddf0-47ef-8011-e8964b6810c1</xr:TypeId>
+						<xr:ValueId>a58d5745-0ad1-4a8b-b59e-85f1539f9146</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8008b561-7a1c-40a0-873d-b7fa750bbc6f</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="c6ec86ed-50c0-442a-9c3d-07080f80ab8c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>АлкогольнаяПродукция</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>797df8ad-d1bf-4d91-90b9-7e8ddc0d8b63</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.КлассификаторАлкогольнойПродукцииЕГАИС</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="00f7a880-e0ed-45cc-a78a-ef13178c9cfe">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Количество</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>889ee744-e23d-47b5-b0e2-9b7e1b6fc2dd</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="12e46281-cb37-4725-b669-0e15db8968fc">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Номенклатура</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>02de8a33-b6bf-4f49-9d49-26162922de46</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.Номенклатура</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="12353ee7-8b6f-4722-9427-8d37b81cbf8b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Упаковка</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>c6fe556b-1a9d-4f4f-860b-4bd3a1eb319b</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.Упаковка</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6fc442d2-7e59-4bd0-a433-a9654b0ce862">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КоличествоУпаковок</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>21efa755-c28b-4ced-948d-0f351596c09e</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="d182b857-c5dc-43d7-ad3f-c860c225b288">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Справка2</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>8c1e2802-3eaa-418f-a45c-d39b914e6ffa</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Справки2ЕГАИС</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="85d7cbe3-bc53-4e68-9c28-6b83eecb6586">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ИдентификаторСтроки</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>8b5c2c77-2003-4ec8-abc4-3600afe769cd</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>36</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="2c014dc9-eed2-4ba4-9aa6-f8f36da2bbfd">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ЕдиницаИзмерения</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>37f2bf3a-4f58-4261-9d3f-dc128d782a26</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="e1f5ba11-950e-4873-b3c9-c3491d3498f7">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>СтатусУказанияСерий</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>c2a2bb1c-9e57-4413-b927-1a718f97ae05</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>2</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="1e435b51-acdb-4e8a-9027-d8ea617f9341">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ЕмкостьТары</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>81c37697-03d4-4df7-a2e1-0f825452f45d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="10174007-a840-4a23-9264-b0e07db74df3">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Серия</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>b5419547-1000-4b5c-804a-2de595940ed5</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.СерияНоменклатуры</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="40f3752b-e66f-4f9e-8306-b64ac43f03f3">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.питАктВскрытияТарыАлкогольнойПродукции.АкцизныеМарки" category="TabularSection">
+						<xr:TypeId>c0c27f78-fa61-454a-ae70-abdaa548c200</xr:TypeId>
+						<xr:ValueId>be815784-8977-44a5-9773-cc53a6143105</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.питАктВскрытияТарыАлкогольнойПродукции.АкцизныеМарки" category="TabularSectionRow">
+						<xr:TypeId>98afd96e-3290-49bf-bccb-0e51b7dbf926</xr:TypeId>
+						<xr:ValueId>9506abfb-e8ba-43d2-ab2b-768ccd3d2c72</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АкцизныеМарки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f9c4d8e8-6b2a-464b-9a71-f1f0bc9714e6</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="e3939cb9-6826-4e13-a06d-a725ee9997a5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КодАкцизнойМарки</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>371bb348-0dd7-40e5-af63-2158fea5e3c1</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>68</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="7966a575-b800-4444-9747-acf5179a9860">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>АкцизнаяМарка</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>6239ce67-7319-45ad-bcfb-8bdde210f0a6</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ШтрихкодыУпаковокТоваров</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="09a407eb-9a3e-4019-a1c6-206dc55ec0ca">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ШтрихкодУпаковки</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>cfbb0af4-cb30-4899-ad26-3b445f23695a</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ШтрихкодыУпаковокТоваров</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="82469b60-cb66-4d73-9843-aa746a2da7e8">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Справка2</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>a3dc1a12-75a7-4db0-9519-40d02d79866d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Справки2ЕГАИС</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="7d52afc6-5e41-4c84-9dc6-64e5e0564a2b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Количество</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>95cb69d1-2124-468b-98a5-8c2c6a64844d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

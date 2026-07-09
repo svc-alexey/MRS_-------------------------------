@@ -1,0 +1,2193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Создание целевых документов по Чекам Общепита</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьЗагрузку" id="92">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<DefaultItem>true</DefaultItem>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаВыполнитьЗагрузкуExtendedTooltip" id="95"/>
+			</Button>
+			<Button name="ФормаИзменитьВозможностьЗагрузкиДокументов" id="184">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Зарегистрировать чеки для повторной обработки</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаИзменитьВозможностьЗагрузкиДокументовРасширеннаяПодсказка" id="185"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="116"/>
+			<ChildItems>
+				<Page name="ГруппаНастройки" id="182">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="183"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборПоДокументам" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор по документам</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор по документам</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаОтборПоДокументамExtendedTooltip" id="96"/>
+							<ChildItems>
+								<InputField name="Организация" id="1">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="104"/>
+								</InputField>
+								<InputField name="КассовыйУзел" id="3">
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="КассовыйУзелКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="КассовыйУзелExtendedTooltip" id="105"/>
+								</InputField>
+								<UsualGroup name="ГруппаПериод" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа период</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПериодExtendedTooltip" id="97"/>
+									<ChildItems>
+										<InputField name="ДатаНачалаОтбора" id="5">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период с</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаНачалаОтбораКонтекстноеМеню" id="6"/>
+											<ExtendedTooltip name="ДатаНачалаОтбораExtendedTooltip" id="98"/>
+										</InputField>
+										<InputField name="ДатаКонцаОтбора" id="7">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>по</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДатаКонцаОтбораКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ДатаКонцаОтбораExtendedTooltip" id="99"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаАнализ" id="65">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Анализировать дни</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа анализ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаАнализExtendedTooltip" id="100"/>
+									<ChildItems>
+										<CheckBoxField name="ПереходящаяСмена" id="13">
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПереходящаяСменаКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ПереходящаяСменаExtendedTooltip" id="101"/>
+										</CheckBoxField>
+										<InputField name="ДнейВпередДляАнализаПерехода" id="15">
+											<EditMode>EnterOnInput</EditMode>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ДнейВпередДляАнализаПереходаКонтекстноеМеню" id="16"/>
+											<ExtendedTooltip name="ДнейВпередДляАнализаПереходаExtendedTooltip" id="102"/>
+										</InputField>
+										<InputField name="ДнейНазадДляАнализаПерехода" id="17">
+											<EditMode>EnterOnInput</EditMode>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ДнейНазадДляАнализаПереходаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ДнейНазадДляАнализаПереходаExtendedTooltip" id="103"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкиЦелевыхДокументов" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки целевых документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки целевых документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиЦелевыхДокументовExtendedTooltip" id="106"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДатаЦелевыхДокументов" id="72">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата создаваемых документов</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата целевых документов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаДатаЦелевыхДокументовExtendedTooltip" id="107"/>
+									<ChildItems>
+										<RadioButtonField name="ДатаЦелевыхДокументов" id="9">
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По дате начала смены</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По дате окончания смены</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Фиксированная</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ДатаЦелевыхДокументовКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="ДатаЦелевыхДокументовExtendedTooltip" id="108"/>
+										</RadioButtonField>
+										<InputField name="ФиксированнаяДата" id="75">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ФиксированнаяДатаКонтекстноеМеню" id="76"/>
+											<ExtendedTooltip name="ФиксированнаяДатаExtendedTooltip" id="109"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФлаги" id="70">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа флаги</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа флаги</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФлагиExtendedTooltip" id="110"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаГруппировкаДокументов" id="66">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группировка документов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа группировка документов</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ExtendedTooltip name="ГруппаГруппировкаДокументовExtendedTooltip" id="111"/>
+											<ChildItems>
+												<CheckBoxField name="ГруппироватьПоНомеруСмены" id="11">
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ГруппироватьПоНомеруСменыКонтекстноеМеню" id="12"/>
+													<ExtendedTooltip name="ГруппироватьПоНомеруСменыExtendedTooltip" id="112"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтображениеРезультата" id="67">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отображение результата</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отображение результата</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ExtendedTooltip name="ГруппаОтображениеРезультатаExtendedTooltip" id="114"/>
+											<ChildItems>
+												<CheckBoxField name="ВыводитьОтчетОСохраненныхДокументах" id="68">
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ВыводитьОтчетОСохраненныхДокументахКонтекстноеМеню" id="69"/>
+													<ExtendedTooltip name="ВыводитьОтчетОСохраненныхДокументахExtendedTooltip" id="115"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДокументы" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы для обработки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа документы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДокументыExtendedTooltip" id="117"/>
+					<ChildItems>
+						<Table name="ТаблицаОбрабатываемыхДокументов" id="47">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаОбрабатываемыхДокументовКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="ТаблицаОбрабатываемыхДокументовКоманднаяПанель" id="49">
+								<ChildItems>
+									<Button name="ТаблицаОбрабатываемыхДокументовСнятьФлажкиДокументы" id="93">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСнятьФлажкиДокументыExtendedTooltip" id="118"/>
+									</Button>
+									<Button name="ТаблицаОбрабатываемыхДокументовУстановитьФлажкиДокументы" id="94">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовУстановитьФлажкиДокументыExtendedTooltip" id="119"/>
+									</Button>
+									<Button name="ТаблицаОбрабатываемыхДокументовОбновитьСписокДокументов" id="89">
+										<Type>CommandBarButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовОбновитьСписокДокументовExtendedTooltip" id="120"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовExtendedTooltip" id="121"/>
+							<SearchStringAddition name="ТаблицаОбрабатываемыхДокументовСтрокаПоиска" id="155">
+								<AdditionSource>
+									<Item>ТаблицаОбрабатываемыхДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбрабатываемыхДокументовСтрокаПоискаКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСтрокаПоискаРасширеннаяПодсказка" id="157"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотра" id="158">
+								<AdditionSource>
+									<Item>ТаблицаОбрабатываемыхДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотраКонтекстноеМеню" id="159"/>
+								<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотраРасширеннаяПодсказка" id="160"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаОбрабатываемыхДокументовУправлениеПоиском" id="161">
+								<AdditionSource>
+									<Item>ТаблицаОбрабатываемыхДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбрабатываемыхДокументовУправлениеПоискомКонтекстноеМеню" id="162"/>
+								<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовУправлениеПоискомРасширеннаяПодсказка" id="163"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ТаблицаОбрабатываемыхДокументовИспользовать" id="50">
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовИспользоватьКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовИспользоватьExtendedTooltip" id="122"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаОбрабатываемыхДокументовДокументПредставление" id="52">
+									<EditMode>EnterOnInput</EditMode>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>false</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>false</OpenButton>
+									<TextEdit>false</TextEdit>
+									<ChoiceListButton>false</ChoiceListButton>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовДокументПредставлениеКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовДокументПредставлениеExtendedTooltip" id="123"/>
+								</InputField>
+								<InputField name="ТаблицаОбрабатываемыхДокументовКассовыйУзел" id="90">
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовКассовыйУзелКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовКассовыйУзелExtendedTooltip" id="124"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКассы" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры касс ККМ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кассы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКассыExtendedTooltip" id="125"/>
+					<ChildItems>
+						<Table name="ПараметрыКасс" id="21">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<Width>1</Width>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыКассКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="ПараметрыКассКоманднаяПанель" id="23">
+								<ChildItems>
+									<ButtonGroup name="ПараметрыКассГруппаФлажки" id="88">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа флажки</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа флажки</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПараметрыКассГруппаФлажкиExtendedTooltip" id="126"/>
+										<ChildItems>
+											<Button name="ПараметрыКассУстановитьФлажкиКасс" id="87">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассУстановитьФлажкиКассExtendedTooltip" id="127"/>
+											</Button>
+											<Button name="ПараметрыКассСнятьФлажкиКасс" id="86">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассСнятьФлажкиКассExtendedTooltip" id="128"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Popup name="ПараметрыКассГруппаЗаполнение" id="78">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнение</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа заполнение</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПараметрыКассГруппаЗаполнениеExtendedTooltip" id="129"/>
+										<ChildItems>
+											<Button name="ПараметрыКассЗаполнитьНастройкиПоКассовымУзлам" id="81">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассЗаполнитьНастройкиПоКассовымУзламExtendedTooltip" id="130"/>
+											</Button>
+											<Button name="ПараметрыКассЗаполнитьНастройкиПоКассовомуУзлу" id="80">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассЗаполнитьНастройкиПоКассовомуУзлуExtendedTooltip" id="131"/>
+											</Button>
+											<ButtonGroup name="ПараметрыКассГруппаОчистка" id="85">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Параметры касс группа очистка</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Параметры касс группа очистка</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ExtendedTooltip name="ПараметрыКассГруппаОчисткаExtendedTooltip" id="132"/>
+												<ChildItems>
+													<Button name="ПараметрыКассОчиститьПараметрыКасс" id="84">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ПараметрыКассОчиститьПараметрыКассExtendedTooltip" id="133"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+										</ChildItems>
+									</Popup>
+									<Popup name="ПараметрыКассГруппаСохранение" id="79">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сохранение настроек</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа сохранение</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПараметрыКассГруппаСохранениеExtendedTooltip" id="134"/>
+										<ChildItems>
+											<Button name="ПараметрыКассСохранитьНастройкиПоКассовымУзлам" id="83">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассСохранитьНастройкиПоКассовымУзламExtendedTooltip" id="135"/>
+											</Button>
+											<Button name="ПараметрыКассСохранитьНастройкиПоКассовомуУзлу" id="82">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ПараметрыКассСохранитьНастройкиПоКассовомуУзлуExtendedTooltip" id="136"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПараметрыКассExtendedTooltip" id="137"/>
+							<SearchStringAddition name="ПараметрыКассСтрокаПоиска" id="164">
+								<AdditionSource>
+									<Item>ПараметрыКасс</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКассСтрокаПоискаКонтекстноеМеню" id="165"/>
+								<ExtendedTooltip name="ПараметрыКассСтрокаПоискаРасширеннаяПодсказка" id="166"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыКассСостояниеПросмотра" id="167">
+								<AdditionSource>
+									<Item>ПараметрыКасс</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКассСостояниеПросмотраКонтекстноеМеню" id="168"/>
+								<ExtendedTooltip name="ПараметрыКассСостояниеПросмотраРасширеннаяПодсказка" id="169"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыКассУправлениеПоиском" id="170">
+								<AdditionSource>
+									<Item>ПараметрыКасс</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыКассУправлениеПоискомКонтекстноеМеню" id="171"/>
+								<ExtendedTooltip name="ПараметрыКассУправлениеПоискомРасширеннаяПодсказка" id="172"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПараметрыКассНомерСтроки" id="24">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыКассНомерСтрокиКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ПараметрыКассНомерСтрокиExtendedTooltip" id="138"/>
+								</LabelField>
+								<CheckBoxField name="ПараметрыКассИспользовать" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исп.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПараметрыКассИспользоватьКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ПараметрыКассИспользоватьExtendedTooltip" id="139"/>
+								</CheckBoxField>
+								<InputField name="ПараметрыКассКассаККМ" id="26">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыКассКассаККМКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПараметрыКассКассаККМExtendedTooltip" id="140"/>
+								</InputField>
+								<ColumnGroup name="ПараметрыКассГруппаПриготовление" id="73">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры касс группа приготовление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры касс группа приготовление</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПараметрыКассГруппаПриготовлениеExtendedTooltip" id="141"/>
+									<ChildItems>
+										<InputField name="ПараметрыКассСпособОпределенияСкладаПриготовления" id="30">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ определения склада приготовления</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Склад по умолчанию</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По залу документа продажи</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По месту печати документа продажи</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ПараметрыКассСпособОпределенияСкладаПриготовленияКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ПараметрыКассСпособОпределенияСкладаПриготовленияExtendedTooltip" id="142"/>
+										</InputField>
+										<InputField name="ПараметрыКассСкладПриготовления" id="34">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склад приготовления по умолчанию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыКассСкладПриготовленияКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ПараметрыКассСкладПриготовленияExtendedTooltip" id="143"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыКассГруппаРеализация" id="74">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры касс группа реализация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры касс группа реализация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ПараметрыКассГруппаРеализацияExtendedTooltip" id="144"/>
+									<ChildItems>
+										<InputField name="ПараметрыКассСпособОпределенияСкладаРеализации" id="32">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ определения склада реализации</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Склад по умолчанию</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По залу документа продажи</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>По месту печати документа продажи</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ПараметрыКассСпособОпределенияСкладаРеализацииКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ПараметрыКассСпособОпределенияСкладаРеализацииExtendedTooltip" id="145"/>
+										</InputField>
+										<InputField name="ПараметрыКассСкладРеализации" id="36">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склад реализации по умолчанию</v8:content>
+												</v8:item>
+											</ToolTip>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыКассСкладРеализацииКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ПараметрыКассСкладРеализацииExtendedTooltip" id="146"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыКассГруппа2" id="191">
+									<ExtendedTooltip name="ПараметрыКассГруппа2РасширеннаяПодсказка" id="192"/>
+									<ChildItems>
+										<CheckBoxField name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументы" id="38">
+											<EditMode>Directly</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументыКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументыExtendedTooltip" id="147"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещением" id="193">
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещениемКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещениемРасширеннаяПодсказка" id="195"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыКассГруппа1" id="189">
+									<ExtendedTooltip name="ПараметрыКассГруппа1РасширеннаяПодсказка" id="190"/>
+									<ChildItems>
+										<CheckBoxField name="ПараметрыКассПроводитьЗагружаемыеДокументы" id="40">
+											<EditMode>Directly</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПараметрыКассПроводитьЗагружаемыеДокументыКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ПараметрыКассПроводитьЗагружаемыеДокументыExtendedTooltip" id="148"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродаж" id="186">
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродажКонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродажРасширеннаяПодсказка" id="188"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+								<CheckBoxField name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродаж" id="42">
+									<EditMode>Directly</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродажКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродажExtendedTooltip" id="149"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаНастройкиВыпускаПродукции" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки выпуска продукции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки выпуска продукции</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаНастройкиВыпускаПродукцииExtendedTooltip" id="150"/>
+							<ChildItems>
+								<Table name="НастройкиВыпускаПродукции" id="54">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НастройкиВыпускаПродукцииКонтекстноеМеню" id="55"/>
+									<AutoCommandBar name="НастройкиВыпускаПродукцииКоманднаяПанель" id="56"/>
+									<ExtendedTooltip name="НастройкиВыпускаПродукцииExtendedTooltip" id="151"/>
+									<SearchStringAddition name="НастройкиВыпускаПродукцииСтрокаПоиска" id="173">
+										<AdditionSource>
+											<Item>НастройкиВыпускаПродукции</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиВыпускаПродукцииСтрокаПоискаКонтекстноеМеню" id="174"/>
+										<ExtendedTooltip name="НастройкиВыпускаПродукцииСтрокаПоискаРасширеннаяПодсказка" id="175"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НастройкиВыпускаПродукцииСостояниеПросмотра" id="176">
+										<AdditionSource>
+											<Item>НастройкиВыпускаПродукции</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиВыпускаПродукцииСостояниеПросмотраКонтекстноеМеню" id="177"/>
+										<ExtendedTooltip name="НастройкиВыпускаПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="178"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НастройкиВыпускаПродукцииУправлениеПоиском" id="179">
+										<AdditionSource>
+											<Item>НастройкиВыпускаПродукции</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкиВыпускаПродукцииУправлениеПоискомКонтекстноеМеню" id="180"/>
+										<ExtendedTooltip name="НастройкиВыпускаПродукцииУправлениеПоискомРасширеннаяПодсказка" id="181"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="НастройкиВыпускаПродукцииИмяКолонки" id="57">
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкиВыпускаПродукцииИмяКолонкиКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииИмяКолонкиExtendedTooltip" id="152"/>
+										</InputField>
+										<InputField name="НастройкиВыпускаПродукцииЗаголовокКолонки" id="59">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкиВыпускаПродукцииЗаголовокКолонкиКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииЗаголовокКолонкиExtendedTooltip" id="153"/>
+										</InputField>
+										<CheckBoxField name="НастройкиВыпускаПродукцииЗначение" id="61">
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НастройкиВыпускаПродукцииЗначениеКонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииЗначениеExtendedTooltip" id="154"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаОбрабатываемыхДокументовДокументПредставление</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаОбрабатываемыхДокументов.НеОбрабатывать</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Склад по умолчанию</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По залу документа продажи</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По месту печати документа продажи</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Склад по умолчанию</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По залу документа продажи</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>По месту печати документа продажи</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Создание целевых документов по Чекам Общепита</v8:content>
+			</v8:item>
+		</Title>
+		<AutoTitle>false</AutoTitle>
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ФормаВыполнитьЗагрузку" id="92">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<DefaultItem>true</DefaultItem>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаВыполнитьЗагрузкуExtendedTooltip" id="95"/>
+				</Button>
+				<Button name="ФормаИзменитьВозможностьЗагрузкиДокументов" id="184">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зарегистрировать чеки для повторной обработки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаИзменитьВозможностьЗагрузкиДокументовРасширеннаяПодсказка" id="185"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<Pages name="ГруппаСтраницы" id="44">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа страницы</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа страницы</v8:content>
+					</v8:item>
+				</ToolTip>
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
+				<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="116"/>
+				<ChildItems>
+					<Page name="ГруппаНастройки" id="182">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Настройки</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа настройки</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="183"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаОтборПоДокументам" id="63">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отбор по документам</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа отбор по документам</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="ГруппаОтборПоДокументамExtendedTooltip" id="96"/>
+								<ChildItems>
+									<InputField name="Организация" id="1">
+										<EditMode>EnterOnInput</EditMode>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+										<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="104"/>
+									</InputField>
+									<InputField name="КассовыйУзел" id="3">
+										<EditMode>EnterOnInput</EditMode>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<ContextMenu name="КассовыйУзелКонтекстноеМеню" id="4"/>
+										<ExtendedTooltip name="КассовыйУзелExtendedTooltip" id="105"/>
+									</InputField>
+									<UsualGroup name="ГруппаПериод" id="64">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа период</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа период</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Horizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаПериодExtendedTooltip" id="97"/>
+										<ChildItems>
+											<InputField name="ДатаНачалаОтбора" id="5">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Период с</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ДатаНачалаОтбораКонтекстноеМеню" id="6"/>
+												<ExtendedTooltip name="ДатаНачалаОтбораExtendedTooltip" id="98"/>
+											</InputField>
+											<InputField name="ДатаКонцаОтбора" id="7">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>по</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ДатаКонцаОтбораКонтекстноеМеню" id="8"/>
+												<ExtendedTooltip name="ДатаКонцаОтбораExtendedTooltip" id="99"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаАнализ" id="65">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Анализировать дни</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа анализ</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Horizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаАнализExtendedTooltip" id="100"/>
+										<ChildItems>
+											<CheckBoxField name="ПереходящаяСмена" id="13">
+												<EditMode>EnterOnInput</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПереходящаяСменаКонтекстноеМеню" id="14"/>
+												<ExtendedTooltip name="ПереходящаяСменаExtendedTooltip" id="101"/>
+											</CheckBoxField>
+											<InputField name="ДнейВпередДляАнализаПерехода" id="15">
+												<EditMode>EnterOnInput</EditMode>
+												<SpinButton>true</SpinButton>
+												<ContextMenu name="ДнейВпередДляАнализаПереходаКонтекстноеМеню" id="16"/>
+												<ExtendedTooltip name="ДнейВпередДляАнализаПереходаExtendedTooltip" id="102"/>
+											</InputField>
+											<InputField name="ДнейНазадДляАнализаПерехода" id="17">
+												<EditMode>EnterOnInput</EditMode>
+												<SpinButton>true</SpinButton>
+												<ContextMenu name="ДнейНазадДляАнализаПереходаКонтекстноеМеню" id="18"/>
+												<ExtendedTooltip name="ДнейНазадДляАнализаПереходаExtendedTooltip" id="103"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаНастройкиЦелевыхДокументов" id="71">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа настройки целевых документов</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа настройки целевых документов</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаНастройкиЦелевыхДокументовExtendedTooltip" id="106"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаДатаЦелевыхДокументов" id="72">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Дата создаваемых документов</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа дата целевых документов</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<ExtendedTooltip name="ГруппаДатаЦелевыхДокументовExtendedTooltip" id="107"/>
+										<ChildItems>
+											<RadioButtonField name="ДатаЦелевыхДокументов" id="9">
+												<TitleLocation>None</TitleLocation>
+												<EditMode>EnterOnInput</EditMode>
+												<RadioButtonType>Auto</RadioButtonType>
+												<ColumnsCount>1</ColumnsCount>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По дате начала смены</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">0</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По дате окончания смены</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">1</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Фиксированная</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">2</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="ДатаЦелевыхДокументовКонтекстноеМеню" id="10"/>
+												<ExtendedTooltip name="ДатаЦелевыхДокументовExtendedTooltip" id="108"/>
+											</RadioButtonField>
+											<InputField name="ФиксированнаяДата" id="75">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="ФиксированнаяДатаКонтекстноеМеню" id="76"/>
+												<ExtendedTooltip name="ФиксированнаяДатаExtendedTooltip" id="109"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаФлаги" id="70">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа флаги</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа флаги</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаФлагиExtendedTooltip" id="110"/>
+										<ChildItems>
+											<UsualGroup name="ГруппаГруппировкаДокументов" id="66">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группировка документов</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа группировка документов</v8:content>
+													</v8:item>
+												</ToolTip>
+												<Group>Vertical</Group>
+												<Behavior>Usual</Behavior>
+												<ExtendedTooltip name="ГруппаГруппировкаДокументовExtendedTooltip" id="111"/>
+												<ChildItems>
+													<CheckBoxField name="ГруппироватьПоНомеруСмены" id="11">
+														<EditMode>EnterOnInput</EditMode>
+														<CheckBoxType>Auto</CheckBoxType>
+														<ContextMenu name="ГруппироватьПоНомеруСменыКонтекстноеМеню" id="12"/>
+														<ExtendedTooltip name="ГруппироватьПоНомеруСменыExtendedTooltip" id="112"/>
+													</CheckBoxField>
+												</ChildItems>
+											</UsualGroup>
+											<UsualGroup name="ГруппаОтображениеРезультата" id="67">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Отображение результата</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Группа отображение результата</v8:content>
+													</v8:item>
+												</ToolTip>
+												<Group>Vertical</Group>
+												<Behavior>Usual</Behavior>
+												<ExtendedTooltip name="ГруппаОтображениеРезультатаExtendedTooltip" id="114"/>
+												<ChildItems>
+													<CheckBoxField name="ВыводитьОтчетОСохраненныхДокументах" id="68">
+														<CheckBoxType>Auto</CheckBoxType>
+														<ContextMenu name="ВыводитьОтчетОСохраненныхДокументахКонтекстноеМеню" id="69"/>
+														<ExtendedTooltip name="ВыводитьОтчетОСохраненныхДокументахExtendedTooltip" id="115"/>
+													</CheckBoxField>
+												</ChildItems>
+											</UsualGroup>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаДокументы" id="45">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Документы для обработки</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа документы</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаДокументыExtendedTooltip" id="117"/>
+						<ChildItems>
+							<Table name="ТаблицаОбрабатываемыхДокументов" id="47">
+								<Representation>List</Representation>
+								<ChangeRowSet>false</ChangeRowSet>
+								<AutoInsertNewRow>true</AutoInsertNewRow>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<FileDragMode>AsFile</FileDragMode>
+								<SearchStringLocation>None</SearchStringLocation>
+								<ViewStatusLocation>None</ViewStatusLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="ТаблицаОбрабатываемыхДокументовКонтекстноеМеню" id="48"/>
+								<AutoCommandBar name="ТаблицаОбрабатываемыхДокументовКоманднаяПанель" id="49">
+									<ChildItems>
+										<Button name="ТаблицаОбрабатываемыхДокументовСнятьФлажкиДокументы" id="93">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСнятьФлажкиДокументыExtendedTooltip" id="118"/>
+										</Button>
+										<Button name="ТаблицаОбрабатываемыхДокументовУстановитьФлажкиДокументы" id="94">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовУстановитьФлажкиДокументыExtendedTooltip" id="119"/>
+										</Button>
+										<Button name="ТаблицаОбрабатываемыхДокументовОбновитьСписокДокументов" id="89">
+											<Type>CommandBarButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовОбновитьСписокДокументовExtendedTooltip" id="120"/>
+										</Button>
+									</ChildItems>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовExtendedTooltip" id="121"/>
+								<SearchStringAddition name="ТаблицаОбрабатываемыхДокументовСтрокаПоиска" id="155">
+									<AdditionSource>
+										<Item>ТаблицаОбрабатываемыхДокументов</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовСтрокаПоискаКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСтрокаПоискаРасширеннаяПодсказка" id="157"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотра" id="158">
+									<AdditionSource>
+										<Item>ТаблицаОбрабатываемыхДокументов</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотраКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовСостояниеПросмотраРасширеннаяПодсказка" id="160"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ТаблицаОбрабатываемыхДокументовУправлениеПоиском" id="161">
+									<AdditionSource>
+										<Item>ТаблицаОбрабатываемыхДокументов</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ТаблицаОбрабатываемыхДокументовУправлениеПоискомКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовУправлениеПоискомРасширеннаяПодсказка" id="163"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<CheckBoxField name="ТаблицаОбрабатываемыхДокументовИспользовать" id="50">
+										<TitleLocation>None</TitleLocation>
+										<HorizontalAlign>Left</HorizontalAlign>
+										<EditMode>Directly</EditMode>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ТаблицаОбрабатываемыхДокументовИспользоватьКонтекстноеМеню" id="51"/>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовИспользоватьExtendedTooltip" id="122"/>
+									</CheckBoxField>
+									<InputField name="ТаблицаОбрабатываемыхДокументовДокументПредставление" id="52">
+										<EditMode>EnterOnInput</EditMode>
+										<ChoiceButton>false</ChoiceButton>
+										<ClearButton>false</ClearButton>
+										<SpinButton>false</SpinButton>
+										<OpenButton>false</OpenButton>
+										<TextEdit>false</TextEdit>
+										<ChoiceListButton>false</ChoiceListButton>
+										<ContextMenu name="ТаблицаОбрабатываемыхДокументовДокументПредставлениеКонтекстноеМеню" id="53"/>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовДокументПредставлениеExtendedTooltip" id="123"/>
+									</InputField>
+									<InputField name="ТаблицаОбрабатываемыхДокументовКассовыйУзел" id="90">
+										<Visible>false</Visible>
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ТаблицаОбрабатываемыхДокументовКассовыйУзелКонтекстноеМеню" id="91"/>
+										<ExtendedTooltip name="ТаблицаОбрабатываемыхДокументовКассовыйУзелExtendedTooltip" id="124"/>
+									</InputField>
+								</ChildItems>
+							</Table>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаКассы" id="46">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Параметры касс ККМ</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа кассы</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ГруппаКассыExtendedTooltip" id="125"/>
+						<ChildItems>
+							<Table name="ПараметрыКасс" id="21">
+								<Representation>List</Representation>
+								<ChangeRowSet>false</ChangeRowSet>
+								<Width>1</Width>
+								<AutoInsertNewRow>true</AutoInsertNewRow>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<FileDragMode>AsFile</FileDragMode>
+								<SearchStringLocation>None</SearchStringLocation>
+								<ViewStatusLocation>None</ViewStatusLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="ПараметрыКассКонтекстноеМеню" id="22"/>
+								<AutoCommandBar name="ПараметрыКассКоманднаяПанель" id="23">
+									<ChildItems>
+										<ButtonGroup name="ПараметрыКассГруппаФлажки" id="88">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры касс группа флажки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры касс группа флажки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ПараметрыКассГруппаФлажкиExtendedTooltip" id="126"/>
+											<ChildItems>
+												<Button name="ПараметрыКассУстановитьФлажкиКасс" id="87">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассУстановитьФлажкиКассExtendedTooltip" id="127"/>
+												</Button>
+												<Button name="ПараметрыКассСнятьФлажкиКасс" id="86">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассСнятьФлажкиКассExtendedTooltip" id="128"/>
+												</Button>
+											</ChildItems>
+										</ButtonGroup>
+										<Popup name="ПараметрыКассГруппаЗаполнение" id="78">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Заполнение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры касс группа заполнение</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ПараметрыКассГруппаЗаполнениеExtendedTooltip" id="129"/>
+											<ChildItems>
+												<Button name="ПараметрыКассЗаполнитьНастройкиПоКассовымУзлам" id="81">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассЗаполнитьНастройкиПоКассовымУзламExtendedTooltip" id="130"/>
+												</Button>
+												<Button name="ПараметрыКассЗаполнитьНастройкиПоКассовомуУзлу" id="80">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассЗаполнитьНастройкиПоКассовомуУзлуExtendedTooltip" id="131"/>
+												</Button>
+												<ButtonGroup name="ПараметрыКассГруппаОчистка" id="85">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметры касс группа очистка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметры касс группа очистка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ПараметрыКассГруппаОчисткаExtendedTooltip" id="132"/>
+													<ChildItems>
+														<Button name="ПараметрыКассОчиститьПараметрыКасс" id="84">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ПараметрыКассОчиститьПараметрыКассExtendedTooltip" id="133"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</Popup>
+										<Popup name="ПараметрыКассГруппаСохранение" id="79">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сохранение настроек</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Параметры касс группа сохранение</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ПараметрыКассГруппаСохранениеExtendedTooltip" id="134"/>
+											<ChildItems>
+												<Button name="ПараметрыКассСохранитьНастройкиПоКассовымУзлам" id="83">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассСохранитьНастройкиПоКассовымУзламExtendedTooltip" id="135"/>
+												</Button>
+												<Button name="ПараметрыКассСохранитьНастройкиПоКассовомуУзлу" id="82">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ПараметрыКассСохранитьНастройкиПоКассовомуУзлуExtendedTooltip" id="136"/>
+												</Button>
+											</ChildItems>
+										</Popup>
+									</ChildItems>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ПараметрыКассExtendedTooltip" id="137"/>
+								<SearchStringAddition name="ПараметрыКассСтрокаПоиска" id="164">
+									<AdditionSource>
+										<Item>ПараметрыКасс</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПараметрыКассСтрокаПоискаКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="ПараметрыКассСтрокаПоискаРасширеннаяПодсказка" id="166"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ПараметрыКассСостояниеПросмотра" id="167">
+									<AdditionSource>
+										<Item>ПараметрыКасс</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ПараметрыКассСостояниеПросмотраКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ПараметрыКассСостояниеПросмотраРасширеннаяПодсказка" id="169"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ПараметрыКассУправлениеПоиском" id="170">
+									<AdditionSource>
+										<Item>ПараметрыКасс</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ПараметрыКассУправлениеПоискомКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="ПараметрыКассУправлениеПоискомРасширеннаяПодсказка" id="172"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<LabelField name="ПараметрыКассНомерСтроки" id="24">
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ПараметрыКассНомерСтрокиКонтекстноеМеню" id="25"/>
+										<ExtendedTooltip name="ПараметрыКассНомерСтрокиExtendedTooltip" id="138"/>
+									</LabelField>
+									<CheckBoxField name="ПараметрыКассИспользовать" id="28">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исп.</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>Directly</EditMode>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПараметрыКассИспользоватьКонтекстноеМеню" id="29"/>
+										<ExtendedTooltip name="ПараметрыКассИспользоватьExtendedTooltip" id="139"/>
+									</CheckBoxField>
+									<InputField name="ПараметрыКассКассаККМ" id="26">
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ПараметрыКассКассаККМКонтекстноеМеню" id="27"/>
+										<ExtendedTooltip name="ПараметрыКассКассаККМExtendedTooltip" id="140"/>
+									</InputField>
+									<ColumnGroup name="ПараметрыКассГруппаПриготовление" id="73">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа приготовление</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа приготовление</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПараметрыКассГруппаПриготовлениеExtendedTooltip" id="141"/>
+										<ChildItems>
+											<InputField name="ПараметрыКассСпособОпределенияСкладаПриготовления" id="30">
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Способ определения склада приготовления</v8:content>
+													</v8:item>
+												</ToolTip>
+												<HorizontalAlign>Left</HorizontalAlign>
+												<EditMode>EnterOnInput</EditMode>
+												<ListChoiceMode>true</ListChoiceMode>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Склад по умолчанию</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">0</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По залу документа продажи</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">1</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По месту печати документа продажи</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">2</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="ПараметрыКассСпособОпределенияСкладаПриготовленияКонтекстноеМеню" id="31"/>
+												<ExtendedTooltip name="ПараметрыКассСпособОпределенияСкладаПриготовленияExtendedTooltip" id="142"/>
+											</InputField>
+											<InputField name="ПараметрыКассСкладПриготовления" id="34">
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Склад приготовления по умолчанию</v8:content>
+													</v8:item>
+												</ToolTip>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ПараметрыКассСкладПриготовленияКонтекстноеМеню" id="35"/>
+												<ExtendedTooltip name="ПараметрыКассСкладПриготовленияExtendedTooltip" id="143"/>
+											</InputField>
+										</ChildItems>
+									</ColumnGroup>
+									<ColumnGroup name="ПараметрыКассГруппаРеализация" id="74">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа реализация</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Параметры касс группа реализация</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ПараметрыКассГруппаРеализацияExtendedTooltip" id="144"/>
+										<ChildItems>
+											<InputField name="ПараметрыКассСпособОпределенияСкладаРеализации" id="32">
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Способ определения склада реализации</v8:content>
+													</v8:item>
+												</ToolTip>
+												<HorizontalAlign>Left</HorizontalAlign>
+												<EditMode>EnterOnInput</EditMode>
+												<ListChoiceMode>true</ListChoiceMode>
+												<ChoiceList>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Склад по умолчанию</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">0</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По залу документа продажи</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">1</Value>
+														</xr:Value>
+													</xr:Item>
+													<xr:Item>
+														<xr:Presentation/>
+														<xr:CheckState>0</xr:CheckState>
+														<xr:Value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По месту печати документа продажи</v8:content>
+																</v8:item>
+															</Presentation>
+															<Value xsi:type="xs:decimal">2</Value>
+														</xr:Value>
+													</xr:Item>
+												</ChoiceList>
+												<ContextMenu name="ПараметрыКассСпособОпределенияСкладаРеализацииКонтекстноеМеню" id="33"/>
+												<ExtendedTooltip name="ПараметрыКассСпособОпределенияСкладаРеализацииExtendedTooltip" id="145"/>
+											</InputField>
+											<InputField name="ПараметрыКассСкладРеализации" id="36">
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Склад реализации по умолчанию</v8:content>
+													</v8:item>
+												</ToolTip>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ПараметрыКассСкладРеализацииКонтекстноеМеню" id="37"/>
+												<ExtendedTooltip name="ПараметрыКассСкладРеализацииExtendedTooltip" id="146"/>
+											</InputField>
+										</ChildItems>
+									</ColumnGroup>
+									<ColumnGroup name="ПараметрыКассГруппа2" id="191">
+										<ExtendedTooltip name="ПараметрыКассГруппа2РасширеннаяПодсказка" id="192"/>
+										<ChildItems>
+											<CheckBoxField name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументы" id="38">
+												<EditMode>Directly</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументыКонтекстноеМеню" id="39"/>
+												<ExtendedTooltip name="ПараметрыКассЗагрузкаДанныхПродажВПроизводственныеДокументыExtendedTooltip" id="147"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещением" id="193">
+												<EditMode>EnterOnInput</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещениемКонтекстноеМеню" id="194"/>
+												<ExtendedTooltip name="ПараметрыКассЗагружатьТоварыВВыпускСПеремещениемРасширеннаяПодсказка" id="195"/>
+											</CheckBoxField>
+										</ChildItems>
+									</ColumnGroup>
+									<ColumnGroup name="ПараметрыКассГруппа1" id="189">
+										<ExtendedTooltip name="ПараметрыКассГруппа1РасширеннаяПодсказка" id="190"/>
+										<ChildItems>
+											<CheckBoxField name="ПараметрыКассПроводитьЗагружаемыеДокументы" id="40">
+												<EditMode>Directly</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПараметрыКассПроводитьЗагружаемыеДокументыКонтекстноеМеню" id="41"/>
+												<ExtendedTooltip name="ПараметрыКассПроводитьЗагружаемыеДокументыExtendedTooltip" id="148"/>
+											</CheckBoxField>
+											<CheckBoxField name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродаж" id="186">
+												<EditMode>EnterOnInput</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродажКонтекстноеМеню" id="187"/>
+												<ExtendedTooltip name="ПараметрыКассУчитыватьВозвратыПриЗагрузкеПродажРасширеннаяПодсказка" id="188"/>
+											</CheckBoxField>
+										</ChildItems>
+									</ColumnGroup>
+									<CheckBoxField name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродаж" id="42">
+										<EditMode>Directly</EditMode>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродажКонтекстноеМеню" id="43"/>
+										<ExtendedTooltip name="ПараметрыКассЗапретитьПовторнуюЗагрузкуДанныхПродажExtendedTooltip" id="149"/>
+									</CheckBoxField>
+								</ChildItems>
+							</Table>
+							<UsualGroup name="ГруппаНастройкиВыпускаПродукции" id="77">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройки выпуска продукции</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа настройки выпуска продукции</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ExtendedTooltip name="ГруппаНастройкиВыпускаПродукцииExtendedTooltip" id="150"/>
+								<ChildItems>
+									<Table name="НастройкиВыпускаПродукции" id="54">
+										<Representation>List</Representation>
+										<CommandBarLocation>None</CommandBarLocation>
+										<ChangeRowSet>false</ChangeRowSet>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<FileDragMode>AsFile</FileDragMode>
+										<SearchStringLocation>None</SearchStringLocation>
+										<ViewStatusLocation>None</ViewStatusLocation>
+										<SearchControlLocation>None</SearchControlLocation>
+										<RowFilter xsi:nil="true"/>
+										<ContextMenu name="НастройкиВыпускаПродукцииКонтекстноеМеню" id="55"/>
+										<AutoCommandBar name="НастройкиВыпускаПродукцииКоманднаяПанель" id="56"/>
+										<ExtendedTooltip name="НастройкиВыпускаПродукцииExtendedTooltip" id="151"/>
+										<SearchStringAddition name="НастройкиВыпускаПродукцииСтрокаПоиска" id="173">
+											<AdditionSource>
+												<Item>НастройкиВыпускаПродукции</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиВыпускаПродукцииСтрокаПоискаКонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииСтрокаПоискаРасширеннаяПодсказка" id="175"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="НастройкиВыпускаПродукцииСостояниеПросмотра" id="176">
+											<AdditionSource>
+												<Item>НастройкиВыпускаПродукции</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиВыпускаПродукцииСостояниеПросмотраКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииСостояниеПросмотраРасширеннаяПодсказка" id="178"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="НастройкиВыпускаПродукцииУправлениеПоиском" id="179">
+											<AdditionSource>
+												<Item>НастройкиВыпускаПродукции</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="НастройкиВыпускаПродукцииУправлениеПоискомКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="НастройкиВыпускаПродукцииУправлениеПоискомРасширеннаяПодсказка" id="181"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<InputField name="НастройкиВыпускаПродукцииИмяКолонки" id="57">
+												<Visible>false</Visible>
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="НастройкиВыпускаПродукцииИмяКолонкиКонтекстноеМеню" id="58"/>
+												<ExtendedTooltip name="НастройкиВыпускаПродукцииИмяКолонкиExtendedTooltip" id="152"/>
+											</InputField>
+											<InputField name="НастройкиВыпускаПродукцииЗаголовокКолонки" id="59">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="НастройкиВыпускаПродукцииЗаголовокКолонкиКонтекстноеМеню" id="60"/>
+												<ExtendedTooltip name="НастройкиВыпускаПродукцииЗаголовокКолонкиExtendedTooltip" id="153"/>
+											</InputField>
+											<CheckBoxField name="НастройкиВыпускаПродукцииЗначение" id="61">
+												<EditMode>EnterOnInput</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="НастройкиВыпускаПродукцииЗначениеКонтекстноеМеню" id="62"/>
+												<ExtendedTooltip name="НастройкиВыпускаПродукцииЗначениеExtendedTooltip" id="154"/>
+											</CheckBoxField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+		</ChildItems>
+		<Attributes>
+			<ConditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ТаблицаОбрабатываемыхДокументовДокументПредставление</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТаблицаОбрабатываемыхДокументов.НеОбрабатывать</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Склад по умолчанию</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По залу документа продажи</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаПриготовления</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаПриготовления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По месту печати документа продажи</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Склад по умолчанию</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По залу документа продажи</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыКассСпособОпределенияСкладаРеализации</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.ПараметрыКасс.СпособОпределенияСкладаРеализации</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>По месту печати документа продажи</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</ConditionalAppearance>
+		</Attributes>
+	</BaseForm>
+</Form>
