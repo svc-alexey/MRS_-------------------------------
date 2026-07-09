@@ -108,6 +108,7 @@
 			<Document>питВыпускБлюд</Document>
 			<Document>питРецептура</Document>
 			<Document>питАктВскрытияТарыАлкогольнойПродукции</Document>
+			<Document>питДанныеПродажФронта</Document>
 			<Enum>ПЛ_ТипыФронтСистем</Enum>
 			<Enum>питХозяйственныеОперации</Enum>
 			<Enum>питВидыДвиженийОстатковМарокИС</Enum>
@@ -117,6 +118,7 @@
 			<DataProcessor>MRS_ЗагрузкаДанныхИзФронтСистем</DataProcessor>
 			<DataProcessor>питЗагрузкаИзДанныхПродажФронта</DataProcessor>
 			<InformationRegister>ПЛ_СоответствиеСФронтСистемами</InformationRegister>
+			<InformationRegister>питУчетДанныхПродаж</InformationRegister>
 			<AccumulationRegister>питОстаткиМарокИС</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ПЛ_ТипыОбъектовФронтСистем</ChartOfCharacteristicTypes>
 		</ChildObjects>

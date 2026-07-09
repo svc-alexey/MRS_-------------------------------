@@ -44,7 +44,7 @@
 		<Metadata name="CommonPicture.СтатусыУказанияСерий" id="c1cbd29a-c232-4587-9460-03d2b733a46b" configVersion="e75ec9f8de67b098f8838eedb37adce5d4739bd8"/>
 		<Metadata name="CommonPicture.Сумма" id="95a3b3da-2a8f-4fe2-9716-1bafd4420f2d" configVersion="7b5363f2cfd8318a7205f3264d5d0871629f8d05"/>
 		<Metadata name="CommonPicture.питКартинкаНоменклатуры" id="9e4d4d09-2bbf-4b48-9555-13f4bd892b61" configVersion="5c026deff2c3884deeb613433a5e88d2dabe72c6"/>
-		<Metadata name="Configuration.MRS_ЗакрытиеСмены" id="faf0f71d-9ecf-4271-84bd-682e8ab5ec2d" configVersion="042ebd356b71df3d45f4cac297926dc10a3aa3f2"/>
+		<Metadata name="Configuration.MRS_ЗакрытиеСмены" id="faf0f71d-9ecf-4271-84bd-682e8ab5ec2d" configVersion="6f2bd0dbae9718f1b367028b08ea3b2269688c1a"/>
 		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены" id="d0aaea4b-93d2-4a90-b815-e456b8bdb738" configVersion="192fb8ee2588b267e72733e3b4049a807a0955a9">
 			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.Использовать" id="1ea96a21-02d3-48dd-b64d-d894d969a363"/>
 			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.НачалоПериода" id="340067d1-a73c-47e0-bbcc-0b12e4515481"/>
@@ -220,6 +220,7 @@
 		<Metadata name="Document.питВыпускБлюд.Form.ФормаДокумента.Form" id="6b9e0e29-610b-4402-a11d-31458ec4afda.0" configVersion="deca029e0e73d3cd74a99db90796c1b0974e075d"/>
 		<Metadata name="Document.питВыпускБлюд.ManagerModule" id="03dea7b3-3bb2-4383-b122-48644694d66a.2" configVersion="9e0e8b710d0bae6a2935c2710dbe560a55cca3dc"/>
 		<Metadata name="Document.питВыпускБлюд.ObjectModule" id="03dea7b3-3bb2-4383-b122-48644694d66a.0" configVersion="2eb219759ad1056c04797b975ae522ad1f2d9e7c"/>
+		<Metadata name="Document.питДанныеПродажФронта" id="ce0dbcb5-40d9-4efc-a97a-ab1bc201001e" configVersion="5c912a0edcf4c24ed606fa1c32efccb2666db2c1"/>
 		<Metadata name="Document.питРецептура" id="328ee32b-287c-41db-b927-329aa6459824" configVersion="2bcdfd6c81502c72c4c1f8b78c1273de8c7f7c07">
 			<Metadata name="Document.питРецептура.Attribute.ДатаНачала" id="0258908c-6598-4da8-b16c-544069f7348f"/>
 			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоБрутто" id="17467a2f-295b-4371-98b0-e3314a5e9075"/>
@@ -287,6 +288,14 @@
 		<Metadata name="InformationRegister.ПЛ_СоответствиеСФронтСистемами.Form.ФормаЗаписи.Form" id="31387794-0f71-4aeb-b470-265462aa2659.0" configVersion="5215412f25c4900fd00fd6b927a6fd760efe23d4"/>
 		<Metadata name="InformationRegister.ПЛ_СоответствиеСФронтСистемами.ManagerModule" id="98dd6bd4-5626-40a9-8549-5d8ae1542ddb.2" configVersion="c61d58fc9ea6e3a5ecbe84d6908118d5357577d2"/>
 		<Metadata name="InformationRegister.ПЛ_СоответствиеСФронтСистемами.RecordSetModule" id="98dd6bd4-5626-40a9-8549-5d8ae1542ddb.1" configVersion="6ff97cd2e42a953f65f07e381ac52e705d4e2204"/>
+		<Metadata name="InformationRegister.питУчетДанныхПродаж" id="00bfb4d5-1108-43d0-91e8-e3eee071bb67" configVersion="690610e7e586bfc3a36881ff894cba2e6127f559">
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.ОбновленПриемник" id="05c704cc-90c6-48aa-92d9-4ab4b93c7fb0"/>
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.Дата" id="06d7b79a-3587-47d7-a430-9153bcdd874e"/>
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Attribute.ДатаПоследнегоОбновления" id="255759a2-3337-44f7-b0d6-b6c294bc4ea1"/>
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.ДокументРегистратор" id="3b7bff06-91d3-471a-af76-47824f32f3e7"/>
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.КассовыйУзел" id="4571fb54-6a6c-43e7-b7a7-969a60ba0e2b"/>
+			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.ДокументПриемник" id="4b02f878-f250-4a0a-9c66-d8ceb0050086"/>
+		</Metadata>
 		<Metadata name="Language.Русский" id="f897aac1-ba25-4089-8bb5-59aa40c3bf34" configVersion="5caae8324641df9185197a09548302766d5fd0f6"/>
 		<Metadata name="Report.MRS_ПродажиФронтСистем" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452" configVersion="9415f71a740629ca82696e582ad00c9595c4a45b"/>
 		<Metadata name="Report.MRS_ПродажиФронтСистем.ObjectModule" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452.0" configVersion="48cc40f8a35dd0ca42d8cad63e403d7140c77114"/>

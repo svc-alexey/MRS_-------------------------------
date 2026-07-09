@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="00bfb4d5-1108-43d0-91e8-e3eee071bb67">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.питУчетДанныхПродаж" category="Record">
+				<xr:TypeId>259f3f11-2bc2-4a51-bb00-93a1e7dac89b</xr:TypeId>
+				<xr:ValueId>a3974d32-0581-4b23-a43e-56664172729f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.питУчетДанныхПродаж" category="Manager">
+				<xr:TypeId>03a9d2e8-7047-44ec-a0c8-f2518f6e390b</xr:TypeId>
+				<xr:ValueId>f645a713-1128-458b-9ebf-80f7e1ef2f7c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.питУчетДанныхПродаж" category="Selection">
+				<xr:TypeId>34defe6f-868f-498f-8739-59643efe30d9</xr:TypeId>
+				<xr:ValueId>f7809492-3e39-44dc-ac5a-84d9d2aa4c85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.питУчетДанныхПродаж" category="List">
+				<xr:TypeId>72b6fb49-5001-4cdf-afdb-363dd5d22dba</xr:TypeId>
+				<xr:ValueId>fffae04d-3f62-4395-9acc-b40c77bfd23a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.питУчетДанныхПродаж" category="RecordSet">
+				<xr:TypeId>8171c9bb-48e5-4d14-ad81-06bea62262fc</xr:TypeId>
+				<xr:ValueId>44998de6-9ba9-47a0-9788-7da5412a2e39</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.питУчетДанныхПродаж" category="RecordKey">
+				<xr:TypeId>aac97156-2483-47c3-8ac8-17cdbae84f35</xr:TypeId>
+				<xr:ValueId>1bb9abd5-fa37-419a-89ca-2fa400e2b501</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.питУчетДанныхПродаж" category="RecordManager">
+				<xr:TypeId>fdc969cd-61d1-4898-9cda-476ca97aeedd</xr:TypeId>
+				<xr:ValueId>3c85ed99-47e7-4c5e-beee-a0d76faa5481</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питУчетДанныхПродаж</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e63f3451-93d2-4e5a-840e-efe701da8456</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="255759a2-3337-44f7-b0d6-b6c294bc4ea1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаПоследнегоОбновления</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>75af6d2c-9b63-4019-abbc-4942695265b1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="4571fb54-6a6c-43e7-b7a7-969a60ba0e2b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КассовыйУзел</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3cbffc75-87e9-405a-8977-78c3988d3587</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:ExchangePlanRef.питУдаленныеКассы</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="06d7b79a-3587-47d7-a430-9153bcdd874e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Дата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>124012b7-f2df-49d8-8469-5219b40b76c5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="3b7bff06-91d3-471a-af76-47824f32f3e7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументРегистратор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8f37d830-7203-44e9-97a1-34fbfc565e52</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.питДанныеПродажФронта</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="4b02f878-f250-4a0a-9c66-d8ceb0050086">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументПриемник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7a640e87-c978-43a0-9e04-91f1cbf87381</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="05c704cc-90c6-48aa-92d9-4ab4b93c7fb0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбновленПриемник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bcbd74ad-096e-4e73-b343-cffa3ac02560</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

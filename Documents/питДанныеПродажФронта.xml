@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="ce0dbcb5-40d9-4efc-a97a-ab1bc201001e">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.питДанныеПродажФронта" category="Object">
+				<xr:TypeId>3996db13-171b-48bb-9921-cbe188cc37bc</xr:TypeId>
+				<xr:ValueId>f56046f7-e5f4-427c-a6e3-af4a841ccbec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.питДанныеПродажФронта" category="Ref">
+				<xr:TypeId>b04451ff-0682-4069-a09e-2086fc11a0bd</xr:TypeId>
+				<xr:ValueId>df1d05cc-ddc9-4ebf-810f-5d2ee622ad3f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.питДанныеПродажФронта" category="Selection">
+				<xr:TypeId>2a60c4ee-6f1d-4a67-9b8f-1a9fabe3866a</xr:TypeId>
+				<xr:ValueId>0984fd8a-c4bd-408e-a0e3-3e939dfff338</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.питДанныеПродажФронта" category="List">
+				<xr:TypeId>da38e284-0f2f-476d-b3fb-3c22bea95ae0</xr:TypeId>
+				<xr:ValueId>5ba952c3-9ddf-487a-9977-f2f06c924b63</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.питДанныеПродажФронта" category="Manager">
+				<xr:TypeId>15aedf87-560e-46ae-9310-b782946cac19</xr:TypeId>
+				<xr:ValueId>719d8793-126b-48de-ae0d-7eb609088e66</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>питДанныеПродажФронта</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f631b003-d688-4d62-aa77-1a3b9583d7c6</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
