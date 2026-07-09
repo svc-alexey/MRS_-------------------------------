@@ -75,6 +75,7 @@
 			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>МаркируемаяПродукцияШапка</CommonPicture>
 			<CommonPicture>МаркируемаяПродукцияТЧ</CommonPicture>
+			<CommonPicture>Сумма</CommonPicture>
 			<Role>MRS_ОсновнаяРоль</Role>
 			<CommonModule>MRS_ЗагрузкаЕГАИСФронт</CommonModule>
 			<CommonModule>MRS_МенеджерОбменаMicros</CommonModule>

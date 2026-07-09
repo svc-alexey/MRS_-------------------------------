@@ -67,6 +67,24 @@
 					<ExtendedConfigurationObject>93704fba-a9a0-45cf-87ce-cb0ef93d2a39</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="1265d23f-83bb-42c4-8f06-0e48a8093b9f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РецептураРазделка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a92b13a0-ec2e-454d-a1c2-10825879f06b</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6b9596d4-49dd-4716-a52a-423eb6aecc25">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РецептураПриготовление</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>49472271-a208-47c9-ad8d-e5bb01949693</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

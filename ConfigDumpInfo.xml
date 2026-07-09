@@ -42,8 +42,9 @@
 		<Metadata name="CommonPicture.Отчеты" id="ad8d803e-9694-4954-878d-79f240bd03a3" configVersion="076727fd9967d48fe9abfb8af6f6c4488c3dd3c0"/>
 		<Metadata name="CommonPicture.СерииНоменклатурыКолонкаСтатусов" id="6bd56564-1348-4a78-bc3c-098bf0e73ad2" configVersion="9123d9345adbfdb65e661505ce671210755270eb"/>
 		<Metadata name="CommonPicture.СтатусыУказанияСерий" id="c1cbd29a-c232-4587-9460-03d2b733a46b" configVersion="e75ec9f8de67b098f8838eedb37adce5d4739bd8"/>
+		<Metadata name="CommonPicture.Сумма" id="95a3b3da-2a8f-4fe2-9716-1bafd4420f2d" configVersion="7b5363f2cfd8318a7205f3264d5d0871629f8d05"/>
 		<Metadata name="CommonPicture.питКартинкаНоменклатуры" id="9e4d4d09-2bbf-4b48-9555-13f4bd892b61" configVersion="5c026deff2c3884deeb613433a5e88d2dabe72c6"/>
-		<Metadata name="Configuration.MRS_ЗакрытиеСмены" id="faf0f71d-9ecf-4271-84bd-682e8ab5ec2d" configVersion="02b36f9f836e0204854add58fa989c1e327a4ca6"/>
+		<Metadata name="Configuration.MRS_ЗакрытиеСмены" id="faf0f71d-9ecf-4271-84bd-682e8ab5ec2d" configVersion="042ebd356b71df3d45f4cac297926dc10a3aa3f2"/>
 		<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены" id="d0aaea4b-93d2-4a90-b815-e456b8bdb738" configVersion="192fb8ee2588b267e72733e3b4049a807a0955a9">
 			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.TabularSection.ПараметрыКасс.Attribute.Использовать" id="1ea96a21-02d3-48dd-b64d-d894d969a363"/>
 			<Metadata name="DataProcessor.MRS_АРМ_Закрытия_смены.Attribute.НачалоПериода" id="340067d1-a73c-47e0-bbcc-0b12e4515481"/>
@@ -219,11 +220,51 @@
 		<Metadata name="Document.питВыпускБлюд.Form.ФормаДокумента.Form" id="6b9e0e29-610b-4402-a11d-31458ec4afda.0" configVersion="deca029e0e73d3cd74a99db90796c1b0974e075d"/>
 		<Metadata name="Document.питВыпускБлюд.ManagerModule" id="03dea7b3-3bb2-4383-b122-48644694d66a.2" configVersion="9e0e8b710d0bae6a2935c2710dbe560a55cca3dc"/>
 		<Metadata name="Document.питВыпускБлюд.ObjectModule" id="03dea7b3-3bb2-4383-b122-48644694d66a.0" configVersion="2eb219759ad1056c04797b975ae522ad1f2d9e7c"/>
-		<Metadata name="Document.питРецептура" id="328ee32b-287c-41db-b927-329aa6459824" configVersion="b1e94a06374ca5d958bd360b1fdd5188bd2bb57d"/>
+		<Metadata name="Document.питРецептура" id="328ee32b-287c-41db-b927-329aa6459824" configVersion="2bcdfd6c81502c72c4c1f8b78c1273de8c7f7c07">
+			<Metadata name="Document.питРецептура.Attribute.ДатаНачала" id="0258908c-6598-4da8-b16c-544069f7348f"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоБрутто" id="17467a2f-295b-4371-98b0-e3314a5e9075"/>
+			<Metadata name="Document.питРецептура.Attribute.Подразделение" id="2cd009f0-972a-46f1-acec-03ccca8a430a"/>
+			<Metadata name="Document.питРецептура.Attribute.Комментарий" id="3027ee4c-56f8-4053-80f3-790e3e27f1e7"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоУпаковокНетто" id="314cb769-a6eb-495b-b9d7-5325f87f9147"/>
+			<Metadata name="Document.питРецептура.Attribute.Упаковка" id="3c6eecf0-7770-4b59-ad82-aaa8b0d9004c"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.Количество" id="4c2164fc-ddf1-4980-a1aa-810344191bd9"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.Замена" id="4e5ca409-6b5d-4ee5-afd0-c8dcc1fb9b5c"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.ЗапретитьЗамены" id="4e961ad6-0580-49ce-99ea-0f89e01d26a9"/>
+			<Metadata name="Document.питРецептура.TabularSection.РазрешенныеПодразделения.Attribute.ВключаяПодчиненные" id="5600febc-c806-4d6c-a6d2-8f0de8f66f7d"/>
+			<Metadata name="Document.питРецептура.Attribute.Количество" id="63899183-88de-472d-9b62-6b1002c13179"/>
+			<Metadata name="Document.питРецептура.Attribute.Номенклатура" id="6980ded9-7663-40cb-a008-141efecc1463"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.Номенклатура" id="7bc756ad-7b7b-4074-b2f7-e51fc44e8629"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоУпаковок" id="8748194b-35cc-4ef8-a412-408ceec9b9da"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоНетто" id="9d92412d-217d-462d-af16-fcaff5d1b35b"/>
+			<Metadata name="Document.питРецептура.TabularSection.РазрешенныеПодразделения.Attribute.Подразделение" id="a5dc1ac5-83cd-4a2b-9f6f-b3e4b246edf6"/>
+			<Metadata name="Document.питРецептура.Attribute.Ответственный" id="a990cf79-29c5-45b8-ba4e-2553daf5cbed"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.Упаковка" id="aa96e365-cdb2-4d64-9ed5-12fad5aeca0b"/>
+			<Metadata name="Document.питРецептура.Attribute.Выход" id="b2542bb1-c41a-476c-880c-c149b7b70591"/>
+			<Metadata name="Document.питРецептура.TabularSection.РазрешенныеПодразделения" id="b5e332c9-c690-4fd7-9e3d-8b53aa750da8"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоВыход" id="b75835fc-1946-46b0-8d6e-5c820bd86efa"/>
+			<Metadata name="Document.питРецептура.Attribute.НомерРецептуры" id="b85c1c1c-e855-40c4-87d0-311f62bdfcd1"/>
+			<Metadata name="Document.питРецептура.Attribute.Основная" id="c254c15e-2389-42c3-9068-9aae370a1212"/>
+			<Metadata name="Document.питРецептура.Attribute.Организация" id="d5e767a9-9aa7-4251-ba15-ffc02aabc549"/>
+			<Metadata name="Document.питРецептура.Attribute.ХозяйственнаяОперация" id="d8d4c294-a35c-4fd2-bfce-d2ba9ff244dc"/>
+			<Metadata name="Document.питРецептура.Attribute.КоличествоУпаковок" id="dd639361-955f-4412-a609-86bee53dfdd1"/>
+			<Metadata name="Document.питРецептура.Attribute.ДатаКонца" id="e2352562-2386-4ee1-a29a-56f7644b43fd"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.Рецептура" id="e4155b03-58e9-4c77-9402-df5d1512882a"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоУпаковокБрутто" id="f4e91f3d-66a8-4075-9eeb-0de000625852"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты" id="f642699f-f7cd-45d3-932c-8e568310782e"/>
+			<Metadata name="Document.питРецептура.TabularSection.Ингредиенты.Attribute.КоличествоУпаковокВыход" id="f7e8dfaf-f93e-4bb3-aa4e-fd32db22a51f"/>
+			<Metadata name="Document.питРецептура.Attribute.Наименование" id="f92a7157-fdbb-47af-af7a-0141331a5085"/>
+			<Metadata name="Document.питРецептура.TabularSection.РазрешенныеПодразделения.Attribute.ЦеховаяКладовая" id="fe31f0e7-af08-4429-b7d1-21ddb8c2bd1d"/>
+		</Metadata>
+		<Metadata name="Document.питРецептура.Form.ФормаДокументаОбщая" id="a8a07719-6d1e-40fe-b7f5-9ea30bd1c4f1" configVersion="8619ac785d9917151bbe57dc88b63ce53adff534"/>
+		<Metadata name="Document.питРецептура.Form.ФормаДокументаОбщая.Form" id="a8a07719-6d1e-40fe-b7f5-9ea30bd1c4f1.0" configVersion="3e3a5274c24c9cdd5744a253908a3a9c32d78474"/>
+		<Metadata name="Document.питРецептура.ManagerModule" id="328ee32b-287c-41db-b927-329aa6459824.2" configVersion="4d19eeaaf65f5a32c11c5c7aa37ab701f26f59fd"/>
+		<Metadata name="Document.питРецептура.ObjectModule" id="328ee32b-287c-41db-b927-329aa6459824.0" configVersion="9da29e99828d9d0b53d3bf4bb83b54af62a2e8c4"/>
 		<Metadata name="Enum.ПЛ_ТипыФронтСистем" id="3dc8f498-4fb1-497b-8e8e-40688f7203e8" configVersion="f800eb3f222d2113d35c553b61e253a7a9d3ee49"/>
 		<Metadata name="Enum.питВидыДвиженийОстатковМарокИС" id="1652610e-1d93-4f4d-a798-63b0faaed94a" configVersion="19402a100a0d683652c3e76228239378a7ea027c"/>
-		<Metadata name="Enum.питХозяйственныеОперации" id="97626bb4-4b77-4d53-a0af-0f12f71b4727" configVersion="c52c744aa9e56eb91f14545d3309cbdfe92b6cfe">
+		<Metadata name="Enum.питХозяйственныеОперации" id="97626bb4-4b77-4d53-a0af-0f12f71b4727" configVersion="353a64e5d769456c86ca82ab5f1207be8c1d56a5">
+			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.РецептураРазделка" id="1265d23f-83bb-42c4-8f06-0e48a8093b9f"/>
 			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.ВыпускПродукции" id="56eee8a7-9e69-4038-9459-d219317c5a11"/>
+			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.РецептураПриготовление" id="6b9596d4-49dd-4716-a52a-423eb6aecc25"/>
 			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.ВыпускПродукцииСРеализацией" id="6d3e10ae-315f-4857-bd49-30f45d67c1a4"/>
 			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.ВыпускПродукцииСоСписанием" id="b1659e9e-417c-49a0-9914-0692e319133b"/>
 			<Metadata name="Enum.питХозяйственныеОперации.EnumValue.ВыпускПродукцииСПеремещением" id="bd173525-7dc2-45db-b916-dd7d9afb6994"/>
