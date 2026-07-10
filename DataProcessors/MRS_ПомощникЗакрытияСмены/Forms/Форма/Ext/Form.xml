@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Form uuid="5bedefd9-1e76-46d8-8ae6-87ae91f26f51">
+		<Properties>
+			<Name>Форма</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<FormType>Managed</FormType>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurposeType">PersonalComputer</v8:Value>
+			</UsePurposes>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attributes>
+				<Attribute uuid="d4f8e3e1-8ede-4fb4-ba4c-72cb0c2f6e70">
+					<Properties>
+						<Name>ВыбранныйДень</Name>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Properties>
+				</Attribute>
+				<Attribute uuid="e3b4e35b-37fd-4496-8bb6-f1824f3e02c3">
+					<Properties>
+						<Name>РекомендуемыйДень</Name>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Properties>
+				</Attribute>
+				<Attribute uuid="a1b2c3d4-e5f6-7890-abcd-ef1234567890">
+					<Properties>
+						<Name>ТекущийСклад</Name>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+						</Type>
+					</Properties>
+				</Attribute>
+			</Attributes>
+			<FormAttributes>
+				<Attribute uuid="b2c3d4e5-f6a7-8901-bcde-f12345678901">
+					<Properties>
+						<Name>СкладыВыбор</Name>
+						<Type>
+							<v8:Type>v8:ValueTable</v8:Type>
+							<v8:ValueTableColumn>
+								<v8:Name>Склад</v8:Name>
+								<v8:ValueType>
+									<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+								</v8:ValueType>
+							</v8:ValueTableColumn>
+							<v8:ValueTableColumn>
+								<v8:Name>Отмечен</v8:Name>
+								<v8:ValueType>
+									<v8:Type>xs:boolean</v8:Type>
+								</v8:ValueType>
+							</v8:ValueTableColumn>
+						</Type>
+					</Properties>
+				</Attribute>
+				<Attribute uuid="c3d4e5f6-a7b8-9012-cdef-123456789012">
+					<Properties>
+						<Name>СтатусыШагов</Name>
+						<Type>
+							<v8:Type>v8:ValueTable</v8:Type>
+							<v8:ValueTableColumn>
+								<v8:Name>НомерШага</v8:Name>
+								<v8:ValueType>
+									<v8:Type>xs:decimal</v8:Type>
+									<v8:NumberQualifiers>
+										<v8:Digits>10</v8:Digits>
+										<v8:FractionDigits>0</v8:FractionDigits>
+									</v8:NumberQualifiers>
+								</v8:ValueType>
+							</v8:ValueTableColumn>
+							<v8:ValueTableColumn>
+								<v8:Name>Наименование</v8:Name>
+								<v8:ValueType>
+									<v8:Type>xs:string</v8:Type>
+								</v8:ValueType>
+							</v8:ValueTableColumn>
+							<v8:ValueTableColumn>
+								<v8:Name>Статус</v8:Name>
+								<v8:ValueType>
+									<v8:Type>xs:string</v8:Type>
+								</v8:ValueType>
+							</v8:ValueTableColumn>
+						</Type>
+					</Properties>
+				</Attribute>
+			</FormAttributes>
+			<Commands>
+				<Command uuid="11aabbcc-ddee-ff00-1111-222233334444">
+					<Properties>
+						<Name>НачатьРаботу</Name>
+						<Action>НачатьРаботу</Action>
+					</Properties>
+				</Command>
+				<Command uuid="22aabbcc-ddee-ff00-2222-333344445555">
+					<Properties>
+						<Name>Далее</Name>
+						<Action>Далее</Action>
+					</Properties>
+				</Command>
+				<Command uuid="33aabbcc-ddee-ff00-3333-444455556666">
+					<Properties>
+						<Name>Назад</Name>
+						<Action>Назад</Action>
+					</Properties>
+				</Command>
+				<Command uuid="44aabbcc-ddee-ff00-4444-555566667777">
+					<Properties>
+						<Name>Сопоставить</Name>
+						<Action>Сопоставить</Action>
+					</Properties>
+				</Command>
+				<Command uuid="55aabbcc-ddee-ff00-5555-666677778888">
+					<Properties>
+						<Name>ПерезагрузитьЧекиЗаДень</Name>
+						<Action>ПерезагрузитьЧекиЗаДень</Action>
+					</Properties>
+				</Command>
+				<Command uuid="66aabbcc-ddee-ff00-6666-777788889999">
+					<Properties>
+						<Name>ПереформироватьВыпуска</Name>
+						<Action>ПереформироватьВыпуска</Action>
+					</Properties>
+				</Command>
+				<Command uuid="77aabbcc-ddee-ff00-7777-888899990000">
+					<Properties>
+						<Name>ОткрытьДокументВыпуска</Name>
+						<Action>ОткрытьДокументВыпуска</Action>
+					</Properties>
+				</Command>
+				<Command uuid="88aabbcc-ddee-ff00-8888-999900001111">
+					<Properties>
+						<Name>ВыбратьДругойДень</Name>
+						<Action>ВыбратьДругойДень</Action>
+					</Properties>
+				</Command>
+			</Commands>
+		</ChildObjects>
+	</Form>
+</MetaDataObject>
