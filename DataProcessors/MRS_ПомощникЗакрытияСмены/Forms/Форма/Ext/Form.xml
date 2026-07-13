@@ -232,7 +232,7 @@
 									<v8:content>Группа шагов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<PagesRepresentation>Wizard</PagesRepresentation>
+							<PagesRepresentation>None</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаШаговРасширеннаяПодсказка" id="71"/>
 							<Events>
 								<Event name="OnCurrentPageChange">ГруппаШаговПриАктивизации</Event>
