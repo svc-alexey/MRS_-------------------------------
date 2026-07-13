@@ -22,3 +22,12 @@ preserve original 1C identifiers (objects, modules, attributes) as-is:
 
 <!-- Populated only when `1c-templates-mcp` is offline; migrate to `remember` once it is back. -->
 
+## 2026-07-13 — питДанныеПродажФронта button code location
+
+- **Scope:** `Документ.питДанныеПродажФронта`.
+- **Rule:** `ПЛ_КодКнопки` belongs to tabular section `Товары`, not to the document header.
+- **Why:** Queries that read `Чек.ПЛ_КодКнопки` from the document header fail or
+  miss item mappings; use `Документ.питДанныеПродажФронта.Товары`.
+- **Source:** User correction during review of
+  `MRS_ПомощникЗакрытияСменыСервер.СтатусШагаСопоставление`.
+
