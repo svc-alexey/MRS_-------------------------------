@@ -302,10 +302,6 @@
 			<Metadata name="InformationRegister.питУчетДанныхПродаж.Dimension.ДокументПриемник" id="4b02f878-f250-4a0a-9c66-d8ceb0050086"/>
 		</Metadata>
 		<Metadata name="Language.Русский" id="f897aac1-ba25-4089-8bb5-59aa40c3bf34" configVersion="5caae8324641df9185197a09548302766d5fd0f6"/>
-		<Metadata name="Report.MRS_ПродажиФронтСистем" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452" configVersion="9415f71a740629ca82696e582ad00c9595c4a45b"/>
-		<Metadata name="Report.MRS_ПродажиФронтСистем.ObjectModule" id="abb56d19-22e1-4ca9-98a9-7e23df1a4452.0" configVersion="ddd4d9b194f864d1c1a46552e619a917d4a5ef7f"/>
-		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.ОсновнаяСхемаКомпоновкиДанных" id="0217b0dc-0167-413e-a508-1754c2bc1bf3" configVersion="9691f1f3a676446800951f118391f259a3d4db7e"/>
-		<Metadata name="Report.MRS_ПродажиФронтСистем.Template.СхемаКомпоновкиMicros" id="19a54c0c-3422-4b50-a14b-712ed55553f0" configVersion="cc74d782af19e4ae3184a2a24239e1555937b6b3"/>
 		<Metadata name="Report.ПЛ_СверкаПродажСЧеками" id="4ef58ecc-c3f5-4d1b-b23c-5397411430b5" configVersion="84e2ae76d1f93f9389ac817559a97207d02c1b4d"/>
 		<Metadata name="Report.ПЛ_СверкаПродажСЧеками.Help" id="4ef58ecc-c3f5-4d1b-b23c-5397411430b5.1" configVersion="7d18b1a1a1c8eab3ad0954fa198923fa886e133c"/>
 		<Metadata name="Report.ПЛ_СверкаПродажСЧеками.ObjectModule" id="4ef58ecc-c3f5-4d1b-b23c-5397411430b5.0" configVersion="6a330bc4b3bae6c1e858b28d43946c047d40ccdb"/>

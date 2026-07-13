@@ -113,7 +113,6 @@
 			<Enum>ПЛ_ТипыФронтСистем</Enum>
 			<Enum>питХозяйственныеОперации</Enum>
 			<Enum>питВидыДвиженийОстатковМарокИС</Enum>
-			<Report>MRS_ПродажиФронтСистем</Report>
 			<Report>ПЛ_СверкаПродажСЧеками</Report>
 			<DataProcessor>MRS_АРМ_Закрытия_смены</DataProcessor>
 			<DataProcessor>MRS_ЗагрузкаДанныхИзФронтСистем</DataProcessor>
