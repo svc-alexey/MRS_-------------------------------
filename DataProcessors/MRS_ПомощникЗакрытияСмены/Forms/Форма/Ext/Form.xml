@@ -123,6 +123,27 @@
 									<ContextMenu name="СкладыВыборСкладКонтекстноеМеню" id="35"/>
 									<ExtendedTooltip name="СкладыВыборСкладРасширеннаяПодсказка" id="36"/>
 								</InputField>
+								<InputField name="СкладыВыборФронтСистема" id="300">
+									<DataPath>СкладыВыбор.ФронтСистема</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СкладыВыборФронтСистемаКонтекстноеМеню" id="301"/>
+									<ExtendedTooltip name="СкладыВыборФронтСистемаРасширеннаяПодсказка" id="302"/>
+								</InputField>
+								<InputField name="СкладыВыборКодТочкиПродаж" id="303">
+									<DataPath>СкладыВыбор.КодТочкиПродаж</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СкладыВыборКодТочкиПродажКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="СкладыВыборКодТочкиПродажРасширеннаяПодсказка" id="305"/>
+								</InputField>
+								<InputField name="СкладыВыборНаименованиеТочкиПродаж" id="306">
+									<DataPath>СкладыВыбор.НаименованиеТочкиПродаж</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СкладыВыборНаименованиеТочкиПродажКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="СкладыВыборНаименованиеТочкиПродажРасширеннаяПодсказка" id="308"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 						<Button name="НачатьРаботу" id="40">
@@ -879,7 +900,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Склады выбор</v8:content>
+					<v8:content>Точки продаж выбор</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -897,7 +918,59 @@
 						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 					</Type>
 				</Column>
-				<Column name="Отмечен" id="2">
+				<Column name="КассаККМ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса ККМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФронтСистема" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фронт-система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПЛ_ТипыФронтСистем</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КодТочкиПродаж" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код точки продаж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеТочкиПродаж" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование точки продаж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отмечен" id="6">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1519,6 +1592,58 @@
 						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 					</Type>
 				</Column>
+				<Column name="КассаККМ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса ККМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФронтСистема" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фронт-система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПЛ_ТипыФронтСистем</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КодТочкиПродаж" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код точки продаж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеТочкиПродаж" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование точки продаж</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="АдресРезультатаФормирования" id="15">
@@ -1541,6 +1666,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Адрес результата рекомендуемого дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультатаСтатуса" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата статуса</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
