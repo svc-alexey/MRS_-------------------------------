@@ -24,6 +24,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<Pages name="ГруппаОсновная" id="11">
 			<Title>
@@ -109,6 +112,9 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="СкладыВыборОтмеченКонтекстноеМеню" id="38"/>
 									<ExtendedTooltip name="СкладыВыборОтмеченРасширеннаяПодсказка" id="39"/>
+									<Events>
+										<Event name="OnChange">СкладыВыборОтмеченПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<InputField name="СкладыВыборСклад" id="34">
 									<DataPath>СкладыВыбор.Склад</DataPath>
@@ -143,7 +149,8 @@
 					<ChildItems>
 						<Table name="СтатусыШагов" id="44">
 							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>false</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СтатусыШагов</DataPath>
@@ -178,6 +185,7 @@
 							<ChildItems>
 								<InputField name="СтатусыШаговНомер" id="57">
 									<DataPath>СтатусыШагов.Номер</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="СтатусыШаговНомерКонтекстноеМеню" id="58"/>
@@ -185,6 +193,7 @@
 								</InputField>
 								<InputField name="СтатусыШаговНаименование" id="60">
 									<DataPath>СтатусыШагов.Наименование</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="СтатусыШаговНаименованиеКонтекстноеМеню" id="61"/>
@@ -192,6 +201,7 @@
 								</InputField>
 								<InputField name="СтатусыШаговСтатус" id="63">
 									<DataPath>СтатусыШагов.Статус</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="СтатусыШаговСтатусКонтекстноеМеню" id="64"/>
@@ -199,6 +209,16 @@
 								</InputField>
 							</ChildItems>
 						</Table>
+						<InputField name="ТекущийСклад" id="261">
+							<DataPath>ТекущийСклад</DataPath>
+							<Visible>false</Visible>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекущийСкладКонтекстноеМеню" id="262"/>
+							<ExtendedTooltip name="ТекущийСкладРасширеннаяПодсказка" id="263"/>
+							<Events>
+								<Event name="OnChange">ТекущийСкладПриИзменении</Event>
+							</Events>
+						</InputField>
 						<Pages name="ГруппаШагов" id="70">
 							<Title>
 								<v8:item>
@@ -212,8 +232,11 @@
 									<v8:content>Группа шагов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<PagesRepresentation>None</PagesRepresentation>
+							<PagesRepresentation>Wizard</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаШаговРасширеннаяПодсказка" id="71"/>
+							<Events>
+								<Event name="OnCurrentPageChange">ГруппаШаговПриАктивизации</Event>
+							</Events>
 							<ChildItems>
 								<Page name="СтраницаСопоставления" id="72">
 									<Title>
@@ -230,11 +253,22 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаСопоставленияРасширеннаяПодсказка" id="73"/>
 									<ChildItems>
+										<LabelDecoration name="НадписьВсеЧистоСопоставление" id="264">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Все объекты сопоставлены. Проблем не обнаружено.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьВсеЧистоСопоставлениеКонтекстноеМеню" id="265"/>
+											<ExtendedTooltip name="НадписьВсеЧистоСопоставлениеРасширеннаяПодсказка" id="266"/>
+										</LabelDecoration>
 										<Table name="НесопоставленныеОбъекты" id="74">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>НесопоставленныеОбъекты</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="НесопоставленныеОбъектыКонтекстноеМеню" id="75"/>
@@ -265,15 +299,24 @@
 												<ExtendedTooltip name="НесопоставленныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="86"/>
 											</SearchControlAddition>
 											<ChildItems>
-												<InputField name="НесопоставленныеОбъектыТипыОбъекта" id="90">
-													<DataPath>НесопоставленныеОбъекты.ТипыОбъекта</DataPath>
+												<CheckBoxField name="НесопоставленныеОбъектыОтмечен" id="267">
+													<DataPath>НесопоставленныеОбъекты.Отмечен</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="НесопоставленныеОбъектыОтмеченКонтекстноеМеню" id="268"/>
+													<ExtendedTooltip name="НесопоставленныеОбъектыОтмеченРасширеннаяПодсказка" id="269"/>
+												</CheckBoxField>
+												<InputField name="НесопоставленныеОбъектыТипОбъекта" id="90">
+													<DataPath>НесопоставленныеОбъекты.ТипОбъекта</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыТипыОбъектаКонтекстноеМеню" id="91"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыТипыОбъектаРасширеннаяПодсказка" id="92"/>
+													<ContextMenu name="НесопоставленныеОбъектыТипОбъектаКонтекстноеМеню" id="91"/>
+													<ExtendedTooltip name="НесопоставленныеОбъектыТипОбъектаРасширеннаяПодсказка" id="92"/>
 												</InputField>
 												<InputField name="НесопоставленныеОбъектыФронтСистема" id="87">
 													<DataPath>НесопоставленныеОбъекты.ФронтСистема</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="НесопоставленныеОбъектыФронтСистемаКонтекстноеМеню" id="88"/>
@@ -281,6 +324,7 @@
 												</InputField>
 												<InputField name="НесопоставленныеОбъектыКод" id="93">
 													<DataPath>НесопоставленныеОбъекты.Код</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="НесопоставленныеОбъектыКодКонтекстноеМеню" id="94"/>
@@ -288,17 +332,18 @@
 												</InputField>
 												<InputField name="НесопоставленныеОбъектыНаименованиеНаФронте" id="96">
 													<DataPath>НесопоставленныеОбъекты.НаименованиеНаФронте</DataPath>
+													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="НесопоставленныеОбъектыНаименованиеНаФронтеКонтекстноеМеню" id="97"/>
 													<ExtendedTooltip name="НесопоставленныеОбъектыНаименованиеНаФронтеРасширеннаяПодсказка" id="98"/>
 												</InputField>
-												<InputField name="НесопоставленныеОбъектыОбъекДляСопоставления" id="99">
-													<DataPath>НесопоставленныеОбъекты.ОбъекДляСопоставления</DataPath>
+												<InputField name="НесопоставленныеОбъектыОбъектДляСопоставления" id="99">
+													<DataPath>НесопоставленныеОбъекты.ОбъектДляСопоставления</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыОбъекДляСопоставленияКонтекстноеМеню" id="100"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыОбъекДляСопоставленияРасширеннаяПодсказка" id="101"/>
+													<ContextMenu name="НесопоставленныеОбъектыОбъектДляСопоставленияКонтекстноеМеню" id="100"/>
+													<ExtendedTooltip name="НесопоставленныеОбъектыОбъектДляСопоставленияРасширеннаяПодсказка" id="101"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -324,11 +369,23 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаСверкаРасширеннаяПодсказка" id="105"/>
 									<ChildItems>
+										<LabelDecoration name="НадписьВсеЧистоСверка" id="270">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отклонений сверки не обнаружено.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьВсеЧистоСверкаКонтекстноеМеню" id="271"/>
+											<ExtendedTooltip name="НадписьВсеЧистоСверкаРасширеннаяПодсказка" id="272"/>
+										</LabelDecoration>
 										<Table name="ОтклоненияСверки" id="106">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>ОтклоненияСверки</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтклоненияСверкиКонтекстноеМеню" id="107"/>
@@ -455,17 +512,23 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаФормированиеРасширеннаяПодсказка" id="153"/>
 									<ChildItems>
-										<InputField name="ТекущийСклад" id="154">
-											<DataPath>ТекущийСклад</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ТекущийСкладКонтекстноеМеню" id="155"/>
-											<ExtendedTooltip name="ТекущийСкладРасширеннаяПодсказка" id="156"/>
-										</InputField>
+										<LabelDecoration name="НадписьВсеЧистоФормирование" id="273">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проблем формирования не обнаружено.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьВсеЧистоФормированиеКонтекстноеМеню" id="274"/>
+											<ExtendedTooltip name="НадписьВсеЧистоФормированиеРасширеннаяПодсказка" id="275"/>
+										</LabelDecoration>
 										<Table name="ОтклоненияВыпуска" id="157">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>ОтклоненияВыпуска</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтклоненияВыпускаКонтекстноеМеню" id="158"/>
@@ -549,9 +612,10 @@
 										</Table>
 										<Table name="ОшибкиФормирования" id="191">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>ОшибкиФормирования</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
@@ -600,9 +664,10 @@
 										</Table>
 										<Table name="ДокументыОткрытыеЦены" id="210">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>ДокументыОткрытыеЦены</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ДокументыОткрытыеЦеныКонтекстноеМеню" id="211"/>
@@ -671,11 +736,23 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаОстаткиРасширеннаяПодсказка" id="232"/>
 									<ChildItems>
+										<LabelDecoration name="НадписьВсеЧистоОстатки" id="276">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отрицательных остатков не обнаружено.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="НадписьВсеЧистоОстаткиКонтекстноеМеню" id="277"/>
+											<ExtendedTooltip name="НадписьВсеЧистоОстаткиРасширеннаяПодсказка" id="278"/>
+										</LabelDecoration>
 										<Table name="ОтрицательныеОстатки" id="233">
 											<Representation>List</Representation>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>false</AutoInsertNewRow>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
 											<DataPath>ОтрицательныеОстатки</DataPath>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтрицательныеОстаткиКонтекстноеМеню" id="234"/>
@@ -742,6 +819,7 @@
 						</Pages>
 						<LabelField name="НадписьГотовность" id="258">
 							<DataPath>НадписьГотовность</DataPath>
+							<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<ContextMenu name="НадписьГотовностьКонтекстноеМеню" id="259"/>
 							<ExtendedTooltip name="НадписьГотовностьРасширеннаяПодсказка" id="260"/>
 						</LabelField>
@@ -928,11 +1006,11 @@
 						<v8:Type>cfg:EnumRef.ПЛ_ТипыФронтСистем</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ТипыОбъекта" id="2">
+				<Column name="ТипОбъекта" id="2">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Типы объекта</v8:content>
+							<v8:content>Тип объекта</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -969,21 +1047,27 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="ОбъекДляСопоставления" id="5">
+				<Column name="ОбъектДляСопоставления" id="5">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объек для сопоставления</v8:content>
+							<v8:content>Объект для сопоставления</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
+						<v8:Type>cfg:CatalogRef.КассыККМ</v8:Type>
 						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
-						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отмечен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмечен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -1413,7 +1497,123 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="МассивСкладовСессии" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Массив складов сессии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Склад" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресРезультатаФормирования" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата формирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультатаРекомендуемогоДня" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата рекомендуемого дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<ConditionalAppearance>
+		<dcsset:item>
+			<dcsset:selection>
+				<dcsset:item>
+					<dcsset:field>СтатусыШаговСтатус</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">СтатусыШагов.Статус</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">Пройден</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+				</dcscor:item>
+			</dcsset:appearance>
+		</dcsset:item>
+		<dcsset:item>
+			<dcsset:selection>
+				<dcsset:item>
+					<dcsset:field>СтатусыШаговСтатус</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">СтатусыШагов.Статус</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string">НеПройден</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+				</dcscor:item>
+			</dcsset:appearance>
+		</dcsset:item>
+		<dcsset:item>
+			<dcsset:selection>
+				<dcsset:item>
+					<dcsset:field>ОтклоненияВыпуска</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ОтклоненияВыпуска.Блокирует</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЦветФона</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">style:ЕдиныйНалоговыйСчетКрасныйЦветФона</dcscor:value>
+				</dcscor:item>
+			</dcsset:appearance>
+		</dcsset:item>
+	</ConditionalAppearance>
 	<Commands>
 		<Command name="НачатьРаботу" id="1">
 			<Title>

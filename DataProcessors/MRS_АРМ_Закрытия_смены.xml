@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment>Швецов. 17.02.2026. АРМ Закрытия смены</Comment>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>DataProcessor.MRS_АРМ_Закрытия_смены.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
