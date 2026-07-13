@@ -82,6 +82,7 @@
 			<CommonModule>MRS_МенеджерОбменаTNG</CommonModule>
 			<CommonModule>питТиповыеДокументы</CommonModule>
 			<CommonModule>питПроизводство</CommonModule>
+			<CommonModule>MRS_ПомощникЗакрытияСменыСервер</CommonModule>
 			<ExchangePlan>питУдаленныеКассы</ExchangePlan>
 			<DefinedType>ДенежнаяСуммаНеотрицательная</DefinedType>
 			<DefinedType>ДенежнаяСуммаЛюбогоЗнака</DefinedType>
@@ -117,6 +118,7 @@
 			<DataProcessor>MRS_АРМ_Закрытия_смены</DataProcessor>
 			<DataProcessor>MRS_ЗагрузкаДанныхИзФронтСистем</DataProcessor>
 			<DataProcessor>питЗагрузкаИзДанныхПродажФронта</DataProcessor>
+			<DataProcessor>MRS_ПомощникЗакрытияСмены</DataProcessor>
 			<InformationRegister>ПЛ_СоответствиеСФронтСистемами</InformationRegister>
 			<InformationRegister>питУчетДанныхПродаж</InformationRegister>
 			<AccumulationRegister>питОстаткиМарокИС</AccumulationRegister>
