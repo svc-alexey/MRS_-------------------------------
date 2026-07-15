@@ -4,21 +4,25 @@
 		<ChildItems>
 			<Button name="ФормаДалее" id="3">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<CommandName>Form.Command.Далее</CommandName>
 				<ExtendedTooltip name="ФормаДалееРасширеннаяПодсказка" id="4"/>
 			</Button>
 			<Button name="ФормаНазад" id="5">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<CommandName>Form.Command.Назад</CommandName>
 				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="6"/>
 			</Button>
 			<Button name="ФормаПерезагрузитьЧекиЗаДень" id="7">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
 				<ExtendedTooltip name="ФормаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="8"/>
 			</Button>
 			<Button name="ФормаВыбратьДругойДень" id="9">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<CommandName>Form.Command.ВыбратьДругойДень</CommandName>
 				<ExtendedTooltip name="ФормаВыбратьДругойДеньРасширеннаяПодсказка" id="10"/>
 			</Button>
@@ -358,6 +362,11 @@
 											<ContextMenu name="НадписьВсеЧистоСопоставлениеКонтекстноеМеню" id="265"/>
 											<ExtendedTooltip name="НадписьВсеЧистоСопоставлениеРасширеннаяПодсказка" id="266"/>
 										</LabelDecoration>
+										<Button name="Сопоставить" id="102">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.Сопоставить</CommandName>
+											<ExtendedTooltip name="СопоставитьРасширеннаяПодсказка" id="103"/>
+										</Button>
 										<Table name="НесопоставленныеОбъекты" id="74">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
@@ -448,11 +457,6 @@
 												</InputField>
 											</ChildItems>
 										</Table>
-										<Button name="Сопоставить" id="102">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.Сопоставить</CommandName>
-											<ExtendedTooltip name="СопоставитьРасширеннаяПодсказка" id="103"/>
-										</Button>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаСверка" id="104">
@@ -1004,6 +1008,46 @@
 								</Page>
 							</ChildItems>
 						</Pages>
+						<UsualGroup name="НавигацияШагов" id="362">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Навигация шагов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Навигация шагов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
+							<ChildItems>
+								<Button name="КнопкаВыбратьДругойДень" id="364">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВыбратьДругойДень</CommandName>
+									<ExtendedTooltip name="КнопкаВыбратьДругойДеньРасширеннаяПодсказка" id="365"/>
+								</Button>
+								<Button name="КнопкаНазад" id="366">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Назад</CommandName>
+									<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="367"/>
+								</Button>
+								<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
+									<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
+								</Button>
+								<Button name="КнопкаДалее" id="370">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.Далее</CommandName>
+									<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="371"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<LabelField name="НадписьГотовность" id="258">
 							<DataPath>НадписьГотовность</DataPath>
 							<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
