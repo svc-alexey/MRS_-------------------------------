@@ -318,7 +318,7 @@
 									<v8:content>Группа шагов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<VerticalStretch>false</VerticalStretch>
+							<VerticalStretch>true</VerticalStretch>
 							<PagesRepresentation>None</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаШаговРасширеннаяПодсказка" id="71"/>
 							<Events>
@@ -472,7 +472,7 @@
 											<v8:content>Страница сверка</v8:content>
 										</v8:item>
 									</ToolTip>
-									<VerticalStretch>false</VerticalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<ExtendedTooltip name="СтраницаСверкаРасширеннаяПодсказка" id="105"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаСверка" id="331">
@@ -632,6 +632,8 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
 											<DataPath>ОтчетСверкиЧеков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
 											<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
 										</SpreadSheetDocumentField>
@@ -650,7 +652,7 @@
 											<v8:content>Страница формирование</v8:content>
 										</v8:item>
 									</ToolTip>
-									<VerticalStretch>false</VerticalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<ExtendedTooltip name="СтраницаФормированиеРасширеннаяПодсказка" id="153"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаФормирование" id="339">
@@ -869,6 +871,8 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
 											<DataPath>ОтчетСверкиВыпусков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
 											<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
 										</SpreadSheetDocumentField>
