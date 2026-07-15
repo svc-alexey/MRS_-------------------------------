@@ -90,6 +90,11 @@
 									<ContextMenu name="РекомендуемыйДеньКонтекстноеМеню" id="19"/>
 									<ExtendedTooltip name="РекомендуемыйДеньРасширеннаяПодсказка" id="20"/>
 								</InputField>
+								<Button name="ПолучитьРекомендуемыйДеньОтработки" id="311">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПолучитьРекомендуемыйДеньОтработки</CommandName>
+									<ExtendedTooltip name="ПолучитьРекомендуемыйДеньОтработкиРасширеннаяПодсказка" id="312"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="СкладыВыбор" id="21">
@@ -568,6 +573,13 @@
 													<ContextMenu name="ОтклоненияСверкиКатегорияОтклоненияКонтекстноеМеню" id="150"/>
 													<ExtendedTooltip name="ОтклоненияСверкиКатегорияОтклоненияРасширеннаяПодсказка" id="151"/>
 												</InputField>
+												<InputField name="ОтклоненияСверкиТекстОшибки" id="313">
+													<DataPath>ОтклоненияСверки.ТекстОшибки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОтклоненияСверкиТекстОшибкиКонтекстноеМеню" id="314"/>
+													<ExtendedTooltip name="ОтклоненияСверкиТекстОшибкиРасширеннаяПодсказка" id="315"/>
+												</InputField>
 											</ChildItems>
 										</Table>
 									</ChildItems>
@@ -888,6 +900,17 @@
 							<ContextMenu name="НадписьГотовностьКонтекстноеМеню" id="259"/>
 							<ExtendedTooltip name="НадписьГотовностьРасширеннаяПодсказка" id="260"/>
 						</LabelField>
+						<Button name="СформироватьИтоговыйОтчет" id="316">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СформироватьИтоговыйОтчет</CommandName>
+							<ExtendedTooltip name="СформироватьИтоговыйОтчетРасширеннаяПодсказка" id="317"/>
+						</Button>
+						<SpreadSheetDocumentField name="ИтоговыйОтчет" id="318">
+							<DataPath>ИтоговыйОтчет</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ИтоговыйОтчетКонтекстноеМеню" id="319"/>
+							<ExtendedTooltip name="ИтоговыйОтчетРасширеннаяПодсказка" id="320"/>
+						</SpreadSheetDocumentField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1367,6 +1390,21 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ТекстОшибки" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ОтклоненияВыпуска" id="10">
@@ -1735,6 +1773,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИтоговыйОтчет" id="321">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итоговый отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="НачатьРаботу" id="1">
@@ -1856,6 +1905,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыбратьДругойДень</Action>
+		</Command>
+		<Command name="ПолучитьРекомендуемыйДеньОтработки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить рекомендуемый день отработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить рекомендуемый день отработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьРекомендуемыйДеньОтработки</Action>
+		</Command>
+		<Command name="СформироватьИтоговыйОтчет" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать итоговый отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать итоговый отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьИтоговыйОтчет</Action>
 		</Command>
 	</Commands>
 </Form>
