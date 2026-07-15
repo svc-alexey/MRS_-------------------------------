@@ -62,6 +62,16 @@
 					<VerticalAlign>Center</VerticalAlign>
 					<ExtendedTooltip name="СтраницаПараметровРасширеннаяПодсказка" id="14"/>
 					<ChildItems>
+						<LabelDecoration name="ОписаниеПараметров" id="325">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите точки продаж и день отработки. Рекомендуемый день рассчитывается после выбора точек продаж отдельной командой.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОписаниеПараметровКонтекстноеМеню" id="326"/>
+							<ExtendedTooltip name="ОписаниеПараметровРасширеннаяПодсказка" id="327"/>
+						</LabelDecoration>
 						<UsualGroup name="Даты" id="309">
 							<Title>
 								<v8:item>
@@ -209,6 +219,7 @@
 							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
 							<ReadOnly>true</ReadOnly>
+							<Visible>false</Visible>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СтатусыШагов</DataPath>
@@ -273,6 +284,13 @@
 								</InputField>
 							</ChildItems>
 						</Table>
+						<LabelField name="ПредставлениеСтатусовШагов" id="322">
+							<DataPath>ПредставлениеСтатусовШагов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ПредставлениеСтатусовШаговКонтекстноеМеню" id="323"/>
+							<ExtendedTooltip name="ПредставлениеСтатусовШаговРасширеннаяПодсказка" id="324"/>
+						</LabelField>
 						<InputField name="ТекущийСклад" id="261">
 							<DataPath>ТекущийСклад</DataPath>
 							<Visible>false</Visible>
@@ -319,6 +337,16 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ExtendedTooltip name="СтраницаСопоставленияРасширеннаяПодсказка" id="73"/>
 									<ChildItems>
+										<LabelDecoration name="ОписаниеШагаСопоставление" id="328">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг 1. Проверьте, что кассы и номенклатура фронт-систем сопоставлены с объектами 1С.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеШагаСопоставлениеКонтекстноеМеню" id="329"/>
+											<ExtendedTooltip name="ОписаниеШагаСопоставлениеРасширеннаяПодсказка" id="330"/>
+										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоСопоставление" id="264">
 											<Visible>false</Visible>
 											<Title formatted="false">
@@ -443,6 +471,16 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ExtendedTooltip name="СтраницаСверкаРасширеннаяПодсказка" id="105"/>
 									<ChildItems>
+										<LabelDecoration name="ОписаниеШагаСверка" id="331">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг 2. Сверьте чеки фронта с загруженными чеками 1С. При отклонениях доступна перезагрузка чеков и детальный отчет по выбранным складам.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеШагаСверкаКонтекстноеМеню" id="332"/>
+											<ExtendedTooltip name="ОписаниеШагаСверкаРасширеннаяПодсказка" id="333"/>
+										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоСверка" id="270">
 											<Visible>false</Visible>
 											<Title formatted="false">
@@ -582,6 +620,17 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+										<Button name="СформироватьОтчетСверкиЧеков" id="334">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
+											<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
+										</Button>
+										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
+											<DataPath>ОтчетСверкиЧеков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
+											<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
+										</SpreadSheetDocumentField>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаФормирование" id="152">
@@ -600,6 +649,16 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ExtendedTooltip name="СтраницаФормированиеРасширеннаяПодсказка" id="153"/>
 									<ChildItems>
+										<LabelDecoration name="ОписаниеШагаФормирование" id="339">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг 3. Проверьте формирование выпусков блюд и сверку количества по чекам с количеством в выпусках.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеШагаФормированиеКонтекстноеМеню" id="340"/>
+											<ExtendedTooltip name="ОписаниеШагаФормированиеРасширеннаяПодсказка" id="341"/>
+										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоФормирование" id="273">
 											<Visible>false</Visible>
 											<Title formatted="false">
@@ -798,6 +857,17 @@
 											<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
 											<ExtendedTooltip name="ПереформироватьВыпускаРасширеннаяПодсказка" id="230"/>
 										</Button>
+										<Button name="СформироватьОтчетСверкиВыпусков" id="342">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СформироватьОтчетСверкиВыпусков</CommandName>
+											<ExtendedTooltip name="СформироватьОтчетСверкиВыпусковРасширеннаяПодсказка" id="343"/>
+										</Button>
+										<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
+											<DataPath>ОтчетСверкиВыпусков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
+											<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
+										</SpreadSheetDocumentField>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаОстатки" id="231">
@@ -816,6 +886,16 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ExtendedTooltip name="СтраницаОстаткиРасширеннаяПодсказка" id="232"/>
 									<ChildItems>
+										<LabelDecoration name="ОписаниеШагаОстатки" id="347">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг 4. Проверьте отрицательные остатки по выбранным складам. Для разбора сформируйте ведомость и откройте строку расшифровки.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеШагаОстаткиКонтекстноеМеню" id="348"/>
+											<ExtendedTooltip name="ОписаниеШагаОстаткиРасширеннаяПодсказка" id="349"/>
+										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоОстатки" id="276">
 											<Visible>false</Visible>
 											<Title formatted="false">
@@ -890,6 +970,36 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+										<Button name="СформироватьВедомостьОтрицательных" id="350">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СформироватьВедомостьОтрицательных</CommandName>
+											<ExtendedTooltip name="СформироватьВедомостьОтрицательныхРасширеннаяПодсказка" id="351"/>
+										</Button>
+										<Button name="ОткрытьВедомостьОтрицательных" id="352">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьВедомостьОтрицательных</CommandName>
+											<ExtendedTooltip name="ОткрытьВедомостьОтрицательныхРасширеннаяПодсказка" id="353"/>
+										</Button>
+										<SpreadSheetDocumentField name="ВедомостьОтрицательныхОстатков" id="354">
+											<DataPath>ВедомостьОтрицательныхОстатков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="ВедомостьОтрицательныхОстатковКонтекстноеМеню" id="355"/>
+											<ExtendedTooltip name="ВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="356"/>
+											<Events>
+												<Event name="DetailProcessing">ВедомостьОтрицательныхОстатковОбработкаРасшифровки</Event>
+											</Events>
+										</SpreadSheetDocumentField>
+										<Button name="СформироватьАнализОтрицательных" id="357">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СформироватьАнализОтрицательных</CommandName>
+											<ExtendedTooltip name="СформироватьАнализОтрицательныхРасширеннаяПодсказка" id="358"/>
+										</Button>
+										<SpreadSheetDocumentField name="АнализОтрицательныхОстатков" id="359">
+											<DataPath>АнализОтрицательныхОстатков</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АнализОтрицательныхОстатковКонтекстноеМеню" id="360"/>
+											<ExtendedTooltip name="АнализОтрицательныхОстатковРасширеннаяПодсказка" id="361"/>
+										</SpreadSheetDocumentField>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -1773,6 +1883,80 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПредставлениеСтатусовШагов" id="381">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление статусов шагов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДанныхРасшифровкиВедомости" id="382">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес данных расшифровки ведомости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчетСверкиЧеков" id="383">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сверки чеков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчетСверкиВыпусков" id="384">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет сверки выпусков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВедомостьОтрицательныхОстатков" id="385">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведомость отрицательных остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АнализОтрицательныхОстатков" id="386">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ отрицательных остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
 		<Attribute name="ИтоговыйОтчет" id="321">
 			<Title>
 				<v8:item>
@@ -1935,6 +2119,81 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СформироватьИтоговыйОтчет</Action>
+		</Command>
+		<Command name="СформироватьОтчетСверкиЧеков" id="391">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет сверки чеков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет сверки чеков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОтчетСверкиЧеков</Action>
+		</Command>
+		<Command name="СформироватьОтчетСверкиВыпусков" id="392">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет сверки выпусков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет сверки выпусков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОтчетСверкиВыпусков</Action>
+		</Command>
+		<Command name="СформироватьВедомостьОтрицательных" id="393">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать ведомость отрицательных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать ведомость отрицательных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьВедомостьОтрицательных</Action>
+		</Command>
+		<Command name="ОткрытьВедомостьОтрицательных" id="394">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ведомость отрицательных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ведомость отрицательных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВедомостьОтрицательных</Action>
+		</Command>
+		<Command name="СформироватьАнализОтрицательных" id="395">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать анализ отрицательных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать анализ отрицательных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьАнализОтрицательных</Action>
 		</Command>
 	</Commands>
 </Form>
