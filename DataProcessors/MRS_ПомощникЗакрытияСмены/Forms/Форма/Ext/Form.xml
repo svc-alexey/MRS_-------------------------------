@@ -517,7 +517,6 @@
 										<Table name="ОтклоненияСверки" id="106">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
-											<ReadOnly>true</ReadOnly>
 											<HeightInTableRows>10</HeightInTableRows>
 											<VerticalStretch>false</VerticalStretch>
 											<DataPath>ОтклоненияСверки</DataPath>
@@ -702,8 +701,18 @@
 										</LabelDecoration>
 										<Table name="ОтклоненияВыпуска" id="157">
 											<Representation>List</Representation>
-											<ReadOnly>true</ReadOnly>
 											<DataPath>ОтклоненияВыпуска</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтклоненияВыпускаКонтекстноеМеню" id="158"/>
 											<AutoCommandBar name="ОтклоненияВыпускаКоманднаяПанель" id="159"/>
@@ -786,8 +795,16 @@
 										</Table>
 										<Table name="ОшибкиФормирования" id="191">
 											<Representation>List</Representation>
-											<ReadOnly>true</ReadOnly>
 											<DataPath>ОшибкиФормирования</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
 											<AutoCommandBar name="ОшибкиФормированияКоманднаяПанель" id="193"/>
@@ -835,8 +852,17 @@
 										</Table>
 										<Table name="ДокументыОткрытыеЦены" id="210">
 											<Representation>List</Representation>
-											<ReadOnly>true</ReadOnly>
 											<DataPath>ДокументыОткрытыеЦены</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ДокументыОткрытыеЦеныКонтекстноеМеню" id="211"/>
 											<AutoCommandBar name="ДокументыОткрытыеЦеныКоманднаяПанель" id="212"/>
@@ -943,8 +969,17 @@
 										</LabelDecoration>
 										<Table name="ОтрицательныеОстатки" id="233">
 											<Representation>List</Representation>
-											<ReadOnly>true</ReadOnly>
 											<DataPath>ОтрицательныеОстатки</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтрицательныеОстаткиКонтекстноеМеню" id="234"/>
 											<AutoCommandBar name="ОтрицательныеОстаткиКоманднаяПанель" id="235"/>
