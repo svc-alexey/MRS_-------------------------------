@@ -383,7 +383,7 @@
 										</Button>
 										<Table name="НесопоставленныеОбъекты" id="74">
 											<Representation>List</Representation>
-											<CommandBarLocation>None</CommandBarLocation>
+											<CommandBarLocation>Top</CommandBarLocation>
 											<AutoMaxHeight>false</AutoMaxHeight>
 											<HeightInTableRows>10</HeightInTableRows>
 											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
@@ -393,6 +393,10 @@
 												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>Copy</ExcludedCommand>
 												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="НесопоставленныеОбъектыКонтекстноеМеню" id="75"/>
@@ -516,7 +520,7 @@
 										</LabelDecoration>
 										<Table name="ОтклоненияСверки" id="106">
 											<Representation>List</Representation>
-											<CommandBarLocation>None</CommandBarLocation>
+											<CommandBarLocation>Top</CommandBarLocation>
 											<HeightInTableRows>10</HeightInTableRows>
 											<VerticalStretch>false</VerticalStretch>
 											<DataPath>ОтклоненияСверки</DataPath>
@@ -525,6 +529,10 @@
 												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>Copy</ExcludedCommand>
 												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ОтклоненияСверкиКонтекстноеМеню" id="107"/>
@@ -645,11 +653,35 @@
 												</InputField>
 											</ChildItems>
 										</Table>
-										<Button name="СформироватьОтчетСверкиЧеков" id="334">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
-											<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
-										</Button>
+										<UsualGroup name="ГруппаКнопки" id="374">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="375"/>
+											<ChildItems>
+												<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
+													<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
+												</Button>
+												<Button name="СформироватьОтчетСверкиЧеков" id="334">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
+													<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
 											<DataPath>ОтчетСверкиЧеков</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -801,6 +833,7 @@
 												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>Copy</ExcludedCommand>
 												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
 												<ExcludedCommand>MoveDown</ExcludedCommand>
 												<ExcludedCommand>MoveUp</ExcludedCommand>
 												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
@@ -1086,6 +1119,7 @@
 									<v8:content>Навигация шагов</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
 							<HorizontalAlign>Center</HorizontalAlign>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
@@ -1110,11 +1144,6 @@
 										</v8:item>
 									</Title>
 									<ExtendedTooltip name="КнопкаПерепроверитьТекущийШагРасширеннаяПодсказка" id="373"/>
-								</Button>
-								<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
-									<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
 								</Button>
 								<Button name="КнопкаДалее" id="370">
 									<Type>UsualButton</Type>
