@@ -62,17 +62,20 @@
 						</v8:item>
 					</ToolTip>
 					<VerticalStretch>false</VerticalStretch>
+					<VerticalSpacing>Double</VerticalSpacing>
 					<HorizontalAlign>Center</HorizontalAlign>
 					<VerticalAlign>Center</VerticalAlign>
 					<ExtendedTooltip name="СтраницаПараметровРасширеннаяПодсказка" id="14"/>
 					<ChildItems>
 						<LabelDecoration name="ОписаниеПараметров" id="325">
+							<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Выберите точки продаж и день отработки. Рекомендуемый день рассчитывается после выбора точек продаж отдельной командой.</v8:content>
 								</v8:item>
 							</Title>
+							<BackColor>style:ToolTipBackColor</BackColor>
 							<ContextMenu name="ОписаниеПараметровКонтекстноеМеню" id="326"/>
 							<ExtendedTooltip name="ОписаниеПараметровРасширеннаяПодсказка" id="327"/>
 						</LabelDecoration>
@@ -113,7 +116,7 @@
 						</UsualGroup>
 						<Table name="СкладыВыбор" id="21">
 							<Representation>List</Representation>
-							<CommandBarLocation>None</CommandBarLocation>
+							<CommandBarLocation>Top</CommandBarLocation>
 							<HeightInTableRows>10</HeightInTableRows>
 							<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 							<AutoMaxRowsCount>false</AutoMaxRowsCount>
@@ -125,7 +128,12 @@
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
 								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 							</CommandSet>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="СкладыВыборКонтекстноеМеню" id="22"/>
@@ -221,9 +229,9 @@
 					<ChildItems>
 						<Table name="СтатусыШагов" id="44">
 							<Representation>List</Representation>
+							<Visible>false</Visible>
 							<CommandBarLocation>None</CommandBarLocation>
 							<ReadOnly>true</ReadOnly>
-							<Visible>false</Visible>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СтатусыШагов</DataPath>
@@ -291,6 +299,8 @@
 						<LabelField name="ПредставлениеСтатусовШагов" id="322">
 							<DataPath>ПредставлениеСтатусовШагов</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<HorizontalStretch>true</HorizontalStretch>
+							<BackColor>style:ToolTipBackColor</BackColor>
 							<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<ContextMenu name="ПредставлениеСтатусовШаговКонтекстноеМеню" id="323"/>
 							<ExtendedTooltip name="ПредставлениеСтатусовШаговРасширеннаяПодсказка" id="324"/>
@@ -342,17 +352,21 @@
 									<ExtendedTooltip name="СтраницаСопоставленияРасширеннаяПодсказка" id="73"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаСопоставление" id="328">
+											<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Шаг 1. Проверьте, что кассы и номенклатура фронт-систем сопоставлены с объектами 1С.</v8:content>
 												</v8:item>
 											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
 											<ContextMenu name="ОписаниеШагаСопоставлениеКонтекстноеМеню" id="329"/>
 											<ExtendedTooltip name="ОписаниеШагаСопоставлениеРасширеннаяПодсказка" id="330"/>
 										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоСопоставление" id="264">
 											<Visible>false</Visible>
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -476,17 +490,21 @@
 									<ExtendedTooltip name="СтраницаСверкаРасширеннаяПодсказка" id="105"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаСверка" id="331">
+											<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Шаг 2. Сверьте чеки фронта с загруженными чеками 1С. При отклонениях доступна перезагрузка чеков и детальный отчет по выбранным складам.</v8:content>
 												</v8:item>
 											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
 											<ContextMenu name="ОписаниеШагаСверкаКонтекстноеМеню" id="332"/>
 											<ExtendedTooltip name="ОписаниеШагаСверкаРасширеннаяПодсказка" id="333"/>
 										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоСверка" id="270">
 											<Visible>false</Visible>
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -582,6 +600,7 @@
 												</InputField>
 												<InputField name="ОтклоненияСверкиОтклонениеСуммы" id="137">
 													<DataPath>ОтклоненияСверки.ОтклонениеСуммы</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОтклоненияСверкиОтклонениеСуммыКонтекстноеМеню" id="138"/>
@@ -589,6 +608,7 @@
 												</InputField>
 												<InputField name="ОтклоненияСверкиСкидкаПоФронту" id="140">
 													<DataPath>ОтклоненияСверки.СкидкаПоФронту</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОтклоненияСверкиСкидкаПоФронтуКонтекстноеМеню" id="141"/>
@@ -596,6 +616,7 @@
 												</InputField>
 												<InputField name="ОтклоненияСверкиСкидкаПоЧеку1С" id="143">
 													<DataPath>ОтклоненияСверки.СкидкаПоЧеку1С</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОтклоненияСверкиСкидкаПоЧеку1СКонтекстноеМеню" id="144"/>
@@ -603,6 +624,7 @@
 												</InputField>
 												<InputField name="ОтклоненияСверкиОтклонениеСкидки" id="146">
 													<DataPath>ОтклоненияСверки.ОтклонениеСкидки</DataPath>
+													<Visible>false</Visible>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОтклоненияСверкиОтклонениеСкидкиКонтекстноеМеню" id="147"/>
@@ -632,8 +654,6 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
 											<DataPath>ОтчетСверкиЧеков</DataPath>
 											<TitleLocation>None</TitleLocation>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
 											<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
 										</SpreadSheetDocumentField>
@@ -656,17 +676,21 @@
 									<ExtendedTooltip name="СтраницаФормированиеРасширеннаяПодсказка" id="153"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаФормирование" id="339">
+											<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Шаг 3. Проверьте формирование выпусков блюд и сверку количества по чекам с количеством в выпусках.</v8:content>
 												</v8:item>
 											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
 											<ContextMenu name="ОписаниеШагаФормированиеКонтекстноеМеню" id="340"/>
 											<ExtendedTooltip name="ОписаниеШагаФормированиеРасширеннаяПодсказка" id="341"/>
 										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоФормирование" id="273">
 											<Visible>false</Visible>
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -871,8 +895,6 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
 											<DataPath>ОтчетСверкиВыпусков</DataPath>
 											<TitleLocation>None</TitleLocation>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
 											<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
 										</SpreadSheetDocumentField>
@@ -895,17 +917,21 @@
 									<ExtendedTooltip name="СтраницаОстаткиРасширеннаяПодсказка" id="232"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаОстатки" id="347">
+											<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Шаг 4. Проверьте отрицательные остатки по выбранным складам. Для разбора сформируйте ведомость и откройте строку расшифровки.</v8:content>
 												</v8:item>
 											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
 											<ContextMenu name="ОписаниеШагаОстаткиКонтекстноеМеню" id="348"/>
 											<ExtendedTooltip name="ОписаниеШагаОстаткиРасширеннаяПодсказка" id="349"/>
 										</LabelDecoration>
 										<LabelDecoration name="НадписьВсеЧистоОстатки" id="276">
 											<Visible>false</Visible>
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1025,8 +1051,8 @@
 									<v8:content>Навигация шагов</v8:content>
 								</v8:item>
 							</ToolTip>
-							<ShowTitle>false</ShowTitle>
 							<HorizontalAlign>Center</HorizontalAlign>
+							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
 							<ChildItems>
 								<Button name="КнопкаВыбратьДругойДень" id="364">
