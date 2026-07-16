@@ -31,3 +31,13 @@ preserve original 1C identifiers (objects, modules, attributes) as-is:
 - **Source:** User correction during review of
   `MRS_ПомощникЗакрытияСменыСервер.СтатусШагаСопоставление`.
 
+## 2026-07-16 — Open-price releases in shift-closing reconciliation
+
+- **Scope:** `MRS_ПомощникЗакрытияСменыСервер.ПолучитьОтклоненияВыпуска`.
+- **Rule:** Nomenclature with `Справочник.Номенклатура.питПродажаПоСвободнойЦене`
+  must be excluded from dish-release reconciliation once a conducted
+  `Документ.питВыпускБлюд` exists for the same day, warehouse, and `ПЛ_Номенклатура`.
+- **Why:** After the open-price release is filled with a replacement nomenclature and posted,
+  the original open-price nomenclature must no longer create a blocking control error.
+- **Source:** User correction on 2026-07-16.
+
