@@ -1065,6 +1065,17 @@
 									<CommandName>Form.Command.Назад</CommandName>
 									<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="367"/>
 								</Button>
+								<Button name="КнопкаПерепроверитьТекущийШаг" id="372">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПерепроверитьТекущийШаг</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перепроверить шаг</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаПерепроверитьТекущийШагРасширеннаяПодсказка" id="373"/>
+								</Button>
 								<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
@@ -2268,6 +2279,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СформироватьАнализОтрицательных</Action>
+		</Command>
+		<Command name="ПерепроверитьТекущийШаг" id="396">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепроверить шаг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепроверить шаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерепроверитьТекущийШаг</Action>
 		</Command>
 	</Commands>
 </Form>
