@@ -1324,57 +1324,58 @@
 								</Page>
 							</ChildItems>
 						</Pages>
-						<UsualGroup name="НавигацияШагов" id="362">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Навигация шагов</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Навигация шагов</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<HorizontalAlign>Center</HorizontalAlign>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
-							<ChildItems>
-								<Button name="КнопкаВыбратьДругойДень" id="364">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ВыбратьДругойДень</CommandName>
-									<ExtendedTooltip name="КнопкаВыбратьДругойДеньРасширеннаяПодсказка" id="365"/>
-								</Button>
-								<Button name="КнопкаНазад" id="366">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.Назад</CommandName>
-									<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="367"/>
-								</Button>
-								<Button name="КнопкаПерепроверитьТекущийШаг" id="372">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ПерепроверитьТекущийШаг</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Перепроверить шаг</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="КнопкаПерепроверитьТекущийШагРасширеннаяПодсказка" id="373"/>
-								</Button>
-								<Button name="КнопкаДалее" id="370">
-									<Type>UsualButton</Type>
-									<DefaultButton>true</DefaultButton>
-									<CommandName>Form.Command.Далее</CommandName>
-									<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="371"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</Page>
 			</ChildItems>
 		</Pages>
+		<UsualGroup name="НавигацияШагов" id="362">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Навигация шагов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Навигация шагов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<Visible>false</Visible>
+			<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
+			<ChildItems>
+				<Button name="КнопкаВыбратьДругойДень" id="364">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыбратьДругойДень</CommandName>
+					<ExtendedTooltip name="КнопкаВыбратьДругойДеньРасширеннаяПодсказка" id="365"/>
+				</Button>
+				<Button name="КнопкаНазад" id="366">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Назад</CommandName>
+					<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="367"/>
+				</Button>
+				<Button name="КнопкаПерепроверитьТекущийШаг" id="372">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПерепроверитьТекущийШаг</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перепроверить шаг</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаПерепроверитьТекущийШагРасширеннаяПодсказка" id="373"/>
+				</Button>
+				<Button name="КнопкаДалее" id="370">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Далее</CommandName>
+					<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="371"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
