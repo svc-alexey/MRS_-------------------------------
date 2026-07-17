@@ -46,6 +46,7 @@
 				</v8:item>
 			</ToolTip>
 			<PagesRepresentation>None</PagesRepresentation>
+			<VerticalStretch>true</VerticalStretch>
 			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
 				<Page name="СтраницаПараметров" id="13">
@@ -61,10 +62,10 @@
 							<v8:content>Страница параметров</v8:content>
 						</v8:item>
 					</ToolTip>
-					<VerticalStretch>false</VerticalStretch>
+					<VerticalStretch>true</VerticalStretch>
 					<VerticalSpacing>Double</VerticalSpacing>
 					<HorizontalAlign>Center</HorizontalAlign>
-					<VerticalAlign>Center</VerticalAlign>
+					<VerticalAlign>Top</VerticalAlign>
 					<ExtendedTooltip name="СтраницаПараметровРасширеннаяПодсказка" id="14"/>
 					<ChildItems>
 						<LabelDecoration name="ОписаниеПараметров" id="325">
@@ -118,12 +119,12 @@
 							<Representation>List</Representation>
 							<CommandBarLocation>Top</CommandBarLocation>
 							<HeightInTableRows>10</HeightInTableRows>
-							<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 							<AutoMaxRowsCount>false</AutoMaxRowsCount>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СкладыВыбор</DataPath>
+							<VerticalStretch>true</VerticalStretch>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -225,6 +226,7 @@
 							<v8:content>Страница шагов</v8:content>
 						</v8:item>
 					</ToolTip>
+					<VerticalStretch>true</VerticalStretch>
 					<ExtendedTooltip name="СтраницаШаговРасширеннаяПодсказка" id="43"/>
 					<ChildItems>
 						<Table name="СтатусыШагов" id="44">
@@ -348,7 +350,7 @@
 											<v8:content>Страница сопоставления</v8:content>
 										</v8:item>
 									</ToolTip>
-									<VerticalStretch>false</VerticalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<ExtendedTooltip name="СтраницаСопоставленияРасширеннаяПодсказка" id="73"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаСопоставление" id="328">
@@ -381,12 +383,25 @@
 											<CommandName>Form.Command.Сопоставить</CommandName>
 											<ExtendedTooltip name="СопоставитьРасширеннаяПодсказка" id="103"/>
 										</Button>
+										<UsualGroup name="ГруппаНесопоставленныеОбъекты" id="422">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Несопоставленные объекты</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаНесопоставленныеОбъектыРасширеннаяПодсказка" id="423"/>
+											<ChildItems>
 										<Table name="НесопоставленныеОбъекты" id="74">
 											<Representation>List</Representation>
 											<CommandBarLocation>Top</CommandBarLocation>
 											<AutoMaxHeight>false</AutoMaxHeight>
 											<HeightInTableRows>10</HeightInTableRows>
-											<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+											<VerticalStretch>true</VerticalStretch>
 											<DataPath>НесопоставленныеОбъекты</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
@@ -475,6 +490,8 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаСверка" id="104">
@@ -518,11 +535,24 @@
 											<ContextMenu name="НадписьВсеЧистоСверкаКонтекстноеМеню" id="271"/>
 											<ExtendedTooltip name="НадписьВсеЧистоСверкаРасширеннаяПодсказка" id="272"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаОтклоненияСверки" id="424">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отклонения сверки чеков</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОтклоненияСверкиРасширеннаяПодсказка" id="425"/>
+											<ChildItems>
 										<Table name="ОтклоненияСверки" id="106">
 											<Representation>List</Representation>
 											<CommandBarLocation>Top</CommandBarLocation>
 											<HeightInTableRows>10</HeightInTableRows>
-											<VerticalStretch>false</VerticalStretch>
+											<VerticalStretch>true</VerticalStretch>
 											<DataPath>ОтклоненияСверки</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
@@ -653,6 +683,21 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтчетСверкиЧеков" id="426">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет сверки чеков</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОтчетСверкиЧековРасширеннаяПодсказка" id="427"/>
+											<ChildItems>
 										<UsualGroup name="ГруппаКнопки" id="374">
 											<Title>
 												<v8:item>
@@ -685,9 +730,12 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
 											<DataPath>ОтчетСверкиЧеков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
 											<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
 										</SpreadSheetDocumentField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаФормирование" id="152">
@@ -731,9 +779,23 @@
 											<ContextMenu name="НадписьВсеЧистоФормированиеКонтекстноеМеню" id="274"/>
 											<ExtendedTooltip name="НадписьВсеЧистоФормированиеРасширеннаяПодсказка" id="275"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаОтклоненияВыпуска" id="428">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отклонения выпуска</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОтклоненияВыпускаРасширеннаяПодсказка" id="429"/>
+											<ChildItems>
 										<Table name="ОтклоненияВыпуска" id="157">
 											<Representation>List</Representation>
 											<DataPath>ОтклоненияВыпуска</DataPath>
+											<VerticalStretch>true</VerticalStretch>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
 												<ExcludedCommand>Change</ExcludedCommand>
@@ -825,9 +887,25 @@
 												</CheckBoxField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОшибкиФормирования" id="430">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ошибки формирования</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОшибкиФормированияРасширеннаяПодсказка" id="431"/>
+											<ChildItems>
 										<Table name="ОшибкиФормирования" id="191">
 											<Representation>List</Representation>
 											<DataPath>ОшибкиФормирования</DataPath>
+											<VerticalStretch>true</VerticalStretch>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
 												<ExcludedCommand>Change</ExcludedCommand>
@@ -883,9 +961,25 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаДокументыОткрытыеЦены" id="432">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Документы открытых цен</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаДокументыОткрытыеЦеныРасширеннаяПодсказка" id="433"/>
+											<ChildItems>
 										<Table name="ДокументыОткрытыеЦены" id="210">
 											<Representation>List</Representation>
 											<DataPath>ДокументыОткрытыеЦены</DataPath>
+											<VerticalStretch>true</VerticalStretch>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
 												<ExcludedCommand>Change</ExcludedCommand>
@@ -941,6 +1035,21 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтчетСверкиВыпусков" id="434">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет сверки выпусков</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОтчетСверкиВыпусковРасширеннаяПодсказка" id="435"/>
+											<ChildItems>
 										<Button name="ПереформироватьВыпуска" id="229">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
@@ -954,9 +1063,12 @@
 										<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
 											<DataPath>ОтчетСверкиВыпусков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
 											<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
 										</SpreadSheetDocumentField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="СтраницаОстатки" id="231">
@@ -972,7 +1084,7 @@
 											<v8:content>Страница остатки</v8:content>
 										</v8:item>
 									</ToolTip>
-									<VerticalStretch>false</VerticalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<ExtendedTooltip name="СтраницаОстаткиРасширеннаяПодсказка" id="232"/>
 									<ChildItems>
 										<LabelDecoration name="ОписаниеШагаОстатки" id="347">
@@ -1000,9 +1112,23 @@
 											<ContextMenu name="НадписьВсеЧистоОстаткиКонтекстноеМеню" id="277"/>
 											<ExtendedTooltip name="НадписьВсеЧистоОстаткиРасширеннаяПодсказка" id="278"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаОтрицательныеОстатки" id="436">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отрицательные остатки</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаОтрицательныеОстаткиРасширеннаяПодсказка" id="437"/>
+											<ChildItems>
 										<Table name="ОтрицательныеОстатки" id="233">
 											<Representation>List</Representation>
 											<DataPath>ОтрицательныеОстатки</DataPath>
+											<VerticalStretch>true</VerticalStretch>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
 												<ExcludedCommand>Change</ExcludedCommand>
@@ -1072,6 +1198,21 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВедомостьОтрицательныхОстатков" id="438">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ведомость отрицательных остатков</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="439"/>
+											<ChildItems>
 										<Button name="СформироватьВедомостьОтрицательных" id="350">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.СформироватьВедомостьОтрицательных</CommandName>
@@ -1085,12 +1226,28 @@
 										<SpreadSheetDocumentField name="ВедомостьОтрицательныхОстатков" id="354">
 											<DataPath>ВедомостьОтрицательныхОстатков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="ВедомостьОтрицательныхОстатковКонтекстноеМеню" id="355"/>
 											<ExtendedTooltip name="ВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="356"/>
 											<Events>
 												<Event name="DetailProcessing">ВедомостьОтрицательныхОстатковОбработкаРасшифровки</Event>
 											</Events>
 										</SpreadSheetDocumentField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаАнализОтрицательныхОстатков" id="440">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Анализ отрицательных остатков</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаАнализОтрицательныхОстатковРасширеннаяПодсказка" id="441"/>
+											<ChildItems>
 										<Button name="СформироватьАнализОтрицательных" id="357">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.СформироватьАнализОтрицательных</CommandName>
@@ -1099,9 +1256,70 @@
 										<SpreadSheetDocumentField name="АнализОтрицательныхОстатков" id="359">
 											<DataPath>АнализОтрицательныхОстатков</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<VerticalStretch>true</VerticalStretch>
 											<ContextMenu name="АнализОтрицательныхОстатковКонтекстноеМеню" id="360"/>
 											<ExtendedTooltip name="АнализОтрицательныхОстатковРасширеннаяПодсказка" id="361"/>
 										</SpreadSheetDocumentField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаИтоговыйОтчет" id="417">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Итоговый отчет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Итоговый отчет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<VerticalStretch>true</VerticalStretch>
+									<ExtendedTooltip name="СтраницаИтоговыйОтчетРасширеннаяПодсказка" id="418"/>
+									<ChildItems>
+										<LabelDecoration name="ОписаниеШагаИтоговыйОтчет" id="419">
+											<Font ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг 5. Проверьте итоговый отчет по выбранному дню и складам.</v8:content>
+												</v8:item>
+											</Title>
+											<BackColor>style:ToolTipBackColor</BackColor>
+											<ContextMenu name="ОписаниеШагаИтоговыйОтчетКонтекстноеМеню" id="420"/>
+											<ExtendedTooltip name="ОписаниеШагаИтоговыйОтчетРасширеннаяПодсказка" id="421"/>
+										</LabelDecoration>
+										<LabelField name="НадписьГотовность" id="258">
+											<DataPath>НадписьГотовность</DataPath>
+											<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="НадписьГотовностьКонтекстноеМеню" id="259"/>
+											<ExtendedTooltip name="НадписьГотовностьРасширеннаяПодсказка" id="260"/>
+										</LabelField>
+										<UsualGroup name="ГруппаИтоговыйОтчет" id="442">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Итоговый отчет</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Collapsible</Behavior>
+											<Representation>NormalSeparation</Representation>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаИтоговыйОтчетРасширеннаяПодсказка" id="443"/>
+											<ChildItems>
+										<SpreadSheetDocumentField name="ИтоговыйОтчет" id="318">
+											<DataPath>ИтоговыйОтчет</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<VerticalStretch>true</VerticalStretch>
+											<ContextMenu name="ИтоговыйОтчетКонтекстноеМеню" id="319"/>
+											<ExtendedTooltip name="ИтоговыйОтчетРасширеннаяПодсказка" id="320"/>
+										</SpreadSheetDocumentField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -1153,23 +1371,6 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<LabelField name="НадписьГотовность" id="258">
-							<DataPath>НадписьГотовность</DataPath>
-							<Font ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-							<ContextMenu name="НадписьГотовностьКонтекстноеМеню" id="259"/>
-							<ExtendedTooltip name="НадписьГотовностьРасширеннаяПодсказка" id="260"/>
-						</LabelField>
-						<Button name="СформироватьИтоговыйОтчет" id="316">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.СформироватьИтоговыйОтчет</CommandName>
-							<ExtendedTooltip name="СформироватьИтоговыйОтчетРасширеннаяПодсказка" id="317"/>
-						</Button>
-						<SpreadSheetDocumentField name="ИтоговыйОтчет" id="318">
-							<DataPath>ИтоговыйОтчет</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="ИтоговыйОтчетКонтекстноеМеню" id="319"/>
-							<ExtendedTooltip name="ИтоговыйОтчетРасширеннаяПодсказка" id="320"/>
-						</SpreadSheetDocumentField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -2253,21 +2454,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьРекомендуемыйДеньОтработки</Action>
-		</Command>
-		<Command name="СформироватьИтоговыйОтчет" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать итоговый отчет</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать итоговый отчет</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>СформироватьИтоговыйОтчет</Action>
 		</Command>
 		<Command name="СформироватьОтчетСверкиЧеков" id="391">
 			<Title>
