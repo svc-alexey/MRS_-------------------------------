@@ -2631,68 +2631,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:DocumentRef.АктКонтроляКачестваТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеОтгрузки</v8:Type>
-						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеПеремещения</v8:Type>
-						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеПриемки</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВводОстатков</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВводОстатковТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВнутреннееПотребление</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВозвратМатериаловИзПроизводства</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВозвратСырьяДавальцу</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВозвратСырьяОтПереработчика</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВозвратТоваровОтКлиента</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
-						<v8:Type>cfg:DocumentRef.ВыпускПродукции</v8:Type>
-						<v8:Type>cfg:DocumentRef.ДвижениеПродукцииИМатериалов</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЗаявкаНаКонтрольКачестваТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаИзлишковНедостачПоТоварнымМестам</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаНазначенияТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаПоОрдеруНаТовары</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаПриобретения</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаРеализации</v8:Type>
-						<v8:Type>cfg:DocumentRef.КорректировкаРегистров</v8:Type>
-						<v8:Type>cfg:DocumentRef.МаркировкаТоваровГИСМ</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОприходованиеИзлишковТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеИзлишковТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеНедостачТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеПересортицыТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеПорчиТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОрдерНаПеремещениеТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровКлиенту</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровСХранения</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОтчетОРозничныхВозвратах</v8:Type>
-						<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПередачаДавальцу</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПередачаМатериаловВПроизводство</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПередачаСырьяПереработчику</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПередачаТоваровХранителю</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПеремаркировкаТоваровГИСМ</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПересортицаТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПересчетТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПорчаТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПоступлениеОтПереработчика</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПоступлениеСырьяОтДавальца</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровНаСклад</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровОтКлиента</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровОтХранителя</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПриемкаТоваровНаХранение</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПриобретениеТоваровУслуг</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПриходныйОрдерНаТовары</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПроизводствоБезЗаказа</v8:Type>
-						<v8:Type>cfg:DocumentRef.ПрочееОприходованиеТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.РаспределениеВозвратныхОтходов</v8:Type>
-						<v8:Type>cfg:DocumentRef.РаспределениеПроизводственныхЗатрат</v8:Type>
-						<v8:Type>cfg:DocumentRef.РасходныйОрдерНаТовары</v8:Type>
-						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
-						<v8:Type>cfg:DocumentRef.СборкаТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.СписаниеНедостачТоваров</v8:Type>
-						<v8:Type>cfg:DocumentRef.Сторно</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЧекККМ</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЧекККМВозврат</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЧекККМКоррекции</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 			</Columns>
