@@ -46,6 +46,7 @@
 				</v8:item>
 			</ToolTip>
 			<PagesRepresentation>None</PagesRepresentation>
+			<Height>20</Height>
 			<VerticalStretch>true</VerticalStretch>
 			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
@@ -378,6 +379,64 @@
 											<ContextMenu name="НадписьВсеЧистоСопоставлениеКонтекстноеМеню" id="265"/>
 											<ExtendedTooltip name="НадписьВсеЧистоСопоставлениеРасширеннаяПодсказка" id="266"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаСостояниеСопоставлениеУспешно" id="447">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеСопоставлениеУспешноРасширеннаяПодсказка" id="448"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияСопоставлениеУспешноИконка" id="449">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияСопоставлениеУспешноИконкаКонтекстноеМеню" id="450"/>
+													<ExtendedTooltip name="ДекорацияСопоставлениеУспешноИконкаРасширеннаяПодсказка" id="451"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСопоставлениеУспешноТекст" id="452">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Несопоставленных объектов нет. Таблица пустая - можно переходить дальше.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСопоставлениеУспешноТекстКонтекстноеМеню" id="453"/>
+													<ExtendedTooltip name="ДекорацияСопоставлениеУспешноТекстРасширеннаяПодсказка" id="454"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеСопоставлениеПроблема" id="455">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеСопоставлениеПроблемаРасширеннаяПодсказка" id="456"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияСопоставлениеПроблемаИконка" id="457">
+													<Picture>
+														<xr:Ref>CommonPicture.ВниманиеКрасный</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияСопоставлениеПроблемаИконкаКонтекстноеМеню" id="458"/>
+													<ExtendedTooltip name="ДекорацияСопоставлениеПроблемаИконкаРасширеннаяПодсказка" id="459"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСопоставлениеПроблемаТекст" id="460">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть несопоставленные объекты. Заполните объект 1С, нажмите «Сопоставить» и обновите шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСопоставлениеПроблемаТекстКонтекстноеМеню" id="461"/>
+													<ExtendedTooltip name="ДекорацияСопоставлениеПроблемаТекстРасширеннаяПодсказка" id="462"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<Button name="Сопоставить" id="102">
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.Сопоставить</CommandName>
@@ -535,6 +594,64 @@
 											<ContextMenu name="НадписьВсеЧистоСверкаКонтекстноеМеню" id="271"/>
 											<ExtendedTooltip name="НадписьВсеЧистоСверкаРасширеннаяПодсказка" id="272"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаСостояниеСверкаУспешно" id="463">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеСверкаУспешноРасширеннаяПодсказка" id="464"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияСверкаУспешноИконка" id="465">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияСверкаУспешноИконкаКонтекстноеМеню" id="466"/>
+													<ExtendedTooltip name="ДекорацияСверкаУспешноИконкаРасширеннаяПодсказка" id="467"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСверкаУспешноТекст" id="468">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отклонений сверки нет. Таблица пустая - можно переходить дальше.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСверкаУспешноТекстКонтекстноеМеню" id="469"/>
+													<ExtendedTooltip name="ДекорацияСверкаУспешноТекстРасширеннаяПодсказка" id="470"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеСверкаПроблема" id="471">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеСверкаПроблемаРасширеннаяПодсказка" id="472"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияСверкаПроблемаИконка" id="473">
+													<Picture>
+														<xr:Ref>CommonPicture.ВниманиеКрасный</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияСверкаПроблемаИконкаКонтекстноеМеню" id="474"/>
+													<ExtendedTooltip name="ДекорацияСверкаПроблемаИконкаРасширеннаяПодсказка" id="475"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСверкаПроблемаТекст" id="476">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть отклонения сверки. Проверьте строки, при необходимости перезагрузите чеки и обновите шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСверкаПроблемаТекстКонтекстноеМеню" id="477"/>
+													<ExtendedTooltip name="ДекорацияСверкаПроблемаТекстРасширеннаяПодсказка" id="478"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОтклоненияСверки" id="424">
 											<Title>
 												<v8:item>
@@ -685,6 +802,35 @@
 										</Table>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаПояснениеОтчетСверкиЧеков" id="479">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеОтчетСверкиЧековРасширеннаяПодсказка" id="480"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтчетСверкиЧековИконка" id="481">
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтчетСверкиЧековИконкаКонтекстноеМеню" id="482"/>
+													<ExtendedTooltip name="ДекорацияОтчетСверкиЧековИконкаРасширеннаяПодсказка" id="483"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтчетСверкиЧековТекст" id="484">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчет сверки чеков показывает расхождения между фронтом и загруженными чеками 1С по выбранным складам.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтчетСверкиЧековТекстКонтекстноеМеню" id="485"/>
+													<ExtendedTooltip name="ДекорацияОтчетСверкиЧековТекстРасширеннаяПодсказка" id="486"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОтчетСверкиЧеков" id="426">
 											<Title>
 												<v8:item>
@@ -694,6 +840,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтчетСверкиЧековРасширеннаяПодсказка" id="427"/>
@@ -779,6 +926,64 @@
 											<ContextMenu name="НадписьВсеЧистоФормированиеКонтекстноеМеню" id="274"/>
 											<ExtendedTooltip name="НадписьВсеЧистоФормированиеРасширеннаяПодсказка" id="275"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаСостояниеОтклоненияВыпускаУспешно" id="487">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОтклоненияВыпускаУспешноРасширеннаяПодсказка" id="488"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтклоненияВыпускаУспешноИконка" id="489">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтклоненияВыпускаУспешноИконкаКонтекстноеМеню" id="490"/>
+													<ExtendedTooltip name="ДекорацияОтклоненияВыпускаУспешноИконкаРасширеннаяПодсказка" id="491"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтклоненияВыпускаУспешноТекст" id="492">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отклонений выпуска нет.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтклоненияВыпускаУспешноТекстКонтекстноеМеню" id="493"/>
+													<ExtendedTooltip name="ДекорацияОтклоненияВыпускаУспешноТекстРасширеннаяПодсказка" id="494"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеОтклоненияВыпускаПроблема" id="495">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОтклоненияВыпускаПроблемаРасширеннаяПодсказка" id="496"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтклоненияВыпускаПроблемаИконка" id="497">
+													<Picture>
+														<xr:Ref>CommonPicture.ВниманиеКрасный</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтклоненияВыпускаПроблемаИконкаКонтекстноеМеню" id="498"/>
+													<ExtendedTooltip name="ДекорацияОтклоненияВыпускаПроблемаИконкаРасширеннаяПодсказка" id="499"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтклоненияВыпускаПроблемаТекст" id="500">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть отклонения выпуска. Исправьте выпуск блюд, проведите документы и переформируйте шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтклоненияВыпускаПроблемаТекстКонтекстноеМеню" id="501"/>
+													<ExtendedTooltip name="ДекорацияОтклоненияВыпускаПроблемаТекстРасширеннаяПодсказка" id="502"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОтклоненияВыпуска" id="428">
 											<Title>
 												<v8:item>
@@ -889,6 +1094,64 @@
 										</Table>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеОшибкиФормированияУспешно" id="503">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОшибкиФормированияУспешноРасширеннаяПодсказка" id="504"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОшибкиФормированияУспешноИконка" id="505">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОшибкиФормированияУспешноИконкаКонтекстноеМеню" id="506"/>
+													<ExtendedTooltip name="ДекорацияОшибкиФормированияУспешноИконкаРасширеннаяПодсказка" id="507"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОшибкиФормированияУспешноТекст" id="508">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ошибок формирования нет.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОшибкиФормированияУспешноТекстКонтекстноеМеню" id="509"/>
+													<ExtendedTooltip name="ДекорацияОшибкиФормированияУспешноТекстРасширеннаяПодсказка" id="510"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеОшибкиФормированияПроблема" id="511">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОшибкиФормированияПроблемаРасширеннаяПодсказка" id="512"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОшибкиФормированияПроблемаИконка" id="513">
+													<Picture>
+														<xr:Ref>CommonPicture.ВниманиеКрасный</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОшибкиФормированияПроблемаИконкаКонтекстноеМеню" id="514"/>
+													<ExtendedTooltip name="ДекорацияОшибкиФормированияПроблемаИконкаРасширеннаяПодсказка" id="515"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОшибкиФормированияПроблемаТекст" id="516">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть ошибки формирования. Исправьте причину, проведите выпуск и обновите шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОшибкиФормированияПроблемаТекстКонтекстноеМеню" id="517"/>
+													<ExtendedTooltip name="ДекорацияОшибкиФормированияПроблемаТекстРасширеннаяПодсказка" id="518"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОшибкиФормирования" id="430">
 											<Title>
 												<v8:item>
@@ -898,6 +1161,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОшибкиФормированияРасширеннаяПодсказка" id="431"/>
@@ -963,6 +1227,64 @@
 										</Table>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеДокументыОткрытыеЦеныУспешно" id="519">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеДокументыОткрытыеЦеныУспешноРасширеннаяПодсказка" id="520"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияДокументыОткрытыеЦеныУспешноИконка" id="521">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияДокументыОткрытыеЦеныУспешноИконкаКонтекстноеМеню" id="522"/>
+													<ExtendedTooltip name="ДекорацияДокументыОткрытыеЦеныУспешноИконкаРасширеннаяПодсказка" id="523"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияДокументыОткрытыеЦеныУспешноТекст" id="524">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Документы открытых цен не требуют обработки.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияДокументыОткрытыеЦеныУспешноТекстКонтекстноеМеню" id="525"/>
+													<ExtendedTooltip name="ДекорацияДокументыОткрытыеЦеныУспешноТекстРасширеннаяПодсказка" id="526"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеДокументыОткрытыеЦеныПроблема" id="527">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеДокументыОткрытыеЦеныПроблемаРасширеннаяПодсказка" id="528"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияДокументыОткрытыеЦеныПроблемаИконка" id="529">
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияДокументыОткрытыеЦеныПроблемаИконкаКонтекстноеМеню" id="530"/>
+													<ExtendedTooltip name="ДекорацияДокументыОткрытыеЦеныПроблемаИконкаРасширеннаяПодсказка" id="531"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияДокументыОткрытыеЦеныПроблемаТекст" id="532">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть документы с открытой ценой. Проверьте выпуск по замещающей номенклатуре, проведите документы и обновите шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияДокументыОткрытыеЦеныПроблемаТекстКонтекстноеМеню" id="533"/>
+													<ExtendedTooltip name="ДекорацияДокументыОткрытыеЦеныПроблемаТекстРасширеннаяПодсказка" id="534"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаДокументыОткрытыеЦены" id="432">
 											<Title>
 												<v8:item>
@@ -972,6 +1294,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаДокументыОткрытыеЦеныРасширеннаяПодсказка" id="433"/>
@@ -1037,6 +1360,35 @@
 										</Table>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаПояснениеОтчетСверкиВыпусков" id="535">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеОтчетСверкиВыпусковРасширеннаяПодсказка" id="536"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтчетСверкиВыпусковИконка" id="537">
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтчетСверкиВыпусковИконкаКонтекстноеМеню" id="538"/>
+													<ExtendedTooltip name="ДекорацияОтчетСверкиВыпусковИконкаРасширеннаяПодсказка" id="539"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтчетСверкиВыпусковТекст" id="540">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчет сверки выпусков показывает расхождения количества по чекам и количества в выпусках блюд.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтчетСверкиВыпусковТекстКонтекстноеМеню" id="541"/>
+													<ExtendedTooltip name="ДекорацияОтчетСверкиВыпусковТекстРасширеннаяПодсказка" id="542"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОтчетСверкиВыпусков" id="434">
 											<Title>
 												<v8:item>
@@ -1046,6 +1398,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтчетСверкиВыпусковРасширеннаяПодсказка" id="435"/>
@@ -1112,6 +1465,64 @@
 											<ContextMenu name="НадписьВсеЧистоОстаткиКонтекстноеМеню" id="277"/>
 											<ExtendedTooltip name="НадписьВсеЧистоОстаткиРасширеннаяПодсказка" id="278"/>
 										</LabelDecoration>
+										<UsualGroup name="ГруппаСостояниеОтрицательныеОстаткиУспешно" id="543">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОтрицательныеОстаткиУспешноРасширеннаяПодсказка" id="544"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтрицательныеОстаткиУспешноИконка" id="545">
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтрицательныеОстаткиУспешноИконкаКонтекстноеМеню" id="546"/>
+													<ExtendedTooltip name="ДекорацияОтрицательныеОстаткиУспешноИконкаРасширеннаяПодсказка" id="547"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтрицательныеОстаткиУспешноТекст" id="548">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отрицательных остатков нет.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтрицательныеОстаткиУспешноТекстКонтекстноеМеню" id="549"/>
+													<ExtendedTooltip name="ДекорацияОтрицательныеОстаткиУспешноТекстРасширеннаяПодсказка" id="550"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеОтрицательныеОстаткиПроблема" id="551">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеОтрицательныеОстаткиПроблемаРасширеннаяПодсказка" id="552"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияОтрицательныеОстаткиПроблемаИконка" id="553">
+													<Picture>
+														<xr:Ref>CommonPicture.ВниманиеКрасный</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияОтрицательныеОстаткиПроблемаИконкаКонтекстноеМеню" id="554"/>
+													<ExtendedTooltip name="ДекорацияОтрицательныеОстаткиПроблемаИконкаРасширеннаяПодсказка" id="555"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияОтрицательныеОстаткиПроблемаТекст" id="556">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Есть отрицательные остатки. Сформируйте ведомость/анализ, исправьте документы и обновите шаг.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОтрицательныеОстаткиПроблемаТекстКонтекстноеМеню" id="557"/>
+													<ExtendedTooltip name="ДекорацияОтрицательныеОстаткиПроблемаТекстРасширеннаяПодсказка" id="558"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаОтрицательныеОстатки" id="436">
 											<Title>
 												<v8:item>
@@ -1200,6 +1611,35 @@
 										</Table>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаПояснениеВедомостьОтрицательныхОстатков" id="559">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="560"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияВедомостьОтрицательныхОстатковИконка" id="561">
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияВедомостьОтрицательныхОстатковИконкаКонтекстноеМеню" id="562"/>
+													<ExtendedTooltip name="ДекорацияВедомостьОтрицательныхОстатковИконкаРасширеннаяПодсказка" id="563"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияВедомостьОтрицательныхОстатковТекст" id="564">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ведомость нужна для расшифровки движений по отрицательному остатку. Клик по строке открывает типовую ведомость.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияВедомостьОтрицательныхОстатковТекстКонтекстноеМеню" id="565"/>
+													<ExtendedTooltip name="ДекорацияВедомостьОтрицательныхОстатковТекстРасширеннаяПодсказка" id="566"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаВедомостьОтрицательныхОстатков" id="438">
 											<Title>
 												<v8:item>
@@ -1209,6 +1649,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="439"/>
@@ -1235,6 +1676,35 @@
 										</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="ГруппаПояснениеАнализОтрицательныхОстатков" id="567">
+											<Visible>false</Visible>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПояснениеАнализОтрицательныхОстатковРасширеннаяПодсказка" id="568"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияАнализОтрицательныхОстатковИконка" id="569">
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ДекорацияАнализОтрицательныхОстатковИконкаКонтекстноеМеню" id="570"/>
+													<ExtendedTooltip name="ДекорацияАнализОтрицательныхОстатковИконкаРасширеннаяПодсказка" id="571"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияАнализОтрицательныхОстатковТекст" id="572">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Анализ показывает документы и движения, из-за которых появился отрицательный остаток.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияАнализОтрицательныхОстатковТекстКонтекстноеМеню" id="573"/>
+													<ExtendedTooltip name="ДекорацияАнализОтрицательныхОстатковТекстРасширеннаяПодсказка" id="574"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаАнализОтрицательныхОстатков" id="440">
 											<Title>
 												<v8:item>
@@ -1244,6 +1714,7 @@
 											</Title>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
 											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаАнализОтрицательныхОстатковРасширеннаяПодсказка" id="441"/>
@@ -1328,6 +1799,12 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<LabelDecoration name="ДекорацияНизФормы" id="444">
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="ДекорацияНизФормыКонтекстноеМеню" id="445"/>
+			<ExtendedTooltip name="ДекорацияНизФормыРасширеннаяПодсказка" id="446"/>
+		</LabelDecoration>
 		<UsualGroup name="НавигацияШагов" id="362">
 			<Title>
 				<v8:item>
@@ -1342,7 +1819,9 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<HorizontalStretch>true</HorizontalStretch>
 			<HorizontalAlign>Center</HorizontalAlign>
+			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<Visible>false</Visible>
 			<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
