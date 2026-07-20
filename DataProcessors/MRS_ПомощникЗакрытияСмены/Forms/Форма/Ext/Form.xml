@@ -45,9 +45,9 @@
 					<v8:content>Группа основная</v8:content>
 				</v8:item>
 			</ToolTip>
-			<PagesRepresentation>None</PagesRepresentation>
 			<Height>20</Height>
 			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="12"/>
 			<ChildItems>
 				<Page name="СтраницаПараметров" id="13">
@@ -125,7 +125,6 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>СкладыВыбор</DataPath>
-							<VerticalStretch>true</VerticalStretch>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -446,116 +445,121 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Несопоставленные объекты</v8:content>
+													<v8:content>Несопоставленные объекты ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Несопоставленные объекты ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаНесопоставленныеОбъектыРасширеннаяПодсказка" id="423"/>
 											<ChildItems>
-										<Table name="НесопоставленныеОбъекты" id="74">
-											<Representation>List</Representation>
-											<CommandBarLocation>Top</CommandBarLocation>
-											<AutoMaxHeight>false</AutoMaxHeight>
-											<HeightInTableRows>10</HeightInTableRows>
-											<VerticalStretch>true</VerticalStretch>
-											<DataPath>НесопоставленныеОбъекты</DataPath>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="НесопоставленныеОбъектыКонтекстноеМеню" id="75"/>
-											<AutoCommandBar name="НесопоставленныеОбъектыКоманднаяПанель" id="76"/>
-											<ExtendedTooltip name="НесопоставленныеОбъектыРасширеннаяПодсказка" id="77"/>
-											<SearchStringAddition name="НесопоставленныеОбъектыСтрокаПоиска" id="78">
-												<AdditionSource>
-													<Item>НесопоставленныеОбъекты</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="НесопоставленныеОбъектыСтрокаПоискаКонтекстноеМеню" id="79"/>
-												<ExtendedTooltip name="НесопоставленныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="80"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="НесопоставленныеОбъектыСостояниеПросмотра" id="81">
-												<AdditionSource>
-													<Item>НесопоставленныеОбъекты</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="НесопоставленныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="82"/>
-												<ExtendedTooltip name="НесопоставленныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="НесопоставленныеОбъектыУправлениеПоиском" id="84">
-												<AdditionSource>
-													<Item>НесопоставленныеОбъекты</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="НесопоставленныеОбъектыУправлениеПоискомКонтекстноеМеню" id="85"/>
-												<ExtendedTooltip name="НесопоставленныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="86"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<CheckBoxField name="НесопоставленныеОбъектыОтмечен" id="267">
-													<DataPath>НесопоставленныеОбъекты.Отмечен</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="НесопоставленныеОбъектыОтмеченКонтекстноеМеню" id="268"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыОтмеченРасширеннаяПодсказка" id="269"/>
-												</CheckBoxField>
-												<InputField name="НесопоставленныеОбъектыТипОбъекта" id="90">
-													<DataPath>НесопоставленныеОбъекты.ТипОбъекта</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыТипОбъектаКонтекстноеМеню" id="91"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыТипОбъектаРасширеннаяПодсказка" id="92"/>
-												</InputField>
-												<InputField name="НесопоставленныеОбъектыФронтСистема" id="87">
-													<DataPath>НесопоставленныеОбъекты.ФронтСистема</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыФронтСистемаКонтекстноеМеню" id="88"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыФронтСистемаРасширеннаяПодсказка" id="89"/>
-												</InputField>
-												<InputField name="НесопоставленныеОбъектыКод" id="93">
-													<DataPath>НесопоставленныеОбъекты.Код</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыКодКонтекстноеМеню" id="94"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыКодРасширеннаяПодсказка" id="95"/>
-												</InputField>
-												<InputField name="НесопоставленныеОбъектыНаименованиеНаФронте" id="96">
-													<DataPath>НесопоставленныеОбъекты.НаименованиеНаФронте</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыНаименованиеНаФронтеКонтекстноеМеню" id="97"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыНаименованиеНаФронтеРасширеннаяПодсказка" id="98"/>
-												</InputField>
-												<InputField name="НесопоставленныеОбъектыОбъектДляСопоставления" id="99">
-													<DataPath>НесопоставленныеОбъекты.ОбъектДляСопоставления</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыОбъектДляСопоставленияКонтекстноеМеню" id="100"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыОбъектДляСопоставленияРасширеннаяПодсказка" id="101"/>
-												</InputField>
-												<InputField name="НесопоставленныеОбъектыКоличество" id="575">
-													<DataPath>НесопоставленныеОбъекты.Количество</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НесопоставленныеОбъектыКоличествоКонтекстноеМеню" id="576"/>
-													<ExtendedTooltip name="НесопоставленныеОбъектыКоличествоРасширеннаяПодсказка" id="577"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="НесопоставленныеОбъекты" id="74">
+													<Representation>List</Representation>
+													<CommandBarLocation>Top</CommandBarLocation>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<HeightInTableRows>10</HeightInTableRows>
+													<DataPath>НесопоставленныеОбъекты</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="НесопоставленныеОбъектыКонтекстноеМеню" id="75"/>
+													<AutoCommandBar name="НесопоставленныеОбъектыКоманднаяПанель" id="76"/>
+													<ExtendedTooltip name="НесопоставленныеОбъектыРасширеннаяПодсказка" id="77"/>
+													<SearchStringAddition name="НесопоставленныеОбъектыСтрокаПоиска" id="78">
+														<AdditionSource>
+															<Item>НесопоставленныеОбъекты</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="НесопоставленныеОбъектыСтрокаПоискаКонтекстноеМеню" id="79"/>
+														<ExtendedTooltip name="НесопоставленныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="НесопоставленныеОбъектыСостояниеПросмотра" id="81">
+														<AdditionSource>
+															<Item>НесопоставленныеОбъекты</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="НесопоставленныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="82"/>
+														<ExtendedTooltip name="НесопоставленныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="НесопоставленныеОбъектыУправлениеПоиском" id="84">
+														<AdditionSource>
+															<Item>НесопоставленныеОбъекты</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="НесопоставленныеОбъектыУправлениеПоискомКонтекстноеМеню" id="85"/>
+														<ExtendedTooltip name="НесопоставленныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<CheckBoxField name="НесопоставленныеОбъектыОтмечен" id="267">
+															<DataPath>НесопоставленныеОбъекты.Отмечен</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="НесопоставленныеОбъектыОтмеченКонтекстноеМеню" id="268"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыОтмеченРасширеннаяПодсказка" id="269"/>
+														</CheckBoxField>
+														<InputField name="НесопоставленныеОбъектыТипОбъекта" id="90">
+															<DataPath>НесопоставленныеОбъекты.ТипОбъекта</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыТипОбъектаКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыТипОбъектаРасширеннаяПодсказка" id="92"/>
+														</InputField>
+														<InputField name="НесопоставленныеОбъектыФронтСистема" id="87">
+															<DataPath>НесопоставленныеОбъекты.ФронтСистема</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыФронтСистемаКонтекстноеМеню" id="88"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыФронтСистемаРасширеннаяПодсказка" id="89"/>
+														</InputField>
+														<InputField name="НесопоставленныеОбъектыКод" id="93">
+															<DataPath>НесопоставленныеОбъекты.Код</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыКодКонтекстноеМеню" id="94"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыКодРасширеннаяПодсказка" id="95"/>
+														</InputField>
+														<InputField name="НесопоставленныеОбъектыНаименованиеНаФронте" id="96">
+															<DataPath>НесопоставленныеОбъекты.НаименованиеНаФронте</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыНаименованиеНаФронтеКонтекстноеМеню" id="97"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыНаименованиеНаФронтеРасширеннаяПодсказка" id="98"/>
+														</InputField>
+														<InputField name="НесопоставленныеОбъектыОбъектДляСопоставления" id="99">
+															<DataPath>НесопоставленныеОбъекты.ОбъектДляСопоставления</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыОбъектДляСопоставленияКонтекстноеМеню" id="100"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыОбъектДляСопоставленияРасширеннаяПодсказка" id="101"/>
+														</InputField>
+														<InputField name="НесопоставленныеОбъектыКоличество" id="575">
+															<DataPath>НесопоставленныеОбъекты.Количество</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НесопоставленныеОбъектыКоличествоКонтекстноеМеню" id="576"/>
+															<ExtendedTooltip name="НесопоставленныеОбъектыКоличествоРасширеннаяПодсказка" id="577"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -663,150 +667,155 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Отклонения сверки чеков</v8:content>
+													<v8:content>Отклонения сверки чеков ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отклонения сверки чеков ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтклоненияСверкиРасширеннаяПодсказка" id="425"/>
 											<ChildItems>
-										<Table name="ОтклоненияСверки" id="106">
-											<Representation>List</Representation>
-											<CommandBarLocation>Top</CommandBarLocation>
-											<HeightInTableRows>10</HeightInTableRows>
-											<VerticalStretch>true</VerticalStretch>
-											<DataPath>ОтклоненияСверки</DataPath>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОтклоненияСверкиКонтекстноеМеню" id="107"/>
-											<AutoCommandBar name="ОтклоненияСверкиКоманднаяПанель" id="108"/>
-											<ExtendedTooltip name="ОтклоненияСверкиРасширеннаяПодсказка" id="109"/>
-											<SearchStringAddition name="ОтклоненияСверкиСтрокаПоиска" id="110">
-												<AdditionSource>
-													<Item>ОтклоненияСверки</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияСверкиСтрокаПоискаКонтекстноеМеню" id="111"/>
-												<ExtendedTooltip name="ОтклоненияСверкиСтрокаПоискаРасширеннаяПодсказка" id="112"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОтклоненияСверкиСостояниеПросмотра" id="113">
-												<AdditionSource>
-													<Item>ОтклоненияСверки</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияСверкиСостояниеПросмотраКонтекстноеМеню" id="114"/>
-												<ExtendedTooltip name="ОтклоненияСверкиСостояниеПросмотраРасширеннаяПодсказка" id="115"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОтклоненияСверкиУправлениеПоиском" id="116">
-												<AdditionSource>
-													<Item>ОтклоненияСверки</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияСверкиУправлениеПоискомКонтекстноеМеню" id="117"/>
-												<ExtendedTooltip name="ОтклоненияСверкиУправлениеПоискомРасширеннаяПодсказка" id="118"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОтклоненияСверкиФронтСистема" id="119">
-													<DataPath>ОтклоненияСверки.ФронтСистема</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиФронтСистемаКонтекстноеМеню" id="120"/>
-													<ExtendedTooltip name="ОтклоненияСверкиФронтСистемаРасширеннаяПодсказка" id="121"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиНомерЧека" id="122">
-													<DataPath>ОтклоненияСверки.НомерЧека</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиНомерЧекаКонтекстноеМеню" id="123"/>
-													<ExtendedTooltip name="ОтклоненияСверкиНомерЧекаРасширеннаяПодсказка" id="124"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиКодТочкиПродаж" id="125">
-													<DataPath>ОтклоненияСверки.КодТочкиПродаж</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиКодТочкиПродажКонтекстноеМеню" id="126"/>
-													<ExtendedTooltip name="ОтклоненияСверкиКодТочкиПродажРасширеннаяПодсказка" id="127"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиНоменклатура" id="128">
-													<DataPath>ОтклоненияСверки.Номенклатура</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиНоменклатураКонтекстноеМеню" id="129"/>
-													<ExtendedTooltip name="ОтклоненияСверкиНоменклатураРасширеннаяПодсказка" id="130"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиСуммаПоФронту" id="131">
-													<DataPath>ОтклоненияСверки.СуммаПоФронту</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиСуммаПоФронтуКонтекстноеМеню" id="132"/>
-													<ExtendedTooltip name="ОтклоненияСверкиСуммаПоФронтуРасширеннаяПодсказка" id="133"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиСуммаПоЧеку1С" id="134">
-													<DataPath>ОтклоненияСверки.СуммаПоЧеку1С</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиСуммаПоЧеку1СКонтекстноеМеню" id="135"/>
-													<ExtendedTooltip name="ОтклоненияСверкиСуммаПоЧеку1СРасширеннаяПодсказка" id="136"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиОтклонениеСуммы" id="137">
-													<DataPath>ОтклоненияСверки.ОтклонениеСуммы</DataPath>
-													<Visible>false</Visible>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиОтклонениеСуммыКонтекстноеМеню" id="138"/>
-													<ExtendedTooltip name="ОтклоненияСверкиОтклонениеСуммыРасширеннаяПодсказка" id="139"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиСкидкаПоФронту" id="140">
-													<DataPath>ОтклоненияСверки.СкидкаПоФронту</DataPath>
-													<Visible>false</Visible>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиСкидкаПоФронтуКонтекстноеМеню" id="141"/>
-													<ExtendedTooltip name="ОтклоненияСверкиСкидкаПоФронтуРасширеннаяПодсказка" id="142"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиСкидкаПоЧеку1С" id="143">
-													<DataPath>ОтклоненияСверки.СкидкаПоЧеку1С</DataPath>
-													<Visible>false</Visible>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиСкидкаПоЧеку1СКонтекстноеМеню" id="144"/>
-													<ExtendedTooltip name="ОтклоненияСверкиСкидкаПоЧеку1СРасширеннаяПодсказка" id="145"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиОтклонениеСкидки" id="146">
-													<DataPath>ОтклоненияСверки.ОтклонениеСкидки</DataPath>
-													<Visible>false</Visible>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиОтклонениеСкидкиКонтекстноеМеню" id="147"/>
-													<ExtendedTooltip name="ОтклоненияСверкиОтклонениеСкидкиРасширеннаяПодсказка" id="148"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиКатегорияОтклонения" id="149">
-													<DataPath>ОтклоненияСверки.КатегорияОтклонения</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиКатегорияОтклоненияКонтекстноеМеню" id="150"/>
-													<ExtendedTooltip name="ОтклоненияСверкиКатегорияОтклоненияРасширеннаяПодсказка" id="151"/>
-												</InputField>
-												<InputField name="ОтклоненияСверкиТекстОшибки" id="313">
-													<DataPath>ОтклоненияСверки.ТекстОшибки</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияСверкиТекстОшибкиКонтекстноеМеню" id="314"/>
-													<ExtendedTooltip name="ОтклоненияСверкиТекстОшибкиРасширеннаяПодсказка" id="315"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="ОтклоненияСверки" id="106">
+													<Representation>List</Representation>
+													<CommandBarLocation>Top</CommandBarLocation>
+													<HeightInTableRows>10</HeightInTableRows>
+													<DataPath>ОтклоненияСверки</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ОтклоненияСверкиКонтекстноеМеню" id="107"/>
+													<AutoCommandBar name="ОтклоненияСверкиКоманднаяПанель" id="108"/>
+													<ExtendedTooltip name="ОтклоненияСверкиРасширеннаяПодсказка" id="109"/>
+													<SearchStringAddition name="ОтклоненияСверкиСтрокаПоиска" id="110">
+														<AdditionSource>
+															<Item>ОтклоненияСверки</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияСверкиСтрокаПоискаКонтекстноеМеню" id="111"/>
+														<ExtendedTooltip name="ОтклоненияСверкиСтрокаПоискаРасширеннаяПодсказка" id="112"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ОтклоненияСверкиСостояниеПросмотра" id="113">
+														<AdditionSource>
+															<Item>ОтклоненияСверки</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияСверкиСостояниеПросмотраКонтекстноеМеню" id="114"/>
+														<ExtendedTooltip name="ОтклоненияСверкиСостояниеПросмотраРасширеннаяПодсказка" id="115"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ОтклоненияСверкиУправлениеПоиском" id="116">
+														<AdditionSource>
+															<Item>ОтклоненияСверки</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияСверкиУправлениеПоискомКонтекстноеМеню" id="117"/>
+														<ExtendedTooltip name="ОтклоненияСверкиУправлениеПоискомРасширеннаяПодсказка" id="118"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ОтклоненияСверкиФронтСистема" id="119">
+															<DataPath>ОтклоненияСверки.ФронтСистема</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиФронтСистемаКонтекстноеМеню" id="120"/>
+															<ExtendedTooltip name="ОтклоненияСверкиФронтСистемаРасширеннаяПодсказка" id="121"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиНомерЧека" id="122">
+															<DataPath>ОтклоненияСверки.НомерЧека</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиНомерЧекаКонтекстноеМеню" id="123"/>
+															<ExtendedTooltip name="ОтклоненияСверкиНомерЧекаРасширеннаяПодсказка" id="124"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиКодТочкиПродаж" id="125">
+															<DataPath>ОтклоненияСверки.КодТочкиПродаж</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиКодТочкиПродажКонтекстноеМеню" id="126"/>
+															<ExtendedTooltip name="ОтклоненияСверкиКодТочкиПродажРасширеннаяПодсказка" id="127"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиНоменклатура" id="128">
+															<DataPath>ОтклоненияСверки.Номенклатура</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиНоменклатураКонтекстноеМеню" id="129"/>
+															<ExtendedTooltip name="ОтклоненияСверкиНоменклатураРасширеннаяПодсказка" id="130"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиСуммаПоФронту" id="131">
+															<DataPath>ОтклоненияСверки.СуммаПоФронту</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиСуммаПоФронтуКонтекстноеМеню" id="132"/>
+															<ExtendedTooltip name="ОтклоненияСверкиСуммаПоФронтуРасширеннаяПодсказка" id="133"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиСуммаПоЧеку1С" id="134">
+															<DataPath>ОтклоненияСверки.СуммаПоЧеку1С</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиСуммаПоЧеку1СКонтекстноеМеню" id="135"/>
+															<ExtendedTooltip name="ОтклоненияСверкиСуммаПоЧеку1СРасширеннаяПодсказка" id="136"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиОтклонениеСуммы" id="137">
+															<DataPath>ОтклоненияСверки.ОтклонениеСуммы</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиОтклонениеСуммыКонтекстноеМеню" id="138"/>
+															<ExtendedTooltip name="ОтклоненияСверкиОтклонениеСуммыРасширеннаяПодсказка" id="139"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиСкидкаПоФронту" id="140">
+															<DataPath>ОтклоненияСверки.СкидкаПоФронту</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиСкидкаПоФронтуКонтекстноеМеню" id="141"/>
+															<ExtendedTooltip name="ОтклоненияСверкиСкидкаПоФронтуРасширеннаяПодсказка" id="142"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиСкидкаПоЧеку1С" id="143">
+															<DataPath>ОтклоненияСверки.СкидкаПоЧеку1С</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиСкидкаПоЧеку1СКонтекстноеМеню" id="144"/>
+															<ExtendedTooltip name="ОтклоненияСверкиСкидкаПоЧеку1СРасширеннаяПодсказка" id="145"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиОтклонениеСкидки" id="146">
+															<DataPath>ОтклоненияСверки.ОтклонениеСкидки</DataPath>
+															<Visible>false</Visible>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиОтклонениеСкидкиКонтекстноеМеню" id="147"/>
+															<ExtendedTooltip name="ОтклоненияСверкиОтклонениеСкидкиРасширеннаяПодсказка" id="148"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиКатегорияОтклонения" id="149">
+															<DataPath>ОтклоненияСверки.КатегорияОтклонения</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиКатегорияОтклоненияКонтекстноеМеню" id="150"/>
+															<ExtendedTooltip name="ОтклоненияСверкиКатегорияОтклоненияРасширеннаяПодсказка" id="151"/>
+														</InputField>
+														<InputField name="ОтклоненияСверкиТекстОшибки" id="313">
+															<DataPath>ОтклоненияСверки.ТекстОшибки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияСверкиТекстОшибкиКонтекстноеМеню" id="314"/>
+															<ExtendedTooltip name="ОтклоненияСверкиТекстОшибкиРасширеннаяПодсказка" id="315"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаПояснениеОтчетСверкиЧеков" id="479">
@@ -842,52 +851,57 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Отчет сверки чеков</v8:content>
+													<v8:content>Отчет сверки чеков ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет сверки чеков ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтчетСверкиЧековРасширеннаяПодсказка" id="427"/>
 											<ChildItems>
-										<UsualGroup name="ГруппаКнопки" id="374">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа кнопки</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа кнопки</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>AlwaysHorizontal</Group>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="375"/>
-											<ChildItems>
-												<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
-													<Type>UsualButton</Type>
-													<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
-													<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
-												</Button>
-												<Button name="СформироватьОтчетСверкиЧеков" id="334">
-													<Type>UsualButton</Type>
-													<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
-													<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
-												</Button>
-											</ChildItems>
-										</UsualGroup>
-										<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
-											<DataPath>ОтчетСверкиЧеков</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<VerticalStretch>true</VerticalStretch>
-											<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
-											<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
-										</SpreadSheetDocumentField>
+												<UsualGroup name="ГруппаКнопки" id="374">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа кнопки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="375"/>
+													<ChildItems>
+														<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
+															<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
+														</Button>
+														<Button name="СформироватьОтчетСверкиЧеков" id="334">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
+															<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<SpreadSheetDocumentField name="ОтчетСверкиЧеков" id="336">
+													<DataPath>ОтчетСверкиЧеков</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ОтчетСверкиЧековКонтекстноеМеню" id="337"/>
+													<ExtendedTooltip name="ОтчетСверкиЧековРасширеннаяПодсказка" id="338"/>
+												</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -995,110 +1009,115 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Отклонения выпуска</v8:content>
+													<v8:content>Отклонения выпуска ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отклонения выпуска ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтклоненияВыпускаРасширеннаяПодсказка" id="429"/>
 											<ChildItems>
-										<Table name="ОтклоненияВыпуска" id="157">
-											<Representation>List</Representation>
-											<DataPath>ОтклоненияВыпуска</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОтклоненияВыпускаКонтекстноеМеню" id="158"/>
-											<AutoCommandBar name="ОтклоненияВыпускаКоманднаяПанель" id="159"/>
-											<ExtendedTooltip name="ОтклоненияВыпускаРасширеннаяПодсказка" id="160"/>
-											<SearchStringAddition name="ОтклоненияВыпускаСтрокаПоиска" id="161">
-												<AdditionSource>
-													<Item>ОтклоненияВыпуска</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияВыпускаСтрокаПоискаКонтекстноеМеню" id="162"/>
-												<ExtendedTooltip name="ОтклоненияВыпускаСтрокаПоискаРасширеннаяПодсказка" id="163"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОтклоненияВыпускаСостояниеПросмотра" id="164">
-												<AdditionSource>
-													<Item>ОтклоненияВыпуска</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияВыпускаСостояниеПросмотраКонтекстноеМеню" id="165"/>
-												<ExtendedTooltip name="ОтклоненияВыпускаСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОтклоненияВыпускаУправлениеПоиском" id="167">
-												<AdditionSource>
-													<Item>ОтклоненияВыпуска</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтклоненияВыпускаУправлениеПоискомКонтекстноеМеню" id="168"/>
-												<ExtendedTooltip name="ОтклоненияВыпускаУправлениеПоискомРасширеннаяПодсказка" id="169"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОтклоненияВыпускаНоменклатура" id="170">
-													<DataPath>ОтклоненияВыпуска.Номенклатура</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаНоменклатураКонтекстноеМеню" id="171"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаНоменклатураРасширеннаяПодсказка" id="172"/>
-												</InputField>
-												<InputField name="ОтклоненияВыпускаХарактеристика" id="173">
-													<DataPath>ОтклоненияВыпуска.Характеристика</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаХарактеристикаКонтекстноеМеню" id="174"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаХарактеристикаРасширеннаяПодсказка" id="175"/>
-												</InputField>
-												<InputField name="ОтклоненияВыпускаСклад" id="176">
-													<DataPath>ОтклоненияВыпуска.Склад</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаСкладКонтекстноеМеню" id="177"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаСкладРасширеннаяПодсказка" id="178"/>
-												</InputField>
-												<InputField name="ОтклоненияВыпускаКоличествоПоЧекам" id="179">
-													<DataPath>ОтклоненияВыпуска.КоличествоПоЧекам</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаКоличествоПоЧекамКонтекстноеМеню" id="180"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаКоличествоПоЧекамРасширеннаяПодсказка" id="181"/>
-												</InputField>
-												<InputField name="ОтклоненияВыпускаКоличествоПоВыпуску" id="182">
-													<DataPath>ОтклоненияВыпуска.КоличествоПоВыпуску</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаКоличествоПоВыпускуКонтекстноеМеню" id="183"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаКоличествоПоВыпускуРасширеннаяПодсказка" id="184"/>
-												</InputField>
-												<InputField name="ОтклоненияВыпускаРазница" id="185">
-													<DataPath>ОтклоненияВыпуска.Разница</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтклоненияВыпускаРазницаКонтекстноеМеню" id="186"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаРазницаРасширеннаяПодсказка" id="187"/>
-												</InputField>
-												<CheckBoxField name="ОтклоненияВыпускаБлокирует" id="188">
-													<DataPath>ОтклоненияВыпуска.Блокирует</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ОтклоненияВыпускаБлокируетКонтекстноеМеню" id="189"/>
-													<ExtendedTooltip name="ОтклоненияВыпускаБлокируетРасширеннаяПодсказка" id="190"/>
-												</CheckBoxField>
-											</ChildItems>
-										</Table>
+												<Table name="ОтклоненияВыпуска" id="157">
+													<Representation>List</Representation>
+													<DataPath>ОтклоненияВыпуска</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ОтклоненияВыпускаКонтекстноеМеню" id="158"/>
+													<AutoCommandBar name="ОтклоненияВыпускаКоманднаяПанель" id="159"/>
+													<ExtendedTooltip name="ОтклоненияВыпускаРасширеннаяПодсказка" id="160"/>
+													<SearchStringAddition name="ОтклоненияВыпускаСтрокаПоиска" id="161">
+														<AdditionSource>
+															<Item>ОтклоненияВыпуска</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияВыпускаСтрокаПоискаКонтекстноеМеню" id="162"/>
+														<ExtendedTooltip name="ОтклоненияВыпускаСтрокаПоискаРасширеннаяПодсказка" id="163"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ОтклоненияВыпускаСостояниеПросмотра" id="164">
+														<AdditionSource>
+															<Item>ОтклоненияВыпуска</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияВыпускаСостояниеПросмотраКонтекстноеМеню" id="165"/>
+														<ExtendedTooltip name="ОтклоненияВыпускаСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ОтклоненияВыпускаУправлениеПоиском" id="167">
+														<AdditionSource>
+															<Item>ОтклоненияВыпуска</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтклоненияВыпускаУправлениеПоискомКонтекстноеМеню" id="168"/>
+														<ExtendedTooltip name="ОтклоненияВыпускаУправлениеПоискомРасширеннаяПодсказка" id="169"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ОтклоненияВыпускаНоменклатура" id="170">
+															<DataPath>ОтклоненияВыпуска.Номенклатура</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаНоменклатураКонтекстноеМеню" id="171"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаНоменклатураРасширеннаяПодсказка" id="172"/>
+														</InputField>
+														<InputField name="ОтклоненияВыпускаХарактеристика" id="173">
+															<DataPath>ОтклоненияВыпуска.Характеристика</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаХарактеристикаКонтекстноеМеню" id="174"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаХарактеристикаРасширеннаяПодсказка" id="175"/>
+														</InputField>
+														<InputField name="ОтклоненияВыпускаСклад" id="176">
+															<DataPath>ОтклоненияВыпуска.Склад</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаСкладКонтекстноеМеню" id="177"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаСкладРасширеннаяПодсказка" id="178"/>
+														</InputField>
+														<InputField name="ОтклоненияВыпускаКоличествоПоЧекам" id="179">
+															<DataPath>ОтклоненияВыпуска.КоличествоПоЧекам</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаКоличествоПоЧекамКонтекстноеМеню" id="180"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаКоличествоПоЧекамРасширеннаяПодсказка" id="181"/>
+														</InputField>
+														<InputField name="ОтклоненияВыпускаКоличествоПоВыпуску" id="182">
+															<DataPath>ОтклоненияВыпуска.КоличествоПоВыпуску</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаКоличествоПоВыпускуКонтекстноеМеню" id="183"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаКоличествоПоВыпускуРасширеннаяПодсказка" id="184"/>
+														</InputField>
+														<InputField name="ОтклоненияВыпускаРазница" id="185">
+															<DataPath>ОтклоненияВыпуска.Разница</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтклоненияВыпускаРазницаКонтекстноеМеню" id="186"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаРазницаРасширеннаяПодсказка" id="187"/>
+														</InputField>
+														<CheckBoxField name="ОтклоненияВыпускаБлокирует" id="188">
+															<DataPath>ОтклоненияВыпуска.Блокирует</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ОтклоненияВыпускаБлокируетКонтекстноеМеню" id="189"/>
+															<ExtendedTooltip name="ОтклоненияВыпускаБлокируетРасширеннаяПодсказка" id="190"/>
+														</CheckBoxField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаСостояниеОшибкиФормированияУспешно" id="503">
@@ -1163,75 +1182,80 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Ошибки формирования</v8:content>
+													<v8:content>Ошибки формирования ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ошибки формирования ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОшибкиФормированияРасширеннаяПодсказка" id="431"/>
 											<ChildItems>
-										<Table name="ОшибкиФормирования" id="191">
-											<Representation>List</Representation>
-											<DataPath>ОшибкиФормирования</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
-											<AutoCommandBar name="ОшибкиФормированияКоманднаяПанель" id="193"/>
-											<ExtendedTooltip name="ОшибкиФормированияРасширеннаяПодсказка" id="194"/>
-											<SearchStringAddition name="ОшибкиФормированияСтрокаПоиска" id="195">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияСтрокаПоискаКонтекстноеМеню" id="196"/>
-												<ExtendedTooltip name="ОшибкиФормированияСтрокаПоискаРасширеннаяПодсказка" id="197"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОшибкиФормированияСостояниеПросмотра" id="198">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияСостояниеПросмотраКонтекстноеМеню" id="199"/>
-												<ExtendedTooltip name="ОшибкиФормированияСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОшибкиФормированияУправлениеПоиском" id="201">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияУправлениеПоискомКонтекстноеМеню" id="202"/>
-												<ExtendedTooltip name="ОшибкиФормированияУправлениеПоискомРасширеннаяПодсказка" id="203"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОшибкиФормированияКатегория" id="204">
-													<DataPath>ОшибкиФормирования.Категория</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОшибкиФормированияКатегорияКонтекстноеМеню" id="205"/>
-													<ExtendedTooltip name="ОшибкиФормированияКатегорияРасширеннаяПодсказка" id="206"/>
-												</InputField>
-												<InputField name="ОшибкиФормированияТекстОшибки" id="207">
-													<DataPath>ОшибкиФормирования.ТекстОшибки</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОшибкиФормированияТекстОшибкиКонтекстноеМеню" id="208"/>
-													<ExtendedTooltip name="ОшибкиФормированияТекстОшибкиРасширеннаяПодсказка" id="209"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="ОшибкиФормирования" id="191">
+													<Representation>List</Representation>
+													<DataPath>ОшибкиФормирования</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
+													<AutoCommandBar name="ОшибкиФормированияКоманднаяПанель" id="193"/>
+													<ExtendedTooltip name="ОшибкиФормированияРасширеннаяПодсказка" id="194"/>
+													<SearchStringAddition name="ОшибкиФормированияСтрокаПоиска" id="195">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияСтрокаПоискаКонтекстноеМеню" id="196"/>
+														<ExtendedTooltip name="ОшибкиФормированияСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ОшибкиФормированияСостояниеПросмотра" id="198">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияСостояниеПросмотраКонтекстноеМеню" id="199"/>
+														<ExtendedTooltip name="ОшибкиФормированияСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ОшибкиФормированияУправлениеПоиском" id="201">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияУправлениеПоискомКонтекстноеМеню" id="202"/>
+														<ExtendedTooltip name="ОшибкиФормированияУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ОшибкиФормированияКатегория" id="204">
+															<DataPath>ОшибкиФормирования.Категория</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОшибкиФормированияКатегорияКонтекстноеМеню" id="205"/>
+															<ExtendedTooltip name="ОшибкиФормированияКатегорияРасширеннаяПодсказка" id="206"/>
+														</InputField>
+														<InputField name="ОшибкиФормированияТекстОшибки" id="207">
+															<DataPath>ОшибкиФормирования.ТекстОшибки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОшибкиФормированияТекстОшибкиКонтекстноеМеню" id="208"/>
+															<ExtendedTooltip name="ОшибкиФормированияТекстОшибкиРасширеннаяПодсказка" id="209"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаСостояниеДокументыОткрытыеЦеныУспешно" id="519">
@@ -1296,75 +1320,80 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Документы открытых цен</v8:content>
+													<v8:content>Документы открытых цен ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Документы открытых цен ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаДокументыОткрытыеЦеныРасширеннаяПодсказка" id="433"/>
 											<ChildItems>
-										<Table name="ДокументыОткрытыеЦены" id="210">
-											<Representation>List</Representation>
-											<DataPath>ДокументыОткрытыеЦены</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ДокументыОткрытыеЦеныКонтекстноеМеню" id="211"/>
-											<AutoCommandBar name="ДокументыОткрытыеЦеныКоманднаяПанель" id="212"/>
-											<ExtendedTooltip name="ДокументыОткрытыеЦеныРасширеннаяПодсказка" id="213"/>
-											<SearchStringAddition name="ДокументыОткрытыеЦеныСтрокаПоиска" id="214">
-												<AdditionSource>
-													<Item>ДокументыОткрытыеЦены</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ДокументыОткрытыеЦеныСтрокаПоискаКонтекстноеМеню" id="215"/>
-												<ExtendedTooltip name="ДокументыОткрытыеЦеныСтрокаПоискаРасширеннаяПодсказка" id="216"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ДокументыОткрытыеЦеныСостояниеПросмотра" id="217">
-												<AdditionSource>
-													<Item>ДокументыОткрытыеЦены</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ДокументыОткрытыеЦеныСостояниеПросмотраКонтекстноеМеню" id="218"/>
-												<ExtendedTooltip name="ДокументыОткрытыеЦеныСостояниеПросмотраРасширеннаяПодсказка" id="219"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ДокументыОткрытыеЦеныУправлениеПоиском" id="220">
-												<AdditionSource>
-													<Item>ДокументыОткрытыеЦены</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ДокументыОткрытыеЦеныУправлениеПоискомКонтекстноеМеню" id="221"/>
-												<ExtendedTooltip name="ДокументыОткрытыеЦеныУправлениеПоискомРасширеннаяПодсказка" id="222"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ДокументыОткрытыеЦеныДокумент" id="223">
-													<DataPath>ДокументыОткрытыеЦены.Документ</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДокументыОткрытыеЦеныДокументКонтекстноеМеню" id="224"/>
-													<ExtendedTooltip name="ДокументыОткрытыеЦеныДокументРасширеннаяПодсказка" id="225"/>
-												</InputField>
-												<InputField name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦены" id="226">
-													<DataPath>ДокументыОткрытыеЦены.НоменклатураОткрытойЦены</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦеныКонтекстноеМеню" id="227"/>
-													<ExtendedTooltip name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦеныРасширеннаяПодсказка" id="228"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="ДокументыОткрытыеЦены" id="210">
+													<Representation>List</Representation>
+													<DataPath>ДокументыОткрытыеЦены</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ДокументыОткрытыеЦеныКонтекстноеМеню" id="211"/>
+													<AutoCommandBar name="ДокументыОткрытыеЦеныКоманднаяПанель" id="212"/>
+													<ExtendedTooltip name="ДокументыОткрытыеЦеныРасширеннаяПодсказка" id="213"/>
+													<SearchStringAddition name="ДокументыОткрытыеЦеныСтрокаПоиска" id="214">
+														<AdditionSource>
+															<Item>ДокументыОткрытыеЦены</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыОткрытыеЦеныСтрокаПоискаКонтекстноеМеню" id="215"/>
+														<ExtendedTooltip name="ДокументыОткрытыеЦеныСтрокаПоискаРасширеннаяПодсказка" id="216"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ДокументыОткрытыеЦеныСостояниеПросмотра" id="217">
+														<AdditionSource>
+															<Item>ДокументыОткрытыеЦены</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыОткрытыеЦеныСостояниеПросмотраКонтекстноеМеню" id="218"/>
+														<ExtendedTooltip name="ДокументыОткрытыеЦеныСостояниеПросмотраРасширеннаяПодсказка" id="219"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ДокументыОткрытыеЦеныУправлениеПоиском" id="220">
+														<AdditionSource>
+															<Item>ДокументыОткрытыеЦены</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыОткрытыеЦеныУправлениеПоискомКонтекстноеМеню" id="221"/>
+														<ExtendedTooltip name="ДокументыОткрытыеЦеныУправлениеПоискомРасширеннаяПодсказка" id="222"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ДокументыОткрытыеЦеныДокумент" id="223">
+															<DataPath>ДокументыОткрытыеЦены.Документ</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ДокументыОткрытыеЦеныДокументКонтекстноеМеню" id="224"/>
+															<ExtendedTooltip name="ДокументыОткрытыеЦеныДокументРасширеннаяПодсказка" id="225"/>
+														</InputField>
+														<InputField name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦены" id="226">
+															<DataPath>ДокументыОткрытыеЦены.НоменклатураОткрытойЦены</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦеныКонтекстноеМеню" id="227"/>
+															<ExtendedTooltip name="ДокументыОткрытыеЦеныНоменклатураОткрытойЦеныРасширеннаяПодсказка" id="228"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаПояснениеОтчетСверкиВыпусков" id="535">
@@ -1400,33 +1429,38 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Отчет сверки выпусков</v8:content>
+													<v8:content>Отчет сверки выпусков ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отчет сверки выпусков ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтчетСверкиВыпусковРасширеннаяПодсказка" id="435"/>
 											<ChildItems>
-										<Button name="ПереформироватьВыпуска" id="229">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
-											<ExtendedTooltip name="ПереформироватьВыпускаРасширеннаяПодсказка" id="230"/>
-										</Button>
-										<Button name="СформироватьОтчетСверкиВыпусков" id="342">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.СформироватьОтчетСверкиВыпусков</CommandName>
-											<ExtendedTooltip name="СформироватьОтчетСверкиВыпусковРасширеннаяПодсказка" id="343"/>
-										</Button>
-										<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
-											<DataPath>ОтчетСверкиВыпусков</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<VerticalStretch>true</VerticalStretch>
-											<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
-											<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
-										</SpreadSheetDocumentField>
+												<Button name="ПереформироватьВыпуска" id="229">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
+													<ExtendedTooltip name="ПереформироватьВыпускаРасширеннаяПодсказка" id="230"/>
+												</Button>
+												<Button name="СформироватьОтчетСверкиВыпусков" id="342">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СформироватьОтчетСверкиВыпусков</CommandName>
+													<ExtendedTooltip name="СформироватьОтчетСверкиВыпусковРасширеннаяПодсказка" id="343"/>
+												</Button>
+												<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
+													<DataPath>ОтчетСверкиВыпусков</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ОтчетСверкиВыпусковКонтекстноеМеню" id="345"/>
+													<ExtendedTooltip name="ОтчетСверкиВыпусковРасширеннаяПодсказка" id="346"/>
+												</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -1534,98 +1568,103 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Отрицательные остатки</v8:content>
+													<v8:content>Отрицательные остатки ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отрицательные остатки ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаОтрицательныеОстаткиРасширеннаяПодсказка" id="437"/>
 											<ChildItems>
-										<Table name="ОтрицательныеОстатки" id="233">
-											<Representation>List</Representation>
-											<DataPath>ОтрицательныеОстатки</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОтрицательныеОстаткиКонтекстноеМеню" id="234"/>
-											<AutoCommandBar name="ОтрицательныеОстаткиКоманднаяПанель" id="235"/>
-											<ExtendedTooltip name="ОтрицательныеОстаткиРасширеннаяПодсказка" id="236"/>
-											<SearchStringAddition name="ОтрицательныеОстаткиСтрокаПоиска" id="237">
-												<AdditionSource>
-													<Item>ОтрицательныеОстатки</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтрицательныеОстаткиСтрокаПоискаКонтекстноеМеню" id="238"/>
-												<ExtendedTooltip name="ОтрицательныеОстаткиСтрокаПоискаРасширеннаяПодсказка" id="239"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОтрицательныеОстаткиСостояниеПросмотра" id="240">
-												<AdditionSource>
-													<Item>ОтрицательныеОстатки</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтрицательныеОстаткиСостояниеПросмотраКонтекстноеМеню" id="241"/>
-												<ExtendedTooltip name="ОтрицательныеОстаткиСостояниеПросмотраРасширеннаяПодсказка" id="242"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОтрицательныеОстаткиУправлениеПоиском" id="243">
-												<AdditionSource>
-													<Item>ОтрицательныеОстатки</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОтрицательныеОстаткиУправлениеПоискомКонтекстноеМеню" id="244"/>
-												<ExtendedTooltip name="ОтрицательныеОстаткиУправлениеПоискомРасширеннаяПодсказка" id="245"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОтрицательныеОстаткиСклад" id="246">
-													<DataPath>ОтрицательныеОстатки.Склад</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтрицательныеОстаткиСкладКонтекстноеМеню" id="247"/>
-													<ExtendedTooltip name="ОтрицательныеОстаткиСкладРасширеннаяПодсказка" id="248"/>
-												</InputField>
-												<InputField name="ОтрицательныеОстаткиНоменклатура" id="249">
-													<DataPath>ОтрицательныеОстатки.Номенклатура</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтрицательныеОстаткиНоменклатураКонтекстноеМеню" id="250"/>
-													<ExtendedTooltip name="ОтрицательныеОстаткиНоменклатураРасширеннаяПодсказка" id="251"/>
-												</InputField>
-												<InputField name="ОтрицательныеОстаткиХарактеристика" id="252">
-													<DataPath>ОтрицательныеОстатки.Характеристика</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтрицательныеОстаткиХарактеристикаКонтекстноеМеню" id="253"/>
-													<ExtendedTooltip name="ОтрицательныеОстаткиХарактеристикаРасширеннаяПодсказка" id="254"/>
-												</InputField>
-												<InputField name="ОтрицательныеОстаткиКонечныйОстаток" id="255">
-													<DataPath>ОтрицательныеОстатки.КонечныйОстаток</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтрицательныеОстаткиКонечныйОстатокКонтекстноеМеню" id="256"/>
-													<ExtendedTooltip name="ОтрицательныеОстаткиКонечныйОстатокРасширеннаяПодсказка" id="257"/>
-												</InputField>
-												<InputField name="ОтрицательныеОстаткиРегистратор" id="578">
-													<DataPath>ОтрицательныеОстатки.Регистратор</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<OpenButton>true</OpenButton>
-													<ChoiceButton>false</ChoiceButton>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОтрицательныеОстаткиРегистраторКонтекстноеМеню" id="579"/>
-													<ExtendedTooltip name="ОтрицательныеОстаткиРегистраторРасширеннаяПодсказка" id="580"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="ОтрицательныеОстатки" id="233">
+													<Representation>List</Representation>
+													<DataPath>ОтрицательныеОстатки</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ОтрицательныеОстаткиКонтекстноеМеню" id="234"/>
+													<AutoCommandBar name="ОтрицательныеОстаткиКоманднаяПанель" id="235"/>
+													<ExtendedTooltip name="ОтрицательныеОстаткиРасширеннаяПодсказка" id="236"/>
+													<SearchStringAddition name="ОтрицательныеОстаткиСтрокаПоиска" id="237">
+														<AdditionSource>
+															<Item>ОтрицательныеОстатки</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтрицательныеОстаткиСтрокаПоискаКонтекстноеМеню" id="238"/>
+														<ExtendedTooltip name="ОтрицательныеОстаткиСтрокаПоискаРасширеннаяПодсказка" id="239"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ОтрицательныеОстаткиСостояниеПросмотра" id="240">
+														<AdditionSource>
+															<Item>ОтрицательныеОстатки</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтрицательныеОстаткиСостояниеПросмотраКонтекстноеМеню" id="241"/>
+														<ExtendedTooltip name="ОтрицательныеОстаткиСостояниеПросмотраРасширеннаяПодсказка" id="242"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ОтрицательныеОстаткиУправлениеПоиском" id="243">
+														<AdditionSource>
+															<Item>ОтрицательныеОстатки</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ОтрицательныеОстаткиУправлениеПоискомКонтекстноеМеню" id="244"/>
+														<ExtendedTooltip name="ОтрицательныеОстаткиУправлениеПоискомРасширеннаяПодсказка" id="245"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ОтрицательныеОстаткиСклад" id="246">
+															<DataPath>ОтрицательныеОстатки.Склад</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтрицательныеОстаткиСкладКонтекстноеМеню" id="247"/>
+															<ExtendedTooltip name="ОтрицательныеОстаткиСкладРасширеннаяПодсказка" id="248"/>
+														</InputField>
+														<InputField name="ОтрицательныеОстаткиНоменклатура" id="249">
+															<DataPath>ОтрицательныеОстатки.Номенклатура</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтрицательныеОстаткиНоменклатураКонтекстноеМеню" id="250"/>
+															<ExtendedTooltip name="ОтрицательныеОстаткиНоменклатураРасширеннаяПодсказка" id="251"/>
+														</InputField>
+														<InputField name="ОтрицательныеОстаткиХарактеристика" id="252">
+															<DataPath>ОтрицательныеОстатки.Характеристика</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтрицательныеОстаткиХарактеристикаКонтекстноеМеню" id="253"/>
+															<ExtendedTooltip name="ОтрицательныеОстаткиХарактеристикаРасширеннаяПодсказка" id="254"/>
+														</InputField>
+														<InputField name="ОтрицательныеОстаткиКонечныйОстаток" id="255">
+															<DataPath>ОтрицательныеОстатки.КонечныйОстаток</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтрицательныеОстаткиКонечныйОстатокКонтекстноеМеню" id="256"/>
+															<ExtendedTooltip name="ОтрицательныеОстаткиКонечныйОстатокРасширеннаяПодсказка" id="257"/>
+														</InputField>
+														<InputField name="ОтрицательныеОстаткиРегистратор" id="578">
+															<DataPath>ОтрицательныеОстатки.Регистратор</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ChoiceButton>false</ChoiceButton>
+															<OpenButton>true</OpenButton>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОтрицательныеОстаткиРегистраторКонтекстноеМеню" id="579"/>
+															<ExtendedTooltip name="ОтрицательныеОстаткиРегистраторРасширеннаяПодсказка" id="580"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаПояснениеВедомостьОтрицательныхОстатков" id="559">
@@ -1661,36 +1700,42 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Ведомость отрицательных остатков</v8:content>
+													<v8:content>Ведомость отрицательных остатков ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ведомость отрицательных остатков ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="439"/>
 											<ChildItems>
-										<Button name="СформироватьВедомостьОтрицательных" id="350">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.СформироватьВедомостьОтрицательных</CommandName>
-											<ExtendedTooltip name="СформироватьВедомостьОтрицательныхРасширеннаяПодсказка" id="351"/>
-										</Button>
-										<Button name="ОткрытьВедомостьОтрицательных" id="352">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ОткрытьВедомостьОтрицательных</CommandName>
-											<ExtendedTooltip name="ОткрытьВедомостьОтрицательныхРасширеннаяПодсказка" id="353"/>
-										</Button>
-										<SpreadSheetDocumentField name="ВедомостьОтрицательныхОстатков" id="354">
-											<DataPath>ВедомостьОтрицательныхОстатков</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<VerticalStretch>true</VerticalStretch>
-											<ContextMenu name="ВедомостьОтрицательныхОстатковКонтекстноеМеню" id="355"/>
-											<ExtendedTooltip name="ВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="356"/>
-											<Events>
-												<Event name="DetailProcessing">ВедомостьОтрицательныхОстатковОбработкаРасшифровки</Event>
-											</Events>
-										</SpreadSheetDocumentField>
+												<Button name="СформироватьВедомостьОтрицательных" id="350">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СформироватьВедомостьОтрицательных</CommandName>
+													<ExtendedTooltip name="СформироватьВедомостьОтрицательныхРасширеннаяПодсказка" id="351"/>
+												</Button>
+												<Button name="ОткрытьВедомостьОтрицательных" id="352">
+													<Type>UsualButton</Type>
+													<Visible>false</Visible>
+													<CommandName>Form.Command.ОткрытьВедомостьОтрицательных</CommandName>
+													<ExtendedTooltip name="ОткрытьВедомостьОтрицательныхРасширеннаяПодсказка" id="353"/>
+												</Button>
+												<SpreadSheetDocumentField name="ВедомостьОтрицательныхОстатков" id="354">
+													<DataPath>ВедомостьОтрицательныхОстатков</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ВедомостьОтрицательныхОстатковКонтекстноеМеню" id="355"/>
+													<ExtendedTooltip name="ВедомостьОтрицательныхОстатковРасширеннаяПодсказка" id="356"/>
+													<Events>
+														<Event name="DetailProcessing">ВедомостьОтрицательныхОстатковОбработкаРасшифровки</Event>
+													</Events>
+												</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаПояснениеАнализОтрицательныхОстатков" id="567">
@@ -1726,28 +1771,33 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Анализ отрицательных остатков</v8:content>
+													<v8:content>Анализ отрицательных остатков ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Анализ отрицательных остатков ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Collapsed>true</Collapsed>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаАнализОтрицательныхОстатковРасширеннаяПодсказка" id="441"/>
 											<ChildItems>
-										<Button name="СформироватьАнализОтрицательных" id="357">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.СформироватьАнализОтрицательных</CommandName>
-											<ExtendedTooltip name="СформироватьАнализОтрицательныхРасширеннаяПодсказка" id="358"/>
-										</Button>
-										<SpreadSheetDocumentField name="АнализОтрицательныхОстатков" id="359">
-											<DataPath>АнализОтрицательныхОстатков</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<VerticalStretch>true</VerticalStretch>
-											<ContextMenu name="АнализОтрицательныхОстатковКонтекстноеМеню" id="360"/>
-											<ExtendedTooltip name="АнализОтрицательныхОстатковРасширеннаяПодсказка" id="361"/>
-										</SpreadSheetDocumentField>
+												<Button name="СформироватьАнализОтрицательных" id="357">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СформироватьАнализОтрицательных</CommandName>
+													<ExtendedTooltip name="СформироватьАнализОтрицательныхРасширеннаяПодсказка" id="358"/>
+												</Button>
+												<SpreadSheetDocumentField name="АнализОтрицательныхОстатков" id="359">
+													<DataPath>АнализОтрицательныхОстатков</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="АнализОтрицательныхОстатковКонтекстноеМеню" id="360"/>
+													<ExtendedTooltip name="АнализОтрицательныхОстатковРасширеннаяПодсказка" id="361"/>
+												</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -1790,22 +1840,27 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Итоговый отчет</v8:content>
+													<v8:content>Итоговый отчет ▲</v8:content>
 												</v8:item>
 											</Title>
+											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Collapsible</Behavior>
+											<CollapsedRepresentationTitle>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Итоговый отчет ▼</v8:content>
+												</v8:item>
+											</CollapsedRepresentationTitle>
 											<Representation>NormalSeparation</Representation>
-											<VerticalStretch>true</VerticalStretch>
 											<ExtendedTooltip name="ГруппаИтоговыйОтчетРасширеннаяПодсказка" id="443"/>
 											<ChildItems>
-										<SpreadSheetDocumentField name="ИтоговыйОтчет" id="318">
-											<DataPath>ИтоговыйОтчет</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<VerticalStretch>true</VerticalStretch>
-											<ContextMenu name="ИтоговыйОтчетКонтекстноеМеню" id="319"/>
-											<ExtendedTooltip name="ИтоговыйОтчетРасширеннаяПодсказка" id="320"/>
-										</SpreadSheetDocumentField>
+												<SpreadSheetDocumentField name="ИтоговыйОтчет" id="318">
+													<DataPath>ИтоговыйОтчет</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ИтоговыйОтчетКонтекстноеМеню" id="319"/>
+													<ExtendedTooltip name="ИтоговыйОтчетРасширеннаяПодсказка" id="320"/>
+												</SpreadSheetDocumentField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -1823,6 +1878,7 @@
 			<ExtendedTooltip name="ДекорацияНизФормыРасширеннаяПодсказка" id="446"/>
 		</LabelDecoration>
 		<UsualGroup name="НавигацияШагов" id="362">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1835,12 +1891,11 @@
 					<v8:content>Навигация шагов</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
 			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
 			<HorizontalAlign>Center</HorizontalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<Visible>false</Visible>
 			<ExtendedTooltip name="НавигацияШаговРасширеннаяПодсказка" id="363"/>
 			<ChildItems>
 				<Button name="КнопкаВыбратьДругойДень" id="364">
@@ -1855,7 +1910,12 @@
 				</Button>
 				<Button name="КнопкаПерепроверитьТекущийШаг" id="372">
 					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
 					<CommandName>Form.Command.ПерепроверитьТекущийШаг</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
