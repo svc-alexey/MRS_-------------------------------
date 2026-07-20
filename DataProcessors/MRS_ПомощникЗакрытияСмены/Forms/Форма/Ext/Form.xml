@@ -547,6 +547,13 @@
 													<ContextMenu name="НесопоставленныеОбъектыОбъектДляСопоставленияКонтекстноеМеню" id="100"/>
 													<ExtendedTooltip name="НесопоставленныеОбъектыОбъектДляСопоставленияРасширеннаяПодсказка" id="101"/>
 												</InputField>
+												<InputField name="НесопоставленныеОбъектыКоличество" id="575">
+													<DataPath>НесопоставленныеОбъекты.Количество</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="НесопоставленныеОбъектыКоличествоКонтекстноеМеню" id="576"/>
+													<ExtendedTooltip name="НесопоставленныеОбъектыКоличествоРасширеннаяПодсказка" id="577"/>
+												</InputField>
 											</ChildItems>
 										</Table>
 											</ChildItems>
@@ -1607,6 +1614,16 @@
 													<ContextMenu name="ОтрицательныеОстаткиКонечныйОстатокКонтекстноеМеню" id="256"/>
 													<ExtendedTooltip name="ОтрицательныеОстаткиКонечныйОстатокРасширеннаяПодсказка" id="257"/>
 												</InputField>
+												<InputField name="ОтрицательныеОстаткиРегистратор" id="578">
+													<DataPath>ОтрицательныеОстатки.Регистратор</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<OpenButton>true</OpenButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОтрицательныеОстаткиРегистраторКонтекстноеМеню" id="579"/>
+													<ExtendedTooltip name="ОтрицательныеОстаткиРегистраторРасширеннаяПодсказка" id="580"/>
+												</InputField>
 											</ChildItems>
 										</Table>
 											</ChildItems>
@@ -2150,6 +2167,22 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Количество" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ОтклоненияСверки" id="9">
@@ -2588,6 +2621,78 @@
 							<v8:FractionDigits>3</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регистратор" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистратор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.АктКонтроляКачестваТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеОтгрузки</v8:Type>
+						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеПеремещения</v8:Type>
+						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеПриемки</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВводОстатков</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВводОстатковТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВнутреннееПотребление</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратМатериаловИзПроизводства</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратСырьяДавальцу</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратСырьяОтПереработчика</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратТоваровОтКлиента</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВыпускПродукции</v8:Type>
+						<v8:Type>cfg:DocumentRef.ДвижениеПродукцииИМатериалов</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаявкаНаКонтрольКачестваТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаИзлишковНедостачПоТоварнымМестам</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаНазначенияТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаПоОрдеруНаТовары</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаПриобретения</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаРеализации</v8:Type>
+						<v8:Type>cfg:DocumentRef.КорректировкаРегистров</v8:Type>
+						<v8:Type>cfg:DocumentRef.МаркировкаТоваровГИСМ</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОприходованиеИзлишковТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеИзлишковТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеНедостачТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеПересортицыТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОрдерНаОтражениеПорчиТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОрдерНаПеремещениеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровКлиенту</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровСХранения</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтчетОРозничныхВозвратах</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПередачаДавальцу</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПередачаМатериаловВПроизводство</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПередачаСырьяПереработчику</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПередачаТоваровХранителю</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПеремаркировкаТоваровГИСМ</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПересортицаТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПересчетТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПорчаТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеОтПереработчика</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеСырьяОтДавальца</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровНаСклад</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровОтКлиента</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровОтХранителя</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриемкаТоваровНаХранение</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриобретениеТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПриходныйОрдерНаТовары</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПроизводствоБезЗаказа</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПрочееОприходованиеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.РаспределениеВозвратныхОтходов</v8:Type>
+						<v8:Type>cfg:DocumentRef.РаспределениеПроизводственныхЗатрат</v8:Type>
+						<v8:Type>cfg:DocumentRef.РасходныйОрдерНаТовары</v8:Type>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.СборкаТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.СписаниеНедостачТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.Сторно</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЧекККМ</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЧекККМВозврат</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЧекККМКоррекции</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЭтапПроизводства2_2</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
