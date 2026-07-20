@@ -49,7 +49,11 @@ preserve original 1C identifiers (objects, modules, attributes) as-is:
 - **Rule:** Nomenclature with `Справочник.Номенклатура.питПродажаПоСвободнойЦене`
   must be excluded from dish-release reconciliation once a conducted
   `Документ.питВыпускБлюд` exists for the same day, warehouse, and `ПЛ_Номенклатура`.
+  Exclude both the original open-price check row and the fact rows of that
+  open-price release after the user replaces the release tabular-section
+  nomenclature with the real item.
 - **Why:** After the open-price release is filled with a replacement nomenclature and posted,
-  the original open-price nomenclature must no longer create a blocking control error.
+  neither the original open-price nomenclature nor the replacement nomenclature should create
+  a reference or quantity reconciliation mismatch.
 - **Source:** User correction on 2026-07-16.
 
