@@ -111,7 +111,13 @@
 								</InputField>
 								<Button name="ПолучитьРекомендуемыйДеньОтработки" id="311">
 									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
 									<CommandName>Form.Command.ПолучитьРекомендуемыйДеньОтработки</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.History</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
 									<ExtendedTooltip name="ПолучитьРекомендуемыйДеньОтработкиРасширеннаяПодсказка" id="312"/>
 								</Button>
 							</ChildItems>
@@ -436,11 +442,6 @@
 												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<Button name="Сопоставить" id="102">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.Сопоставить</CommandName>
-											<ExtendedTooltip name="СопоставитьРасширеннаяПодсказка" id="103"/>
-										</Button>
 										<UsualGroup name="ГруппаНесопоставленныеОбъекты" id="422">
 											<Title>
 												<v8:item>
@@ -460,6 +461,19 @@
 											<Representation>NormalSeparation</Representation>
 											<ExtendedTooltip name="ГруппаНесопоставленныеОбъектыРасширеннаяПодсказка" id="423"/>
 											<ChildItems>
+												<Button name="Сопоставить" id="102">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.Сопоставить</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.AppearanceUpInclineArrowGreen</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ExtendedTooltip name="СопоставитьРасширеннаяПодсказка" id="103"/>
+												</Button>
 												<Table name="НесопоставленныеОбъекты" id="74">
 													<Representation>List</Representation>
 													<CommandBarLocation>Top</CommandBarLocation>
@@ -682,6 +696,25 @@
 											<Representation>NormalSeparation</Representation>
 											<ExtendedTooltip name="ГруппаОтклоненияСверкиРасширеннаяПодсказка" id="425"/>
 											<ChildItems>
+												<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.Reread</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Перезагрузить Чеки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
+												</Button>
 												<Table name="ОтклоненияСверки" id="106">
 													<Representation>List</Representation>
 													<CommandBarLocation>Top</CommandBarLocation>
@@ -884,14 +917,17 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="375"/>
 													<ChildItems>
-														<Button name="КнопкаПерезагрузитьЧекиЗаДень" id="368">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ПерезагрузитьЧекиЗаДень</CommandName>
-															<ExtendedTooltip name="КнопкаПерезагрузитьЧекиЗаДеньРасширеннаяПодсказка" id="369"/>
-														</Button>
 														<Button name="СформироватьОтчетСверкиЧеков" id="334">
 															<Type>UsualButton</Type>
+															<Representation>PictureAndText</Representation>
 															<CommandName>Form.Command.СформироватьОтчетСверкиЧеков</CommandName>
+															<BackColor>style:ImportantColor</BackColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+															<Picture>
+																<xr:Ref>StdPicture.Report</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ToolTipRepresentation>Balloon</ToolTipRepresentation>
 															<ExtendedTooltip name="СформироватьОтчетСверкиЧековРасширеннаяПодсказка" id="335"/>
 														</Button>
 													</ChildItems>
@@ -1024,6 +1060,19 @@
 											<Representation>NormalSeparation</Representation>
 											<ExtendedTooltip name="ГруппаОтклоненияВыпускаРасширеннаяПодсказка" id="429"/>
 											<ChildItems>
+												<Button name="ПереформироватьВыпуска" id="229">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.Document</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ExtendedTooltip name="ПереформироватьВыпускаРасширеннаяПодсказка" id="230"/>
+												</Button>
 												<Table name="ОтклоненияВыпуска" id="157">
 													<Representation>List</Representation>
 													<DataPath>ОтклоненияВыпуска</DataPath>
@@ -1198,72 +1247,71 @@
 											<Representation>NormalSeparation</Representation>
 											<ExtendedTooltip name="ГруппаОшибкиФормированияРасширеннаяПодсказка" id="431"/>
 											<ChildItems>
-										<Table name="ОшибкиФормирования" id="191">
-											<Representation>List</Representation>
-											<DataPath>ОшибкиФормирования</DataPath>
-											<VerticalStretch>true</VerticalStretch>
-											<CommandSet>
-												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
-											<AutoCommandBar name="ОшибкиФормированияКоманднаяПанель" id="193"/>
-											<ExtendedTooltip name="ОшибкиФормированияРасширеннаяПодсказка" id="194"/>
-											<SearchStringAddition name="ОшибкиФормированияСтрокаПоиска" id="195">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияСтрокаПоискаКонтекстноеМеню" id="196"/>
-												<ExtendedTooltip name="ОшибкиФормированияСтрокаПоискаРасширеннаяПодсказка" id="197"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОшибкиФормированияСостояниеПросмотра" id="198">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияСостояниеПросмотраКонтекстноеМеню" id="199"/>
-												<ExtendedTooltip name="ОшибкиФормированияСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОшибкиФормированияУправлениеПоиском" id="201">
-												<AdditionSource>
-													<Item>ОшибкиФормирования</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОшибкиФормированияУправлениеПоискомКонтекстноеМеню" id="202"/>
-												<ExtendedTooltip name="ОшибкиФормированияУправлениеПоискомРасширеннаяПодсказка" id="203"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОшибкиФормированияДокумент" id="581">
-													<DataPath>ОшибкиФормирования.Документ</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОшибкиФормированияДокументКонтекстноеМеню" id="582"/>
-													<ExtendedTooltip name="ОшибкиФормированияДокументРасширеннаяПодсказка" id="583"/>
-												</InputField>
-												<InputField name="ОшибкиФормированияКатегория" id="204">
-													<DataPath>ОшибкиФормирования.Категория</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОшибкиФормированияКатегорияКонтекстноеМеню" id="205"/>
-													<ExtendedTooltip name="ОшибкиФормированияКатегорияРасширеннаяПодсказка" id="206"/>
-												</InputField>
-												<InputField name="ОшибкиФормированияТекстОшибки" id="207">
-													<DataPath>ОшибкиФормирования.ТекстОшибки</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОшибкиФормированияТекстОшибкиКонтекстноеМеню" id="208"/>
-													<ExtendedTooltip name="ОшибкиФормированияТекстОшибкиРасширеннаяПодсказка" id="209"/>
-												</InputField>
-											</ChildItems>
-										</Table>
+												<Table name="ОшибкиФормирования" id="191">
+													<Representation>List</Representation>
+													<DataPath>ОшибкиФормирования</DataPath>
+													<CommandSet>
+														<ExcludedCommand>Add</ExcludedCommand>
+														<ExcludedCommand>Change</ExcludedCommand>
+														<ExcludedCommand>Copy</ExcludedCommand>
+														<ExcludedCommand>Delete</ExcludedCommand>
+														<ExcludedCommand>EndEdit</ExcludedCommand>
+														<ExcludedCommand>MoveDown</ExcludedCommand>
+														<ExcludedCommand>MoveUp</ExcludedCommand>
+														<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													</CommandSet>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="ОшибкиФормированияКонтекстноеМеню" id="192"/>
+													<AutoCommandBar name="ОшибкиФормированияКоманднаяПанель" id="193"/>
+													<ExtendedTooltip name="ОшибкиФормированияРасширеннаяПодсказка" id="194"/>
+													<SearchStringAddition name="ОшибкиФормированияСтрокаПоиска" id="195">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияСтрокаПоискаКонтекстноеМеню" id="196"/>
+														<ExtendedTooltip name="ОшибкиФормированияСтрокаПоискаРасширеннаяПодсказка" id="197"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ОшибкиФормированияСостояниеПросмотра" id="198">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияСостояниеПросмотраКонтекстноеМеню" id="199"/>
+														<ExtendedTooltip name="ОшибкиФормированияСостояниеПросмотраРасширеннаяПодсказка" id="200"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ОшибкиФормированияУправлениеПоиском" id="201">
+														<AdditionSource>
+															<Item>ОшибкиФормирования</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ОшибкиФормированияУправлениеПоискомКонтекстноеМеню" id="202"/>
+														<ExtendedTooltip name="ОшибкиФормированияУправлениеПоискомРасширеннаяПодсказка" id="203"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<InputField name="ОшибкиФормированияДокумент" id="581">
+															<DataPath>ОшибкиФормирования.Документ</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОшибкиФормированияДокументКонтекстноеМеню" id="582"/>
+															<ExtendedTooltip name="ОшибкиФормированияДокументРасширеннаяПодсказка" id="583"/>
+														</InputField>
+														<InputField name="ОшибкиФормированияКатегория" id="204">
+															<DataPath>ОшибкиФормирования.Категория</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОшибкиФормированияКатегорияКонтекстноеМеню" id="205"/>
+															<ExtendedTooltip name="ОшибкиФормированияКатегорияРасширеннаяПодсказка" id="206"/>
+														</InputField>
+														<InputField name="ОшибкиФормированияТекстОшибки" id="207">
+															<DataPath>ОшибкиФормирования.ТекстОшибки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОшибкиФормированияТекстОшибкиКонтекстноеМеню" id="208"/>
+															<ExtendedTooltip name="ОшибкиФормированияТекстОшибкиРасширеннаяПодсказка" id="209"/>
+														</InputField>
+													</ChildItems>
+												</Table>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаСостояниеДокументыОткрытыеЦеныУспешно" id="519">
@@ -1453,14 +1501,17 @@
 											<Representation>NormalSeparation</Representation>
 											<ExtendedTooltip name="ГруппаОтчетСверкиВыпусковРасширеннаяПодсказка" id="435"/>
 											<ChildItems>
-												<Button name="ПереформироватьВыпуска" id="229">
-													<Type>UsualButton</Type>
-													<CommandName>Form.Command.ПереформироватьВыпуска</CommandName>
-													<ExtendedTooltip name="ПереформироватьВыпускаРасширеннаяПодсказка" id="230"/>
-												</Button>
 												<Button name="СформироватьОтчетСверкиВыпусков" id="342">
 													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
 													<CommandName>Form.Command.СформироватьОтчетСверкиВыпусков</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.Report</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
 													<ExtendedTooltip name="СформироватьОтчетСверкиВыпусковРасширеннаяПодсказка" id="343"/>
 												</Button>
 												<SpreadSheetDocumentField name="ОтчетСверкиВыпусков" id="344">
@@ -1726,7 +1777,15 @@
 											<ChildItems>
 												<Button name="СформироватьВедомостьОтрицательных" id="350">
 													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
 													<CommandName>Form.Command.СформироватьВедомостьОтрицательных</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.Report</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
 													<ExtendedTooltip name="СформироватьВедомостьОтрицательныхРасширеннаяПодсказка" id="351"/>
 												</Button>
 												<Button name="ОткрытьВедомостьОтрицательных" id="352">
@@ -1797,7 +1856,15 @@
 											<ChildItems>
 												<Button name="СформироватьАнализОтрицательных" id="357">
 													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
 													<CommandName>Form.Command.СформироватьАнализОтрицательных</CommandName>
+													<BackColor>style:ImportantColor</BackColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Picture>
+														<xr:Ref>StdPicture.Report</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
 													<ExtendedTooltip name="СформироватьАнализОтрицательныхРасширеннаяПодсказка" id="358"/>
 												</Button>
 												<SpreadSheetDocumentField name="АнализОтрицательныхОстатков" id="359">
@@ -2978,7 +3045,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сопоставить</v8:content>
+					<v8:content>Сопоставление кнопки - объект 1С запишется в соответствие и сопоставятся объекты в чеках 1С.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>Сопоставить</Action>
@@ -2993,7 +3060,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перезагрузить чеки за день</v8:content>
+					<v8:content>Полная перезагрузка чеков за выбранный день и склады</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПерезагрузитьЧекиЗаДень</Action>
@@ -3008,7 +3075,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Переформировать выпуска</v8:content>
+					<v8:content>Пересоздать документы Выпуск Блюд за выбранную дату и склад.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПереформироватьВыпуска</Action>
@@ -3068,7 +3135,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать отчет сверки чеков</v8:content>
+					<v8:content>Сформируйте отчет сверки загрузки чеков при необходимости.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>СформироватьОтчетСверкиЧеков</Action>
@@ -3113,7 +3180,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть ведомость отрицательных</v8:content>
+					<v8:content>Сформировать отчет "Отрицательные Остатки" на выбранную дату.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьВедомостьОтрицательных</Action>
@@ -3128,7 +3195,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сформировать анализ отрицательных</v8:content>
+					<v8:content>Сформировать анализ отрицательных движений по номенклтауре.</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>СформироватьАнализОтрицательных</Action>
