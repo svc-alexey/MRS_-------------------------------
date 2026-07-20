@@ -22,6 +22,18 @@ preserve original 1C identifiers (objects, modules, attributes) as-is:
 
 <!-- Populated only when `1c-templates-mcp` is offline; migrate to `remember` once it is back. -->
 
+## 2026-07-20 — Empty front-sale item nomenclature blocks matching step
+
+- **Scope:** `MRS_ПомощникЗакрытияСменыСервер.СтатусШагаСопоставление`,
+  `Документ.питДанныеПродажФронта.Товары`.
+- **Rule:** a check item row with
+  `Номенклатура = Справочник.Номенклатура.ПустаяСсылка` is a blocking matching-step
+  error even when `РегистрСведений.ПЛ_СоответствиеСФронтСистемами` already has a
+  filled mapping for `ПЛ_КодКнопки`.
+- **Why:** otherwise the matching step passes and the defect is visible only later
+  as a release-reconciliation discrepancy with empty nomenclature.
+- **Source:** user bug report on 2026-07-20 and the corresponding code fix.
+
 ## 2026-07-13 — питДанныеПродажФронта button code location
 
 - **Scope:** `Документ.питДанныеПродажФронта`.
