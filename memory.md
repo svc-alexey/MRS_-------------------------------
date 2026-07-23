@@ -22,6 +22,24 @@ preserve original 1C identifiers (objects, modules, attributes) as-is:
 
 <!-- Populated only when `1c-templates-mcp` is offline; migrate to `remember` once it is back. -->
 
+## 2026-07-22 — MICROS mixed check unmatched negative rows
+
+- **Scope:** `MRS_МенеджерОбменаMicros.НормализоватьОтменыВнутриЧековMICROS`,
+  `MRS_МенеджерОбменаMicros.СтрокиСовпадаютДляОтменыMICROS`,
+  `MRS_ПомощникЗакрытияСменыСервер.ОбработатьСтрокиСверки`.
+- **Rule:** In one MICROS Oracle check, matched positive/negative cancellation pairs
+  must be collapsed, but any negative row without a matching positive pair must stay
+  in the load table and become a return check. When `КОДТОВАРА` is filled on both
+  rows, it must match even if both rows are mapped to the same `Номенклатура`
+  such as `Услуга`.
+- **Why:** MICROS can send a mixed check where all cancellation pairs collapse and
+  only one unmatched negative line is the real return; treating it as an error blocks
+  receipt loading, and matching only by generic nomenclature can collapse the wrong
+  menu button. The shift-closing assistant must compare MICROS front data after the
+  same normalization as loading; otherwise raw front rows do not match the final
+  `питДанныеПродажФронта` documents.
+- **Source:** User bug report with `D:/AI_RPG_2/ВозвратДурацкий.xlsx` on 2026-07-22.
+
 ## 2026-07-20 — Empty front-sale item nomenclature blocks matching step
 
 - **Scope:** `MRS_ПомощникЗакрытияСменыСервер.СтатусШагаСопоставление`,
